@@ -8,7 +8,98 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
+
+    <Page.Resources>
+        <Style TargetType="Button">
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="Grid.Column" Value="2"/>
+            <Setter Property="Height" Value="50"/>
+            <Setter Property="Width" Value="300"/>
+            <Setter Property="FontSize" Value="25"/>
+            <Setter Property="Margin" Value="3"/>
+        </Style>
+
+        <Style TargetType="TextBox">
+            <Setter Property="TextAlignment" Value="Center"/>
+            <Setter Property="Grid.Column" Value="2"/>
+            <Setter Property="Height" Value="50"/>
+            <Setter Property="Width" Value="300"/>
+            <Setter Property="FontSize" Value="25"/>
+            <Setter Property="Margin" Value="3"/>
+        </Style>
+
+    </Page.Resources>
+
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="126*"/>
+            <RowDefinition Height="125*"/>
+            <RowDefinition Height="594*"/>
+            <RowDefinition Height="236*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="293*"/>
+            <ColumnDefinition Width="456*"/>
+            <ColumnDefinition Width="479*"/>
+            <ColumnDefinition Width="692*"/>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.Row="1" Grid.RowSpan="2" HorizontalAlignment="Center" VerticalAlignment="Top" Height="508" Width="201">
+            <Button Content="1ªA"></Button>
+            <Button Content="1ªB"></Button>
+            <Button Content="1ªC"></Button>
+            <Button Content="2ªA"></Button>
+            <Button Content="2ªB"></Button>
+            <Button Content="2ªC"></Button>
+            <Button Content="3ªA"></Button>
+            <Button Content="3ªB"></Button>
+            <Button Content="3ªC"></Button>
+        </StackPanel>
+
+        <Button Name="Menu" Grid.Row="3" Grid.Column="3" HorizontalAlignment="Right" VerticalAlignment="Bottom"  Background="Transparent" BorderBrush="Transparent" 
+                Width="100" Height="100" Margin="25">
+            <Image Source="/Assets/info.png" Width="50" Height="50" />
+        </Button>
+
+        <Button Content="BACK" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="50,0,0,30" 
+                Background="#FFFBDED3" FontSize="35" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" BorderBrush="Transparent" Height="88" RenderTransformOrigin="0.49,-0.933"/>
+
+        <TextBox PlaceholderText="STUDENT BODY" IsReadOnly="True" 
+                 HorizontalAlignment="Center" FontSize="30" Grid.Column="3" TextAlignment="Center" VerticalAlignment="Center" Height="54" Width="302"></TextBox>
+
+        <TextBox PlaceholderText="CURRENT MISIONS: 4/4" IsReadOnly="True" 
+                 HorizontalAlignment="Center" Grid.Row="1" FontSize="25" Grid.Column="1" TextAlignment="Center" VerticalAlignment="Center" Height="54" Width="320" Background="#66F07458"></TextBox>
+
+
+        <StackPanel Grid.Row="2" Grid.Column="1" Grid.RowSpan="2" HorizontalAlignment="Right" 
+            VerticalAlignment="Top" Height="508" Width="299">
+            <TextBox PlaceholderText="STUDENT" Margin="0" Background="#FFE5ABE5"></TextBox>
+            <TextBox PlaceholderText="LUFFY" Margin="0"></TextBox>
+            <TextBox PlaceholderText="ROBIN" Margin="0"></TextBox>
+            <TextBox PlaceholderText="ZORO" Margin="0"></TextBox>
+            <TextBox PlaceholderText="SANJI" Margin="0"></TextBox>
+        </StackPanel>
+
+        <StackPanel Grid.Row="2" Grid.Column="2" Grid.RowSpan="2" HorizontalAlignment="Center" 
+            VerticalAlignment="Top" Height="508" Width="480">
+            <TextBox PlaceholderText="TARGET" Margin="0" Width="478" Background="#FFE5ABE5"></TextBox>
+            <TextBox PlaceholderText="HAVE 2 COOKIE STANS" Margin="0" Width="478"></TextBox>
+            <TextBox PlaceholderText="IMPROVE ENGLISH ROOM" Margin="0" Width="478"></TextBox>
+            <TextBox PlaceholderText="ORGANIZE A EXCURSION" Margin="0" Width="478"></TextBox>
+            <TextBox PlaceholderText="AVERAGE OF 7" Margin="0" Width="478"></TextBox>
+        </StackPanel>
+
+        <StackPanel Grid.Row="2" Grid.Column="3" Grid.RowSpan="2" HorizontalAlignment="Left" 
+            VerticalAlignment="Top" Height="508" Width="299">
+            <TextBox PlaceholderText="REWARD" Margin="0" Background="#FFE5ABE5"></TextBox>
+            <TextBox PlaceholderText="100Y" Margin="0"></TextBox>
+            <TextBox PlaceholderText="50xp" Margin="0"></TextBox>
+            <TextBox PlaceholderText="150Y" Margin="0"></TextBox>
+            <TextBox PlaceholderText="REWARD" Margin="0"></TextBox>
+        </StackPanel>
+
+        <TextBox PlaceholderText="CLASS RATING: 3/10" IsReadOnly="True" 
+                 HorizontalAlignment="Center" Grid.Row="3" FontSize="25" Grid.Column="2" TextAlignment="Center" VerticalAlignment="Center" Height="54" Width="377" Background="#66F07458"></TextBox>
 
     </Grid>
 </Page>
