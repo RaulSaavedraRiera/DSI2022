@@ -26,5 +26,20 @@ namespace Peach_HighSchool
         {
             this.InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(MenuInicio));
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(MenuOpciones));
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            Application.Current.Exit();
+        }
     }
 }
