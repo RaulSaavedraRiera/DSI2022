@@ -41,5 +41,11 @@ namespace Peach_HighSchool
         {
             Application.Current.Exit();
         }
+
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(Calendario));
+
+        }
     }
 }
