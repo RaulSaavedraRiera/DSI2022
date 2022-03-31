@@ -26,5 +26,15 @@ namespace Peach_HighSchool
         {
             this.InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            infoActivity.Text = "Un viaje a Okinawa para toda la clase, disfrutando de la playa y el sol.";
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            infoActivity.Text = "Toda la escuela irá a disfrutar del Sakura a las calles de Tokio.";
+        }
     }
 }
