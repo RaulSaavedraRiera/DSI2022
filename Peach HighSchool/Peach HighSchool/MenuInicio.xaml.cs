@@ -22,9 +22,25 @@ namespace Peach_HighSchool
     /// </summary>
     public sealed partial class MenuInicio : Page
     {
+        
         public MenuInicio()
         {
             this.InitializeComponent();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            if (options.Visibility == Visibility.Visible)
+            {
+                options.Visibility = Visibility.Collapsed;
+                optionsPanel.Visibility = Visibility.Collapsed;
+            }
+            else
+            {
+                options.Visibility = Visibility.Visible;
+                optionsPanel.Visibility = Visibility.Visible;
+            }
+               
         }
     }
 }

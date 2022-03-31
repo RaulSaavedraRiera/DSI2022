@@ -8,7 +8,74 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid>
+    <Page.Resources>
+        <Style TargetType="RadioButton">
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+            <Setter Property="BorderBrush" Value="Black"/>
+            <Setter Property="FontSize" Value="23"/>
+            <Setter Property="IsChecked" Value="true"/>
+        </Style>
+    </Page.Resources>
+    <Grid Background="#FFD3FDFF">
+        <Button Content="START NEW GAME" HorizontalAlignment="Center" VerticalAlignment="Bottom" Width="400" Height="150" 
+                Background="#FFCB6B87" FontSize="35"></Button>
 
-    </Grid>
+        <Button Content="BACK TO MENU" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="50,30" Width="350" Height="75" 
+                Background="#FFFBDED3" FontSize="35"></Button>
+
+        <TextBox PlaceholderText="Welcome to Peach HighSchool. Here begins your adventure to take your dream academy to stardom, giving it back the honor it once had. Choose how you want this to be and how difficult your adventure will be." 
+                 IsReadOnly="True" TextWrapping="Wrap" PlaceholderForeground="Black"
+                 HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,25,0,0" FontSize="30" Height="340" Width="450" FontWeight="Normal" FontStyle="Italic"></TextBox>
+
+        <TextBox PlaceholderText="YOUR ACADEMY NAME" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="35" Width="400" Height="100"></TextBox>
+
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0, 180" Spacing="15">
+            <TextBox PlaceholderText="DIFFICULTY" IsReadOnly="True" PlaceholderForeground="Black" HorizontalAlignment="Center" FontSize="45"></TextBox>
+            <RadioButton Content="PRESTIGUE ACADEMY"></RadioButton>
+            <RadioButton Content="NORMAL ACADEMY"></RadioButton>
+            <RadioButton Content="RISKY ACADEMY"></RadioButton>
+
+        </StackPanel>
+
+        <TextBlock HorizontalAlignment="Left" VerticalAlignment="Bottom" Text="PEACH HIGHSCHOOL" TextWrapping="Wrap"  Margin="0, 150"
+                    Grid.ColumnSpan="2" FontSize="65" FontFamily="Century Schoolbook" FontWeight="Bold" RenderTransformOrigin="0,0" FocusVisualPrimaryBrush="Black" Foreground="#FFFD96B5" >
+            <TextBlock.RenderTransform>
+                <CompositeTransform Rotation="-90"/>
+            </TextBlock.RenderTransform>
+        </TextBlock>
+
+        <Button Content="OPCIONES" VerticalAlignment="Top" HorizontalAlignment="Right" Click="Button_Click" ></Button>
+        
+        <Rectangle Name="optionsPanel" HorizontalAlignment="Right" Height="600" Margin="50,50" Stroke="Black" VerticalAlignment="Top" Width="150" Visibility="Collapsed" />
+        <StackPanel Name="options" HorizontalAlignment="Right" DragOver="top" Margin="50, 50" Spacing="125" Visibility="Collapsed">
+            <DropDownButton Content="SEASON" FontSize="25">
+                <DropDownButton.Flyout>
+                    <MenuFlyout Placement="Bottom">
+                        <MenuFlyoutItem Text="SPRING"></MenuFlyoutItem>
+                        <MenuFlyoutItem Text="SUMMER"></MenuFlyoutItem>
+                        <MenuFlyoutItem Text="FALL"></MenuFlyoutItem>
+                        <MenuFlyoutItem Text="WINTER"></MenuFlyoutItem>
+                    </MenuFlyout>
+                </DropDownButton.Flyout>
+            </DropDownButton>
+            <DropDownButton Content="MONEY" FontSize="25">
+                <DropDownButton.Flyout>
+                    <MenuFlyout Placement="Bottom">
+                        <MenuFlyoutItem Text="1K"></MenuFlyoutItem>
+                        <MenuFlyoutItem Text="10K"></MenuFlyoutItem>
+                        <MenuFlyoutItem Text="25K"></MenuFlyoutItem>                        
+                    </MenuFlyout>
+                </DropDownButton.Flyout>
+            </DropDownButton>
+            <DropDownButton Content="PRESTIGE" FontSize="25">
+                <DropDownButton.Flyout>
+                    <MenuFlyout Placement="Bottom">
+                        <MenuFlyoutItem Text="LOW"></MenuFlyoutItem>
+                        <MenuFlyoutItem Text="MEDIUM"></MenuFlyoutItem>
+                        <MenuFlyoutItem Text="HIGH"></MenuFlyoutItem>                        
+                    </MenuFlyout>
+                </DropDownButton.Flyout>
+            </DropDownButton>
+        </StackPanel>
+        </Grid>
 </Page>

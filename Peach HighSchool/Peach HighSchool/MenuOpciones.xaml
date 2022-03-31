@@ -19,22 +19,22 @@
 
         </Style>
 
-        <Style TargetType="CheckBox">
+        <Style TargetType="ToggleSwitch">
             <Setter Property="HorizontalAlignment" Value="Center"/>
             <Setter Property="BorderBrush" Value="Black"/>
             <Setter Property="FontSize" Value="40"/>
-            <Setter Property="IsChecked" Value="true"/>
+            <Setter Property="IsEnabled" Value="true"/>
         </Style>
     </Page.Resources>
 
     <Grid Background="#FFD3FDFF">
         <Image HorizontalAlignment="Right" Grid.Column="0"  Source="Assets/menuOpciones.png" Margin="100,100,-75,0"  />
 
-        <CheckBox Content="AUTOSAVE" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="125" FontSize="55"/>
+        <ToggleSwitch OffContent="AUTOSAVE" OnContent="AUTOSAVE" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="125" FontSize="55" />
         <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Spacing="75">
-            <CheckBox Content="SOUND"/>
+            <ToggleSwitch OffContent="SOUND" OnContent="SOUND"/>
             <Slider Width="500" ></Slider>
-            <CheckBox Content="MUSIC"/>
+            <ToggleSwitch OffContent="MUSIC" OnContent="MUSIC"/>
             <Slider Width="500"></Slider>
             <DropDownButton Content="QUALITY LEVEL" HorizontalAlignment="Center" Width="300" Height="75" Background="White" FontSize="35" >
                 <DropDownButton.Flyout>
