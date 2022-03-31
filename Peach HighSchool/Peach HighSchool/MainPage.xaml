@@ -8,7 +8,34 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
+    <Page.Resources>
+        <Style TargetType="Button">
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+            <Setter Property="BorderBrush" Value="Black"/>
+            <Setter Property="Grid.Column" Value="0"/>
+            <Setter Property="Grid.Row" Value="1"/>
+            <Setter Property="Height" Value="100"/>
+
+        </Style>
+    </Page.Resources>
+
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="39*"/>
+            <RowDefinition Height="211*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="319*"/>
+            <ColumnDefinition Width="431*"/>
+        </Grid.ColumnDefinitions>
+        <Image HorizontalAlignment="Left" Grid.Column="0" Grid.ColumnSpan="2"  Source="Assets/portada.jpg" Stretch="Fill" Grid.RowSpan="2"  />
+        <StackPanel Grid.Row="1" VerticalAlignment="Center" Spacing="125" Height="824" Margin="100,0,100,0" >
+            <Button Content="Button"  Width="400"  />
+            <Button Content="Button"  Width="300"/>
+            <Button Content="Button"  Width="300"/>
+            <Button Content="Button"  Width="150" Height="50"/>
+        </StackPanel>
+
 
     </Grid>
 </Page>
