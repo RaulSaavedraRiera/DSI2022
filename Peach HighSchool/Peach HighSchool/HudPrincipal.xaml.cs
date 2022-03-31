@@ -47,10 +47,9 @@ namespace Peach_HighSchool
                 instrucciones.Visibility = Visibility.Visible;
             else instrucciones.Visibility = Visibility.Collapsed;
         }
-
         private void AlumInMap_Click(object sender, RoutedEventArgs e)
         {
-           //falta grupar todo para poder suprimirlo
+            //falta grupar todo para poder suprimirlo
         }
     }
 }
