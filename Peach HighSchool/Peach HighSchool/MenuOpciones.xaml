@@ -8,7 +8,57 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid>
+    <Page.Resources>
+        <Style TargetType="Button">
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+            <Setter Property="BorderBrush" Value="Black"/>
+            <Setter Property="Grid.Column" Value="0"/>
+            <Setter Property="Grid.Row" Value="1"/>
+            <Setter Property="Height" Value="125"/>
+            <Setter Property="FontSize" Value="33"/>
+
+        </Style>
+
+        <Style TargetType="CheckBox">
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="BorderBrush" Value="Black"/>
+            <Setter Property="FontSize" Value="40"/>
+            <Setter Property="IsChecked" Value="true"/>
+        </Style>
+    </Page.Resources>
+
+    <Grid Background="#FFD3FDFF">
+        <Image HorizontalAlignment="Right" Grid.Column="0"  Source="Assets/menuOpciones.png" Margin="100,100,-75,0"  />
+
+        <CheckBox Content="AUTOSAVE" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="125" FontSize="55"/>
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Spacing="75">
+            <CheckBox Content="SOUND"/>
+            <Slider Width="500" ></Slider>
+            <CheckBox Content="MUSIC"/>
+            <Slider Width="500"></Slider>
+            <DropDownButton Content="QUALITY LEVEL" HorizontalAlignment="Center" Width="300" Height="75" Background="White" FontSize="35" >
+                <DropDownButton.Flyout>
+                    <MenuFlyout Placement="Bottom">
+                        <MenuFlyoutItem Text="LOW"/>
+                        <MenuFlyoutItem Text="MEDIUM"/>
+                        <MenuFlyoutItem Text="HIGH"/>
+                    </MenuFlyout>
+                </DropDownButton.Flyout>
+            </DropDownButton>
+        </StackPanel>
+
+        <Button Content="SAVE" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="50" Width="350" Height="125" 
+                Background="#FFCB6B87" FontSize="30"></Button>
+
+        <Button Content="BACK TO MENU" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="50,30" Width="350" Height="75" 
+                Background="#FFFBDED3" FontSize="35"></Button>
+
+        <TextBlock HorizontalAlignment="Left" VerticalAlignment="Bottom" Text="PEACH HIGHSCHOOL" TextWrapping="Wrap"  Margin="0, 150"
+                    Grid.ColumnSpan="2" FontSize="65" FontFamily="Century Schoolbook" FontWeight="Bold" RenderTransformOrigin="0,0" FocusVisualPrimaryBrush="Black" Foreground="#FFFD96B5" >
+            <TextBlock.RenderTransform>
+                <CompositeTransform Rotation="-90"/>
+            </TextBlock.RenderTransform>
+        </TextBlock>
 
     </Grid>
 </Page>

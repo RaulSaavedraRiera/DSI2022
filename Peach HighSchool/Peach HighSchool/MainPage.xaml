@@ -14,7 +14,8 @@
             <Setter Property="BorderBrush" Value="Black"/>
             <Setter Property="Grid.Column" Value="0"/>
             <Setter Property="Grid.Row" Value="1"/>
-            <Setter Property="Height" Value="100"/>
+            <Setter Property="Height" Value="125"/>
+            <Setter Property="FontSize" Value="33"/>
 
         </Style>
     </Page.Resources>
@@ -30,12 +31,13 @@
         </Grid.ColumnDefinitions>
         <Image HorizontalAlignment="Left" Grid.Column="0" Grid.ColumnSpan="2"  Source="Assets/portada.jpg" Stretch="Fill" Grid.RowSpan="2"  />
         <StackPanel Grid.Row="1" VerticalAlignment="Center" Spacing="125" Height="824" Margin="100,0,100,0" >
-            <Button Content="Button"  Width="400"  />
-            <Button Content="Button"  Width="300"/>
-            <Button Content="Button"  Width="300"/>
-            <Button Content="Button"  Width="150" Height="50"/>
+            <Button Content="RETURN GAME"  Width="500" Background="#FFD15E81" />
+            <Button Content="NEW GAME"  Width="400" Background="#FFD688A0"/>
+            <Button Content="OPTIONS"  Width="400" Background="#FFE8ABBD"/>
+            <Button Content="EXIT"  Width="250" Height="75" Background="#FFCFCFCF"/>
         </StackPanel>
-
+        <TextBlock HorizontalAlignment="Left" Text="PEACH HIGHSCHOOL" TextWrapping="Wrap" VerticalAlignment="Center"
+                    Grid.ColumnSpan="2" FontSize="100" FontFamily="Century Schoolbook" FontWeight="Bold" />
 
     </Grid>
 </Page>
