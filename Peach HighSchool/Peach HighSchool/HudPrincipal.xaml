@@ -9,6 +9,66 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="285*"/>
+            <RowDefinition Height="352*"/>
+            <RowDefinition Height="320*"/>
+            <RowDefinition Height="123*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="506*"/>
+            <ColumnDefinition Width="827*"/>
+            <ColumnDefinition Width="435*"/>
+            <ColumnDefinition Width="152*"/>
+        </Grid.ColumnDefinitions>
 
+        <Button Name="Desplegable" Grid.Row="3" Grid.Column="3" HorizontalAlignment="Center" Click="Desplegable_Click" Background="Transparent" >
+            <Image Source="/Assets/desplegable.png" Width="50" Height="50" />
+        </Button>
+
+        <StackPanel Name="desplegable" Grid.Row="1" Grid.RowSpan="2" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" Spacing="50" 
+                    Visibility="Visible" Height="628" Width="70">
+            <Button HorizontalAlignment="Center" VerticalAlignment="Center" Background="Transparent" Click="Instrucciones_Click">
+                <Image Source="/Assets/info.png" Width="50" Height="50"/>
+            </Button>
+            <Button HorizontalAlignment="Center" VerticalAlignment="Center" Background="Transparent">
+                <Image Source="/Assets/tienda.png" Width="50" Height="50"/>
+            </Button>
+            <Button HorizontalAlignment="Center" VerticalAlignment="Center" Background="Transparent">
+                <Image Source="/Assets/calendario.png" Width="50" Height="50"/>
+            </Button>
+            <Button HorizontalAlignment="Center" VerticalAlignment="Center" Background="Transparent">
+                <Image Source="/Assets/misiones.png" Width="50" Height="50"/>
+            </Button>
+            <Button HorizontalAlignment="Center" VerticalAlignment="Center" Background="Transparent">
+                <Image Source="/Assets/clubs.png" Width="50" Height="50"/>
+            </Button>
+            <Button HorizontalAlignment="Center" VerticalAlignment="Center" Background="Transparent">
+                <Image Source="/Assets/alums.png" Width="50" Height="50"/>
+            </Button>
+        </StackPanel>
+
+        <Button Name="Menu" Grid.Row="0" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,25,0,0"  Background="Transparent" Click="Menu_Click" >
+            <Image Source="/Assets/menu.png" Width="50" Height="50" />
+        </Button>
+
+        <StackPanel Name="menus" Grid.Row="0" Grid.RowSpan="2" Grid.Column="2" VerticalAlignment="Top" HorizontalAlignment="Stretch" Margin="0, 20,0,0" Spacing="50"
+                    Visibility="Visible">
+            <Button Name="SaveButton" Content="SAVE" FontSize="50" Background="#FFEEA0C3" HorizontalAlignment="Stretch"></Button>
+            <Button Name="ToMenuButton" Content="TO MENU" FontSize="50" Background="#FFEEA0C3" HorizontalAlignment="Stretch"></Button>
+            <Button Name="OptionsButton" Content="OPTIONS" FontSize="50" Background="#FFEEA0C3" HorizontalAlignment="Stretch"></Button>
+        </StackPanel>
+
+        <Rectangle Grid.Row="0" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="10" Width="350" Height="50"  Stroke="Black"></Rectangle>
+        <StackPanel Grid.Row="0" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Top" Orientation="Horizontal" Margin="10" Spacing="20">
+            <TextBlock Text="x0.25" FontSize="25"></TextBlock>
+            <TextBlock Text="x0.5" FontSize="25"></TextBlock>
+            <TextBlock Text="x1" FontSize="25" FontWeight="Bold"></TextBlock>
+            <TextBlock Text="x2" FontSize="25"></TextBlock>
+            <TextBlock Text="x5" FontSize="25"></TextBlock>
+        </StackPanel>
+
+        <TextBox Name="instrucciones" Visibility="Collapsed" Grid.Row="0" Grid.RowSpan="3" Grid.Column="0" Grid.ColumnSpan="3" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="160,100,160,0" TextWrapping="Wrap" IsReadOnly="True" FontSize="40" Background="#66B6B6B6"
+                   Header="COMO JUGAR A PEACH HIGH SCHOOL" TextAlignment="Center" Text="Información sobre la aventura y la tareas que deben ser realizadas para completar la aventura. Tenemos diferente tipos de opciones entre ellas"  ></TextBox>
     </Grid>
 </Page>

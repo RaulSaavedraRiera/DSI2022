@@ -26,5 +26,26 @@ namespace Peach_HighSchool
         {
             this.InitializeComponent();
         }
+
+        private void Desplegable_Click(object sender, RoutedEventArgs e)
+        {
+            if (desplegable.Visibility == Visibility.Collapsed)
+                desplegable.Visibility = Visibility.Visible;
+            else desplegable.Visibility = Visibility.Collapsed;
+        }
+
+        private void Menu_Click(object sender, RoutedEventArgs e)
+        {
+            if (menus.Visibility == Visibility.Collapsed)
+                menus.Visibility = Visibility.Visible;
+            else menus.Visibility = Visibility.Collapsed;
+        }
+
+        private void Instrucciones_Click(object sender, RoutedEventArgs e)
+        {
+            if (instrucciones.Visibility == Visibility.Collapsed)
+                instrucciones.Visibility = Visibility.Visible;
+            else instrucciones.Visibility = Visibility.Collapsed;
+        }
     }
 }
