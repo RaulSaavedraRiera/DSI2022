@@ -47,7 +47,7 @@
         <Button Content="OPCIONES" VerticalAlignment="Top" HorizontalAlignment="Right" Click="Button_Click" ></Button>
         
         <Rectangle Name="optionsPanel" HorizontalAlignment="Right" Height="600" Margin="50,50" Stroke="Black" VerticalAlignment="Top" Width="150" Visibility="Collapsed" />
-        <StackPanel Name="options" HorizontalAlignment="Right" DragOver="top" Margin="50, 50" Spacing="125" Visibility="Collapsed">
+        <StackPanel Name="options" HorizontalAlignment="Right" Margin="50, 50" Spacing="125" Visibility="Collapsed">
             <DropDownButton Content="SEASON" FontSize="25">
                 <DropDownButton.Flyout>
                     <MenuFlyout Placement="Bottom">
