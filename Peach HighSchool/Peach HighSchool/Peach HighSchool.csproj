@@ -154,10 +154,22 @@
     </AppxManifest>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\alums.png" />
+    <Content Include="Assets\calendario.png" />
+    <Content Include="Assets\clubs.png" />
+    <Content Include="Assets\desplegable.png" />
+    <Content Include="Assets\dinero.jpg" />
+    <Content Include="Assets\felicidad.png" />
     <Content Include="Assets\info.png" />
+    <Content Include="Assets\medal.png" />
+    <Content Include="Assets\menu.png" />
     <Content Include="Assets\menuOpciones.png" />
+    <Content Include="Assets\misiones.png" />
     <Content Include="Assets\opcion.png" />
     <Content Include="Assets\portada.jpg" />
+    <Content Include="Assets\sakura.png" />
+    <Content Include="Assets\student.png" />
+    <Content Include="Assets\tienda.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />

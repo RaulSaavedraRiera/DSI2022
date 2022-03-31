@@ -8,7 +8,81 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid>
+
+    <Page.Resources>
+        <Style TargetType="Button">
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="Height" Value="50"/>
+            <Setter Property="Width" Value="300"/>
+            <Setter Property="FontSize" Value="25"/>
+            <Setter Property="Background" Value="#FFE5ABE5"></Setter>
+        </Style>
+    </Page.Resources>
+
+    <Grid Margin="10,0,-10,0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="643*"/>
+            <ColumnDefinition Width="608*"/>
+            <ColumnDefinition Width="669*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="132*"/>
+            <RowDefinition Height="121*"/>
+            <RowDefinition Height="540*"/>
+            <RowDefinition Height="288*"/>
+        </Grid.RowDefinitions>
+
+
+
+        <Image Source="/Assets/info.png" Margin="496,216,5,216" Grid.Row="2" RenderTransformOrigin="0.308,0.574"/>
+        <Image Source="/Assets/info.png" Margin="247,216,219,216" Grid.Row="2" Grid.Column="1"/>
+        <Image Source="/Assets/info.png" Margin="41,216,486,216" Grid.Row="2" Grid.Column="2"/>
+
+        <TextBox PlaceholderText="500Y" IsReadOnly="True" 
+                 HorizontalAlignment="Center" FontSize="30" Grid.Column="2" TextAlignment="Center" VerticalAlignment="Center" 
+                 Height="54" Width="302"></TextBox>
+
+
+        <TextBox PlaceholderText="SCHOOLS STORE" IsReadOnly="True" 
+                 HorizontalAlignment="Center" FontSize="30" TextAlignment="Center" VerticalAlignment="Center" 
+                 Height="54" Width="302"/>
+
+        <StackPanel Orientation="Horizontal" Grid.Row="1" Margin="30,30,30,30" Grid.Column="0" Grid.ColumnSpan="3">
+            <Button Content="UPGRADES"></Button>
+            <Button Content="CLOTHES"></Button>
+            <Button Content="SCHOOL"></Button>
+            <Button Content="CLUBS MATERIALS"></Button>
+            <Button Content="STUDY MATERIALS"></Button>
+
+        </StackPanel>
+
+
+        <Button Content="BACK" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="50,0,0,30" 
+                Background="#FFFBDED3" FontSize="35" Grid.Row="3" Grid.Column="0" BorderBrush="Transparent" Height="79" Width="300"/>
+
+        <StackPanel Grid.Column="1" Grid.Row="3" VerticalAlignment="Center" HorizontalAlignment="Center" Orientation="Horizontal" Width="336" Height="60">
+            <TextBox  PlaceholderText="SEARCH" FontSize="30" Width="240" IsReadOnly ="False"/>
+            <Button Width=" 40" Height="40" Margin="10" BorderBrush="Black" Background="Transparent">
+                <SymbolIcon Symbol="Find"></SymbolIcon>
+            </Button>
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" HorizontalAlignment="Center" >
+            <Button Width="400" Height="400" Background="#FFEDE3ED" >
+                <TextBox PlaceholderText="UNIFORM 1       100Y" Margin="-2,220,-2,0" RenderTransformOrigin="0.728,1.423"/>
+            </Button>
+            <Button Width="400" Height="400" Background="#FFEDE3ED">
+
+                <TextBox PlaceholderText="UNIFORM 2        300Y" Margin="-2,220,-2,0" RenderTransformOrigin="0.728,1.423"/>
+
+            </Button>
+            <Button Width="400" Height="400" Background="#FFF69189">
+                <TextBox PlaceholderText="UNIFORM 3       500Y" Margin="-2,220,-2,0" RenderTransformOrigin="0.728,1.423"/>
+
+            </Button>
+
+        </StackPanel>
+
 
     </Grid>
 </Page>

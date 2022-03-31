@@ -29,7 +29,7 @@ namespace Peach_HighSchool
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Frame.Navigate(typeof(MenuInicio));
+            Frame.Navigate(typeof(Tienda));
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
@@ -39,7 +39,9 @@ namespace Peach_HighSchool
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
-            Application.Current.Exit();
+            //Application.Current.Exit();
+            Frame.Navigate(typeof(HudPrincipal));
+
         }
 
         private void Button_Click_3(object sender, RoutedEventArgs e)
