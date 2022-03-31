@@ -7,6 +7,11 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Page.Resources>
+        <Style TargetType="TextBox">
+            <Setter Property="IsReadOnly" Value="True"/>
+        </Style>
+    </Page.Resources>
 
     <Grid>
         <Grid.RowDefinitions>
@@ -17,16 +22,17 @@
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="506*"/>
-            <ColumnDefinition Width="827*"/>
+            <ColumnDefinition Width="223*"/>
+            <ColumnDefinition Width="604*"/>
             <ColumnDefinition Width="435*"/>
             <ColumnDefinition Width="152*"/>
         </Grid.ColumnDefinitions>
 
-        <Button Name="Desplegable" Grid.Row="3" Grid.Column="3" HorizontalAlignment="Center" Click="Desplegable_Click" Background="Transparent" >
+        <Button Name="Desplegable" Grid.Row="3" Grid.Column="4" HorizontalAlignment="Center" Click="Desplegable_Click" Background="Transparent" >
             <Image Source="/Assets/desplegable.png" Width="50" Height="50" />
         </Button>
 
-        <StackPanel Name="desplegable" Grid.Row="1" Grid.RowSpan="2" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" Spacing="50" 
+        <StackPanel Name="desplegable" Grid.Row="1" Grid.RowSpan="2" Grid.Column="4" HorizontalAlignment="Center" VerticalAlignment="Center" Spacing="50" 
                     Visibility="Visible" Height="628" Width="70">
             <Button HorizontalAlignment="Center" VerticalAlignment="Center" Background="Transparent" Click="Instrucciones_Click">
                 <Image Source="/Assets/info.png" Width="50" Height="50"/>
@@ -48,19 +54,19 @@
             </Button>
         </StackPanel>
 
-        <Button Name="Menu" Grid.Row="0" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,25,0,0"  Background="Transparent" Click="Menu_Click" >
+        <Button Name="Menu" Grid.Row="0" Grid.Column="4" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,25,0,0"  Background="Transparent" Click="Menu_Click" >
             <Image Source="/Assets/menu.png" Width="50" Height="50" />
         </Button>
 
-        <StackPanel Name="menus" Grid.Row="0" Grid.RowSpan="2" Grid.Column="2" VerticalAlignment="Top" HorizontalAlignment="Stretch" Margin="0, 20,0,0" Spacing="50"
+        <StackPanel Name="menus" Grid.Row="0" Grid.RowSpan="2" Grid.Column="3" VerticalAlignment="Top" Margin="0,20,0,0" Spacing="50"
                     Visibility="Visible">
             <Button Name="SaveButton" Content="SAVE" FontSize="50" Background="#FFEEA0C3" HorizontalAlignment="Stretch"></Button>
             <Button Name="ToMenuButton" Content="TO MENU" FontSize="50" Background="#FFEEA0C3" HorizontalAlignment="Stretch"></Button>
             <Button Name="OptionsButton" Content="OPTIONS" FontSize="50" Background="#FFEEA0C3" HorizontalAlignment="Stretch"></Button>
         </StackPanel>
 
-        <Rectangle Grid.Row="0" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="10" Width="350" Height="50"  Stroke="Black"></Rectangle>
-        <StackPanel Grid.Row="0" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Top" Orientation="Horizontal" Margin="10" Spacing="20">
+        <Rectangle Grid.Row="0" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="16,10,0,0" Width="350" Height="50"  Stroke="Black"></Rectangle>
+        <StackPanel Grid.Row="0" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Top" Orientation="Horizontal" Margin="60,10,0,0" Spacing="20">
             <TextBlock Text="x0.25" FontSize="25"></TextBlock>
             <TextBlock Text="x0.5" FontSize="25"></TextBlock>
             <TextBlock Text="x1" FontSize="25" FontWeight="Bold"></TextBlock>
@@ -68,7 +74,26 @@
             <TextBlock Text="x5" FontSize="25"></TextBlock>
         </StackPanel>
 
-        <TextBox Name="instrucciones" Visibility="Collapsed" Grid.Row="0" Grid.RowSpan="3" Grid.Column="0" Grid.ColumnSpan="3" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="160,100,160,0" TextWrapping="Wrap" IsReadOnly="True" FontSize="40" Background="#66B6B6B6"
-                   Header="COMO JUGAR A PEACH HIGH SCHOOL" TextAlignment="Center" Text="Información sobre la aventura y la tareas que deben ser realizadas para completar la aventura. Tenemos diferente tipos de opciones entre ellas"  ></TextBox>
+        <TextBox Name="instrucciones" Visibility="Collapsed" Grid.Row="0" Grid.RowSpan="3" Grid.Column="0" Grid.ColumnSpan="4" Margin="160,100,160,0" TextWrapping="Wrap" IsReadOnly="True" FontSize="40" Background="#66B6B6B6"
+                   Header="COMO JUGAR A PEACH HIGH SCHOOL" TextAlignment="Center" Text="Información sobre la aventura y la tareas que deben ser realizadas para completar la aventura. Tenemos diferente tipos de opciones entre ellas"  />
+
+
+        <Rectangle Grid.Row="0" Margin="20, 100, 80, 140" Stroke="Black" Fill="#FFB064B0"/>
+        <Rectangle Grid.Row="0" Margin="20, 160, 140, 80" Stroke="Black" Fill="Yellow"/>
+        <Image Source="Assets/medal.png" Grid.Row="0" Width="75" Height="75" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,80, 0, 0"></Image>
+        <Image Source="Assets/felicidad.png" Grid.Row="0" Width="50" Height="50" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,160, 60, 0"></Image>
+        <TextBox PlaceholderText="$ 500" FontSize="35" Grid.Row="0" Grid.ColumnSpan="1" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="35, 0, 0, 10"></TextBox>
+
+        <Rectangle Grid.Row="1" Grid.RowSpan="3" Grid.ColumnSpan="2" Margin="20, 160, 20, 20" Stroke="Black" Fill="#FFFFEABE"/>
+
+        <TextBox TextAlignment="Center" PlaceholderText="HINATA HYUGA" FontSize="35" Grid.Row="1" Grid.ColumnSpan="2" VerticalAlignment="Center" HorizontalAlignment="Stretch" Margin="35, 60, 35, 0" Background="#FFFFA92C" FontWeight="Bold" ></TextBox>
+        <TextBox TextAlignment="Center" PlaceholderText="Happy: 50%" FontSize="35" Grid.Row="1" Grid.ColumnSpan="2" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="35, 60, 35, 0" Background="#CCFFBA57" FontWeight="Bold" ></TextBox>
+        <TextBox TextAlignment="Center" PlaceholderText="Read Club" FontSize="35" Grid.Row="1" Grid.Column="1" VerticalAlignment="Bottom" HorizontalAlignment="Stretch" Margin="-30, 60, 35, 0" Background="#CCFFBA57" FontWeight="Bold" ></TextBox>
+        <TextBox TextAlignment="Center" PlaceholderText="Social Life" FontSize="35" Grid.Row="2" Grid.ColumnSpan="2" VerticalAlignment="top" HorizontalAlignment="Center" Margin="85, 20, 85, 0" Background="#CCFFBA57" FontWeight="Bold" ></TextBox>
+
+        <StackPanel Grid.Row="3" Grid.RowSpan="4" HorizontalAlignment="Stretch" VerticalAlignment="Center">
+            <TextBlock 
+        </StackPanel>
+
     </Grid>
 </Page>
