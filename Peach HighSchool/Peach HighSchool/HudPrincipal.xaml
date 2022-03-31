@@ -92,7 +92,7 @@
         <TextBox TextAlignment="Center" PlaceholderText="Social Life" FontSize="35" Grid.Row="2" Grid.ColumnSpan="2" VerticalAlignment="top" HorizontalAlignment="Center" Margin="85, 20, 85, 0" Background="#CCFFBA57" FontWeight="Bold" ></TextBox>
 
         <StackPanel Grid.Row="3" Grid.RowSpan="4" HorizontalAlignment="Stretch" VerticalAlignment="Center">
-            <TextBlock 
+            <!--<TextBlock--> 
         </StackPanel>
 
     </Grid>
