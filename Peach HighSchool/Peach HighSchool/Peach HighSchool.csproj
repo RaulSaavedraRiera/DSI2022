@@ -156,6 +156,7 @@
   <ItemGroup>
     <Content Include="Assets\alums.png" />
     <Content Include="Assets\calendario.png" />
+    <Content Include="Assets\camiseta.png" />
     <Content Include="Assets\clubs.png" />
     <Content Include="Assets\desplegable.png" />
     <Content Include="Assets\dinero.jpg" />

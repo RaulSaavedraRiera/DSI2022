@@ -32,11 +32,9 @@
             <RowDefinition Height="288*"/>
         </Grid.RowDefinitions>
 
+        <Image HorizontalAlignment="Stretch" Grid.Column="0" Grid.ColumnSpan="3" 
+               Source="Assets/shop.png" Stretch="Fill" Grid.RowSpan="7" VerticalAlignment="Stretch"/>
 
-
-        <Image Source="/Assets/info.png" Margin="496,216,5,216" Grid.Row="2" RenderTransformOrigin="0.308,0.574"/>
-        <Image Source="/Assets/info.png" Margin="247,216,219,216" Grid.Row="2" Grid.Column="1"/>
-        <Image Source="/Assets/info.png" Margin="41,216,486,216" Grid.Row="2" Grid.Column="2"/>
 
         <TextBox PlaceholderText="500Y" IsReadOnly="True" 
                  HorizontalAlignment="Center" FontSize="30" Grid.Column="2" TextAlignment="Center" VerticalAlignment="Center" 
@@ -67,23 +65,28 @@
             </Button>
         </StackPanel>
 
-        <StackPanel Orientation="Horizontal" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" HorizontalAlignment="Center" >
+        <StackPanel Orientation="Horizontal" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" HorizontalAlignment="Center" VerticalAlignment="Center">
             <Button Width="400" Height="400" Background="#FFEDE3ED" >
-                <TextBox PlaceholderText="UNIFORM 1       100Y" Margin="-2,220,-2,0" RenderTransformOrigin="0.728,1.423"/>
+                <StackPanel>
+                    <TextBox PlaceholderText="UNIFORM 1
+                             500Y"  Margin="20"/>
+                    <Image Source="/Assets/camiseta1.png" Height="210" Width="255" />
+                </StackPanel>
             </Button>
             <Button Width="400" Height="400" Background="#FFEDE3ED">
-
-                <TextBox PlaceholderText="UNIFORM 2        300Y" Margin="-2,220,-2,0" RenderTransformOrigin="0.728,1.423"/>
-
+                <StackPanel>
+                    <TextBox PlaceholderText="UNIFORM 2 
+                             500Y" Margin="20"/>
+                    <Image Source="/Assets/camiseta2.png" Height="210" Width="255"/>
+                </StackPanel>
             </Button>
             <Button Width="400" Height="400" Background="#FFF69189">
                 <StackPanel>
-                    <TextBox PlaceholderText="UNIFORM 3       500Y" Margin="-2,220,-2,0" RenderTransformOrigin="0.728,1.423"/>
-                    <Image></Image>
+                    <TextBox PlaceholderText="UNIFORM 3
+                             500Y" Margin="20"/>
+                    <Image Source="/Assets/camiseta3.png" Height="210" Width="255"/>
                 </StackPanel>
             </Button>
         </StackPanel>
-
-
     </Grid>
 </Page>
