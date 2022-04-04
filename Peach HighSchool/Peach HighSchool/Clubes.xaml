@@ -76,7 +76,7 @@
         </StackPanel>
 
         <StackPanel Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left">
-            <TextBox PlaceholderText="NAME" Background="#FFE5ABE5"></TextBox>
+            <TextBox PlaceholderText="POINTS CONTRIBUTED" Background="#FFE5ABE5"></TextBox>
             <TextBox PlaceholderText="3"></TextBox>
             <TextBox PlaceholderText="5"></TextBox>
             <TextBox PlaceholderText="7"></TextBox>
@@ -99,8 +99,5 @@
                 Width="100" Height="100" Margin="25">
             <Image Source="/Assets/info.png" Width="50" Height="50" />
         </Button>
-
-
-
     </Grid>
 </Page>

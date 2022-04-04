@@ -38,12 +38,12 @@
 
         <TextBox PlaceholderText="500Y" IsReadOnly="True" 
                  HorizontalAlignment="Center" FontSize="30" Grid.Column="2" TextAlignment="Center" VerticalAlignment="Center" 
-                 Height="54" Width="302"></TextBox>
+                 Height="54" Width="302" Background="White"></TextBox>
 
 
-        <TextBox PlaceholderText="SCHOOLS STORE" IsReadOnly="True" 
+        <TextBox PlaceholderText="STORE" IsReadOnly="True" 
                  HorizontalAlignment="Center" FontSize="30" TextAlignment="Center" VerticalAlignment="Center" 
-                 Height="54" Width="302"/>
+                 Height="54" Width="302" Background="White"/>
 
         <StackPanel Orientation="Horizontal" Grid.Row="1" Margin="30,30,30,30" Grid.Column="0" Grid.ColumnSpan="3">
             <Button Content="UPGRADES"></Button>
