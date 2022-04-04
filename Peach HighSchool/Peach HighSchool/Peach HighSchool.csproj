@@ -157,6 +157,10 @@
     <Content Include="Assets\alums.png" />
     <Content Include="Assets\calendario.png" />
     <Content Include="Assets\camiseta.png" />
+    <Content Include="Assets\camiseta1.png" />
+    <Content Include="Assets\camiseta2.png" />
+    <Content Include="Assets\camiseta3.png" />
+    <Content Include="Assets\club.jpg" />
     <Content Include="Assets\clubs.png" />
     <Content Include="Assets\desplegable.png" />
     <Content Include="Assets\dinero.jpg" />
@@ -165,10 +169,13 @@
     <Content Include="Assets\medal.png" />
     <Content Include="Assets\menu.png" />
     <Content Include="Assets\menuOpciones.png" />
+    <Content Include="Assets\mision.jpg" />
     <Content Include="Assets\misiones.png" />
     <Content Include="Assets\opcion.png" />
     <Content Include="Assets\portada.jpg" />
     <Content Include="Assets\sakura.png" />
+    <Content Include="Assets\shop.png" />
+    <Content Include="Assets\stars.jpg" />
     <Content Include="Assets\student.png" />
     <Content Include="Assets\tienda.png" />
     <Content Include="Properties\Default.rd.xml" />

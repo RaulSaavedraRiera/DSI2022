@@ -12,6 +12,7 @@
         <Style TargetType="Button">
             <Setter Property="HorizontalAlignment" Value="Center"/>
             <Setter Property="BorderBrush" Value="#FFBF30BF"/>
+            <Setter Property="Background" Value="White"/>
             <Setter Property="Grid.Column" Value="2"/>
             <Setter Property="Height" Value="100"/>
             <Setter Property="Width" Value="300"/>
@@ -24,6 +25,7 @@
             <Setter Property="FontSize" Value="25"/>
             <Setter Property="Height" Value="50"/>
             <Setter Property="Width" Value="400"/>
+            <Setter Property="Background" Value="White"/>
         </Style>
 
     </Page.Resources>
@@ -40,6 +42,10 @@
             <RowDefinition Height="548*"/>
             <RowDefinition Height="367*"/>
         </Grid.RowDefinitions>
+
+        <Image HorizontalAlignment="Left" Grid.Column="0" Grid.ColumnSpan="4"  
+               Source="Assets/club.jpg" Stretch="Fill" Grid.RowSpan="7" Width="1920"  />
+
 
         <TextBox PlaceholderText="CLUBS" IsReadOnly="True" PlaceholderForeground="#FFBF30BF" 
                  HorizontalAlignment="Center" FontSize="30" Grid.Column="3" VerticalAlignment="Center" Height="54" Width="106"></TextBox>

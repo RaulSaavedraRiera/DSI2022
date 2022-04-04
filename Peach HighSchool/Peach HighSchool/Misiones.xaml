@@ -17,6 +17,8 @@
             <Setter Property="Width" Value="300"/>
             <Setter Property="FontSize" Value="25"/>
             <Setter Property="Margin" Value="3"/>
+            <Setter Property="Background" Value="White"/>
+
         </Style>
 
         <Style TargetType="TextBox">
@@ -26,6 +28,7 @@
             <Setter Property="Width" Value="300"/>
             <Setter Property="FontSize" Value="25"/>
             <Setter Property="Margin" Value="3"/>
+            <Setter Property="Background" Value="White"/>
         </Style>
 
     </Page.Resources>
@@ -43,6 +46,10 @@
             <ColumnDefinition Width="479*"/>
             <ColumnDefinition Width="692*"/>
         </Grid.ColumnDefinitions>
+
+
+        <Image HorizontalAlignment="Left" Grid.Column="0" Grid.ColumnSpan="4"  
+               Source="Assets/mision.jpg" Stretch="Fill" Grid.RowSpan="7" Width="1920"  />
 
         <StackPanel Grid.Row="1" Grid.RowSpan="2" HorizontalAlignment="Center" VerticalAlignment="Top" Height="508" Width="201">
             <Button Content="1ªA"></Button>
@@ -68,7 +75,7 @@
                  HorizontalAlignment="Center" FontSize="30" Grid.Column="3" TextAlignment="Center" VerticalAlignment="Center" Height="54" Width="302"></TextBox>
 
         <TextBox PlaceholderText="CURRENT MISIONS: 4/4" IsReadOnly="True" 
-                 HorizontalAlignment="Center" Grid.Row="1" FontSize="25" Grid.Column="1" TextAlignment="Center" VerticalAlignment="Center" Height="54" Width="320" Background="#66F07458"></TextBox>
+                 HorizontalAlignment="Center" Grid.Row="1" FontSize="25" Grid.Column="1" TextAlignment="Center" VerticalAlignment="Center" Height="54" Width="320" Background="#FFF08787"></TextBox>
 
 
         <StackPanel Grid.Row="2" Grid.Column="1" Grid.RowSpan="2" HorizontalAlignment="Right" 
@@ -99,7 +106,7 @@
         </StackPanel>
 
         <TextBox PlaceholderText="CLASS RATING: 3/10" IsReadOnly="True" 
-                 HorizontalAlignment="Center" Grid.Row="3" FontSize="25" Grid.Column="2" TextAlignment="Center" VerticalAlignment="Center" Height="54" Width="377" Background="#66F07458"></TextBox>
+                 HorizontalAlignment="Center" Grid.Row="3" FontSize="25" Grid.Column="2" TextAlignment="Center" VerticalAlignment="Center" Height="54" Width="377" Background="#FFF08787"></TextBox>
 
     </Grid>
 </Page>
