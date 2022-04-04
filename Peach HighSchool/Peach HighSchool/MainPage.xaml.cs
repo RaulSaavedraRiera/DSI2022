@@ -29,24 +29,22 @@ namespace Peach_HighSchool
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Frame.Navigate(typeof(Misiones));
+            Frame.Navigate(typeof(MenuInicio));
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            Frame.Navigate(typeof(MenuInicio));
+            Frame.Navigate(typeof(MenuOpciones));
         }
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
-            //Application.Current.Exit();
-            Frame.Navigate(typeof(HudPrincipal));
-
+            Application.Current.Exit();
         }
 
         private void Button_Click_3(object sender, RoutedEventArgs e)
         {
-            Frame.Navigate(typeof(Clubes));
+            Frame.Navigate(typeof(HudPrincipal));
 
         }
     }
