@@ -77,10 +77,11 @@
 
             </Button>
             <Button Width="400" Height="400" Background="#FFF69189">
-                <TextBox PlaceholderText="UNIFORM 3       500Y" Margin="-2,220,-2,0" RenderTransformOrigin="0.728,1.423"/>
-
+                <StackPanel>
+                    <TextBox PlaceholderText="UNIFORM 3       500Y" Margin="-2,220,-2,0" RenderTransformOrigin="0.728,1.423"/>
+                    <Image></Image>
+                </StackPanel>
             </Button>
-
         </StackPanel>
 
 
