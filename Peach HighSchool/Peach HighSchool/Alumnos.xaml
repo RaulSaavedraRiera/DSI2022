@@ -8,7 +8,33 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
+    <Page.Resources>
+        <Style TargetType="TextBox">
+            <Setter Property="IsReadOnly" Value="true"></Setter>
+        </Style>
+    </Page.Resources>
+
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100*"/>
+            <RowDefinition Height="93*"/>
+            <RowDefinition Height="375*"/>
+            <RowDefinition Height="77*"/>
+            <RowDefinition Height="322*"/>
+            <RowDefinition Height="113*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="64*"/>
+            <ColumnDefinition Width="201*"/>
+            <ColumnDefinition Width="360*"/>
+            <ColumnDefinition Width="512*"/>
+            <ColumnDefinition Width="514*"/>
+            <ColumnDefinition Width="269*"/>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.Row="2" Grid.Column="1">
+            <TextBox></TextBox>
+        </StackPanel>
 
     </Grid>
 </Page>
