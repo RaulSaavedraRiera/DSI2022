@@ -11,30 +11,145 @@
     <Page.Resources>
         <Style TargetType="TextBox">
             <Setter Property="IsReadOnly" Value="true"></Setter>
+            <Setter Property="Height" Value="65"></Setter>
+            <Setter Property="FontSize" Value="30"></Setter>
+            <Setter Property="TextAlignment" Value="Center"></Setter>
         </Style>
     </Page.Resources>
 
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="100*"/>
-            <RowDefinition Height="93*"/>
-            <RowDefinition Height="375*"/>
-            <RowDefinition Height="77*"/>
-            <RowDefinition Height="322*"/>
-            <RowDefinition Height="113*"/>
+            <RowDefinition Height="80*"/>
+            <RowDefinition Height="103*"/>
+            <RowDefinition Height="157*"/>
+            <RowDefinition Height="79*"/>
+            <RowDefinition Height="96*"/>
+            <RowDefinition Height="97*"/>
+            <RowDefinition Height="83*"/>
+            <RowDefinition Height="144*"/>
+            <RowDefinition Height="141*"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="64*"/>
-            <ColumnDefinition Width="201*"/>
-            <ColumnDefinition Width="360*"/>
-            <ColumnDefinition Width="512*"/>
-            <ColumnDefinition Width="514*"/>
-            <ColumnDefinition Width="269*"/>
+            <ColumnDefinition Width="301*"/>
+            <ColumnDefinition Width="322*"/>
+            <ColumnDefinition Width="56*"/>
+            <ColumnDefinition Width="234*"/>
+            <ColumnDefinition Width="244*"/>
+            <ColumnDefinition Width="67*"/>
+            <ColumnDefinition Width="311*"/>
+            <ColumnDefinition Width="204*"/>
+            <ColumnDefinition Width="117*"/>
         </Grid.ColumnDefinitions>
 
-        <StackPanel Grid.Row="2" Grid.Column="1">
-            <TextBox></TextBox>
+        <StackPanel Grid.Row="2" Grid.Column="1" Grid.RowSpan="3">
+            <TextBox Text="SPORTS"></TextBox>
+            <TextBox Text="CONCENTRATION"></TextBox>
+            <TextBox Text="HABILITY"></TextBox>
+            <TextBox Text="INTELIGENCE"></TextBox>
+            <TextBox Text="CREATIVITY"></TextBox>
         </StackPanel>
+        <StackPanel Grid.Row="2" Grid.Column="2" Grid.RowSpan="3">
+            <TextBox Text="4/10"></TextBox>
+            <TextBox Text="6/10"></TextBox>
+            <TextBox Text="8/10"></TextBox>
+            <TextBox Text="9/10"></TextBox>
+            <TextBox Text="7/10"></TextBox>
+        </StackPanel>
+
+        <StackPanel Grid.Row="2" Grid.Column="1" Grid.RowSpan="3">
+            <TextBox Text="SPORTS"></TextBox>
+            <TextBox Text="CONCENTRATION"></TextBox>
+            <TextBox Text="HABILITY"></TextBox>
+            <TextBox Text="INTELIGENCE"></TextBox>
+            <TextBox Text="CREATIVITY"></TextBox>
+        </StackPanel>
+
+        <StackPanel Grid.Row="6" Grid.Column="1" Grid.RowSpan="3">
+            <TextBox Text="POPULARITY"></TextBox>
+            <TextBox Text="POSITION IN CLASS"></TextBox>
+            <TextBox Text="COUPLE"></TextBox>
+            <TextBox Text="PREFERENCES"></TextBox>
+            <TextBox Text="ACADEMIC MEAN"></TextBox>
+        </StackPanel>
+
+        <StackPanel Grid.Row="6" Grid.Column="2" Grid.RowSpan="3">
+            <TextBox Text="HIGH"></TextBox>
+            <TextBox Text="DELEGATE"></TextBox>
+            <TextBox Text="---"></TextBox>
+            <TextBox Text="STUDY"></TextBox>
+            <TextBox Text="A++"></TextBox>
+        </StackPanel>
+
+        <StackPanel Grid.Row="2" Grid.Column="4" Grid.RowSpan="6">
+            <TextBox Text="LUFFY" Height="80"></TextBox>
+            <TextBox Text="YUMI" Height="80"></TextBox>
+            <TextBox Text="ICHIGO" Height="80"></TextBox>
+            <TextBox Text="SETT" Height="80"></TextBox>
+            <TextBox Text="KAGUYA" Height="80"></TextBox>
+            <TextBox Text="ROBIN" Height="80"></TextBox>
+            <TextBox Text="ZORO" Height="80"></TextBox>
+        </StackPanel>
+
+        <StackPanel Grid.Row="2" Grid.Column="5" Grid.RowSpan="6">
+            <TextBox Text="LITTLE BROTHER" Height="80"></TextBox>
+            <TextBox Text="GIRLFRIEND" Height="80"></TextBox>
+            <TextBox Text="FRIEND" Height="80"></TextBox>
+            <TextBox Text="FRIEND" Height="80"></TextBox>
+            <TextBox Text="SENPAI" Height="80"></TextBox>
+            <TextBox Text="CLASSMATE" Height="80"></TextBox>
+            <TextBox Text="CLASMATE" Height="80"></TextBox>
+        </StackPanel>
+        <TextBox Text="STATS" Grid.Row="1" Grid.Column="1" Background="#66FBDE90" HorizontalAlignment="Center" VerticalAlignment="Center" Height="65" Width="98"/>
+        <TextBox Text="SOCIAL LIFE" Grid.Row="5" Grid.Column="1" Background="#66FBDE90" HorizontalAlignment="Center" VerticalAlignment="Center" Height="65" Width="179"/>
+        <TextBox Text="RELATIONS" Grid.Row="1" Grid.Column="4" Background="#66FBDE90" Margin="0,8,0,7"/>
+
+        <TextBox Text="HAPINESS" Grid.Row="2" Grid.Column="7" Background="#66FBDE90" Margin="0,31,0,7" />
+        <TextBox Text="80%" Grid.Row="3" Grid.Column="7" VerticalAlignment="Top" Height="65" />
+        <TextBox Text="EVOLUTION" Grid.Row="4" Grid.Column="7" Background="#66FBDE90" Margin="0,7,0,7" />
+        <TextBox Text="A-->A+" Grid.Row="5" Grid.Column="7" VerticalAlignment="Top" Height="65" />
+        <TextBox Text="CURRENT CLUB" Grid.Row="7" Grid.Column="7" Background="#66FBDE90" Margin="0,9,0,9" />
+        <TextBox Text="READ CLUB" Grid.Row="8" Grid.Column="7" VerticalAlignment="Top" Height="65" />
+
+        <Button Name="Desplegable" Grid.Row="8" Grid.Column="4" Click="Desplegable_Click" Height="63" Width="70">
+            <Image Source="/Assets/tienda.png" Width="50" Height="50" />
+        </Button>
+        <StackPanel Name="desplegable" Grid.Row="8" Grid.ColumnSpan="2" Grid.Column="4" HorizontalAlignment="Center" VerticalAlignment="Center" Spacing="50" 
+                    Visibility="Collapsed" Orientation="Horizontal" Height="63" Width="190">
+            <Button HorizontalAlignment="Center" VerticalAlignment="Center" Background="Transparent" Click="Instrucciones_Click">
+                <Image Source="/Assets/camiseta1.png" Width="50" Height="50"/>
+            </Button>
+            <Button HorizontalAlignment="Center" VerticalAlignment="Center" Background="Transparent">
+                <Image Source="/Assets/camiseta2.png" Width="50" Height="50"/>
+            </Button>
+        </StackPanel>
+
+        <Button Content="BACK TO MENU" VerticalAlignment="Bottom" Margin="0,0,0,30" 
+                Background="#FFFBDED3" FontSize="35" Grid.Row="9" Grid.Column="1"  Height="95" Width="266"/>
+
+        <TextBox PlaceholderText="ALUMNS" IsReadOnly="True" PlaceholderForeground="#FFDAA74F" 
+                 HorizontalAlignment="Left" FontSize="30" Grid.Column="8" VerticalAlignment="Center" Height="54" Width="180" Margin="71,0,0,0" Grid.ColumnSpan="2"></TextBox>
+
+        <StackPanel Grid.Column="8" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Left" Orientation="Horizontal" Grid.ColumnSpan="2" Margin="11,0,0,0" Height="65" Width="300" >
+            <TextBox  PlaceholderText="Class" FontSize="30" Width="240" IsReadOnly ="False"/>
+            <Button Width=" 40" Height="40" Margin="10" BorderBrush="Black" Background="Transparent">
+                <SymbolIcon Symbol="Find"></SymbolIcon>
+            </Button>
+        </StackPanel>
+
+        <StackPanel Grid.Column="7" Grid.Row="9" VerticalAlignment="Center" HorizontalAlignment="Left" Orientation="Horizontal" Grid.ColumnSpan="3"  Height="65" Width="300" Margin="222,0,0,0" >
+            <TextBox  PlaceholderText="Alumn" FontSize="30" Width="240" IsReadOnly ="False"/>
+            <Button Width=" 40" Height="40" Margin="10" BorderBrush="Black" Background="Transparent">
+                <SymbolIcon Symbol="Find"></SymbolIcon>
+            </Button>
+        </StackPanel>
+
+        <Button Name="Menu" Grid.Row="9" Grid.Column="9" HorizontalAlignment="Center" VerticalAlignment="Bottom"  Background="Transparent" BorderBrush="Transparent" 
+                Width="100" Height="100" Margin="25">
+            <Image Source="/Assets/info.png" Width="50" Height="50" />
+        </Button>
+
 
     </Grid>
 </Page>
