@@ -168,11 +168,13 @@
     <Content Include="Assets\info.png" />
     <Content Include="Assets\medal.png" />
     <Content Include="Assets\menu.png" />
+    <Content Include="Assets\menuInicio.png" />
     <Content Include="Assets\menuOpciones.png" />
     <Content Include="Assets\mision.jpg" />
     <Content Include="Assets\misiones.png" />
     <Content Include="Assets\opcion.png" />
     <Content Include="Assets\portada.jpg" />
+    <Content Include="Assets\sakura.jpg" />
     <Content Include="Assets\sakura.png" />
     <Content Include="Assets\shop.png" />
     <Content Include="Assets\stars.jpg" />

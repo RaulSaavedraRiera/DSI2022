@@ -47,5 +47,14 @@ namespace Peach_HighSchool
         {
             Frame.Navigate(typeof(HudPrincipal));
         }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            Frame rootFrame = Window.Current.Content as Frame;
+            if (rootFrame.CanGoBack)
+            {
+                rootFrame.GoBack();
+            }
+        }
     }
 }
