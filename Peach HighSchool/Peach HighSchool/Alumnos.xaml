@@ -14,7 +14,15 @@
             <Setter Property="Height" Value="65"></Setter>
             <Setter Property="FontSize" Value="30"></Setter>
             <Setter Property="TextAlignment" Value="Center"></Setter>
+            <Setter Property="Background" Value="White"></Setter>
         </Style>
+        <Style TargetType="Button">
+            <Setter Property="HorizontalAlignment" Value="Stretch"></Setter>
+            <Setter Property="VerticalAlignment" Value="Stretch"></Setter>
+            <Setter Property="FontSize" Value="30"></Setter>
+            <Setter Property="Background" Value="White"></Setter>
+        </Style>
+
     </Page.Resources>
 
     <Grid>
@@ -42,6 +50,9 @@
             <ColumnDefinition Width="204*"/>
             <ColumnDefinition Width="117*"/>
         </Grid.ColumnDefinitions>
+
+        <Image HorizontalAlignment="Stretch" Grid.Column="0" Grid.ColumnSpan="10" 
+               Source="Assets/alumnos.jpg" Stretch="Fill" Grid.RowSpan="10" VerticalAlignment="Stretch" />
 
         <StackPanel Grid.Row="2" Grid.Column="1" Grid.RowSpan="3">
             <TextBox Text="SPORTS"></TextBox>
@@ -101,15 +112,15 @@
             <TextBox Text="CLASSMATE" Height="80"></TextBox>
             <TextBox Text="CLASMATE" Height="80"></TextBox>
         </StackPanel>
-        <TextBox Text="STATS" Grid.Row="1" Grid.Column="1" Background="#66FBDE90" HorizontalAlignment="Center" VerticalAlignment="Center" Height="65" Width="98"/>
-        <TextBox Text="SOCIAL LIFE" Grid.Row="5" Grid.Column="1" Background="#66FBDE90" HorizontalAlignment="Center" VerticalAlignment="Center" Height="65" Width="179"/>
-        <TextBox Text="RELATIONS" Grid.Row="1" Grid.Column="4" Background="#66FBDE90" Margin="0,8,0,7"/>
+        <TextBox Text="STATS" Grid.Row="1" Grid.Column="1" Background="#FFFBDE90" HorizontalAlignment="Center" VerticalAlignment="Center" Height="65" Width="98"/>
+        <TextBox Text="SOCIAL LIFE" Grid.Row="5" Grid.Column="1" Background="#FFFBDE90" HorizontalAlignment="Center" VerticalAlignment="Center" Height="65" Width="179"/>
+        <TextBox Text="RELATIONS" Grid.Row="1" Grid.Column="4" Background="#63FBDE90" Margin="0,8,0,7"/>
 
-        <TextBox Text="HAPINESS" Grid.Row="2" Grid.Column="7" Background="#66FBDE90" Margin="0,31,0,7" />
+        <TextBox Text="HAPINESS" Grid.Row="2" Grid.Column="7" Background="#FFFBDE90" Margin="0,31,0,7" />
         <TextBox Text="80%" Grid.Row="3" Grid.Column="7" VerticalAlignment="Top" Height="65" />
-        <TextBox Text="EVOLUTION" Grid.Row="4" Grid.Column="7" Background="#66FBDE90" Margin="0,7,0,7" />
+        <TextBox Text="EVOLUTION" Grid.Row="4" Grid.Column="7" Background="#FFFBDE90" Margin="0,7,0,7" />
         <TextBox Text="A-->A+" Grid.Row="5" Grid.Column="7" VerticalAlignment="Top" Height="65" />
-        <TextBox Text="CURRENT CLUB" Grid.Row="7" Grid.Column="7" Background="#66FBDE90" Margin="0,9,0,9" />
+        <TextBox Text="CURRENT CLUB" Grid.Row="7" Grid.Column="7" Background="#FFFBDE90" Margin="0,9,0,9" />
         <TextBox Text="READ CLUB" Grid.Row="8" Grid.Column="7" VerticalAlignment="Top" Height="65" />
 
         <Button Name="Desplegable" Grid.Row="8" Grid.Column="4" Click="Desplegable_Click" Height="63" Width="70">
@@ -149,6 +160,23 @@
                 Width="100" Height="100" Margin="25">
             <Image Source="/Assets/info.png" Width="50" Height="50" />
         </Button>
+
+        <StackPanel Grid.Row="2" Grid.RowSpan="7" Grid.Column="8" Grid.ColumnSpan="2" Margin="40,20,40,0">
+            <Button Content="Luffy"></Button>
+            <Button Content="Smoothy"></Button>
+            <Button Content="Miracle"></Button>
+            <Button Content="Jonny"></Button>
+            <Button Content="Kaguya"></Button>
+            <Button Content="Robin"></Button>
+            <Button Content="Zoro"></Button>
+            <Button Content="Richard"></Button>
+            <Button Content="Nami"></Button>
+            <Button Content="Kid"></Button>
+            <Button Content="Law"></Button>
+            <Button Content="Uzumaki"></Button>
+            <Button Content="Sasuke"></Button>
+            <Button Content="Kiba"></Button>
+        </StackPanel>
 
 
     </Grid>
