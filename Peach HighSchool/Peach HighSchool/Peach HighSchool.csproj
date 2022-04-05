@@ -165,12 +165,14 @@
     <Content Include="Assets\clubs.png" />
     <Content Include="Assets\desplegable.png" />
     <Content Include="Assets\dinero.jpg" />
+    <Content Include="Assets\entradaescuela.png" />
     <Content Include="Assets\felicidad.png" />
     <Content Include="Assets\info.png" />
+    <Content Include="Assets\mascota.jpg" />
     <Content Include="Assets\medal.png" />
-    <Content Include="Assets\menu.png" />
     <Content Include="Assets\menuInicio.png" />
     <Content Include="Assets\menuOpciones.png" />
+    <Content Include="Assets\menuP.png" />
     <Content Include="Assets\mision.jpg" />
     <Content Include="Assets\misiones.png" />
     <Content Include="Assets\opcion.png" />

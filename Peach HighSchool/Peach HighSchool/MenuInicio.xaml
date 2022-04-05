@@ -39,7 +39,7 @@
         <Button Content="BACK TO MENU" VerticalAlignment="Bottom" Margin="50,0,0,30" 
                 Background="#FFFBDED3" FontSize="35" Grid.Row="5" Grid.Column="1" Height="60" Width="266" Click="Button_Click_2"/>
 
-        <Image HorizontalAlignment="Right" Grid.Column="2"  Source="Assets/menuInicio.png" Margin="0,100,-75,0" Grid.ColumnSpan="2" Grid.RowSpan="7"  />
+        <Image HorizontalAlignment="Left" Grid.Column="3"  Source="Assets/menuInicio.png" Margin="0,70,-75,0" Grid.ColumnSpan="2" Grid.RowSpan="7" />
 
 
         <TextBox PlaceholderText="Welcome to Peach HighSchool. Here begins your adventure to take your dream academy to stardom, giving it back the honor it once had. Choose how you want this to be and how difficult your adventure will be." 
@@ -104,5 +104,11 @@
                 </DropDownButton.Flyout>
             </DropDownButton>
         </StackPanel>
+
+        <Image Source="/Assets/mascota.jpg" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Row="1" Grid.Column="1" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <CompositeTransform Rotation="-20.673"/>
+            </Image.RenderTransform>
+        </Image>
     </Grid>
 </Page>

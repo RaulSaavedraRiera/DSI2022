@@ -74,5 +74,11 @@
             </TextBlock.RenderTransform>
         </TextBlock>
 
+        <Image Source="/Assets/mascota.jpg" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Row="1" Grid.RowSpan="3" Grid.Column="1" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <CompositeTransform Rotation="-20.673"/>
+            </Image.RenderTransform>
+        </Image>
+
     </Grid>
 </Page>
