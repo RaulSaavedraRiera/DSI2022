@@ -38,10 +38,10 @@
         </Grid.ColumnDefinitions>
         <Image HorizontalAlignment="Left" Grid.Column="0" Grid.ColumnSpan="3"  Source="Assets/portada.jpg" Stretch="Fill" Grid.RowSpan="7" Width="1920"  />
 
-        <Button Content="RETURN GAME" Background="#FFD15E81" Grid.Row="1" Click="Button_Click_3" Margin="20,0,0,0"/>
-        <Button Content="NEW GAME" Background="#FFD688A0" Grid.Row="2" Click="Button_Click" Height="70" Margin="20,0,0,0"/>
-        <Button Content="OPTIONS" Background="#FFE8ABBD" Grid.Row="3" Click="Button_Click_1" Height="70" Margin="20,0,0,0"/>
-        <Button Content="EXIT" Width="250" Height="75" Background="#FFCFCFCF" Grid.Row="4" Click="Button_Click_2" Margin="20,0,0,0"/>
+        <Button Content="RETURN GAME" Background="#FFD15E81" Grid.Row="1" Click="Button_Click" Margin="20,0,0,0"/>
+        <Button Content="NEW GAME" Background="#FFD688A0" Grid.Row="2" Click="Button_Click_1" Height="70" Margin="20,0,0,0"/>
+        <Button Content="OPTIONS" Background="#FFE8ABBD" Grid.Row="3" Click="Button_Click_2" Height="70" Margin="20,0,0,0"/>
+        <Button Content="EXIT" Width="250" Height="75" Background="#FFCFCFCF" Grid.Row="4" Click="Button_Click_3" Margin="20,0,0,0"/>
         <TextBlock HorizontalAlignment="Left" Text="PEACH HIGHSCHOOL" TextWrapping="Wrap" VerticalAlignment="Center"
                     Grid.ColumnSpan="3" FontSize="100" FontFamily="Century Schoolbook" FontWeight="Bold" Height="120" Width="1416" />
 

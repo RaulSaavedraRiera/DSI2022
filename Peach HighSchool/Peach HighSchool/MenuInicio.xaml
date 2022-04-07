@@ -37,7 +37,7 @@
                 Background="#FFCB6B87" FontSize="35" Grid.Column="2" Margin="201,70,0,0" Grid.Row="5" Height="60" Width="307" Click="Button_Click_1"/>
 
         <Button Content="BACK TO MENU" VerticalAlignment="Bottom" Margin="50,0,0,30" 
-                Background="#FFFBDED3" FontSize="35" Grid.Row="5" Grid.Column="1" Height="60" Width="266" Click="Button_Click_2"/>
+                Background="#FFFBDED3" FontSize="35" Grid.Row="5" Grid.Column="1" Height="60" Width="266" Click="Button_Click"/>
 
         <Image HorizontalAlignment="Left" Grid.Column="3"  Source="Assets/menuInicio.png" Margin="0,70,-75,0" Grid.ColumnSpan="2" Grid.RowSpan="7" />
 
@@ -64,7 +64,7 @@
             </TextBlock.RenderTransform>
         </TextBlock>
 
-        <Button VerticalAlignment="Top" HorizontalAlignment="Right" Click="Button_Click" Grid.Column="4" Height="44" Width="51" Grid.ColumnSpan="2">
+        <Button VerticalAlignment="Top" HorizontalAlignment="Right" Click="Button_Click_2" Grid.Column="4" Height="44" Width="51" Grid.ColumnSpan="2">
             <Image Source="/Assets/opcion.png" Width="30" Height="30"/>
         </Button>
 

@@ -29,12 +29,21 @@ namespace Peach_HighSchool
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            infoActivity.Text = "Un viaje a Okinawa para toda la clase, disfrutando de la playa y el sol.";
+            Frame rootFrame = Window.Current.Content as Frame;
+            if (rootFrame.CanGoBack)
+            {
+                rootFrame.GoBack();
+            }
         }
 
-        private void Button_Click_1(object sender, RoutedEventArgs e)
+        private void Sakura_Click(object sender, RoutedEventArgs e)
         {
             infoActivity.Text = "Toda la escuela irá a disfrutar del Sakura a las calles de Tokio.";
+        }
+
+        private void Okinawa_Click(object sender, RoutedEventArgs e)
+        {
+            infoActivity.Text = "Un viaje a Okinawa para toda la clase, disfrutando de la playa y el sol.";
         }
     }
 }

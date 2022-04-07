@@ -28,7 +28,7 @@ namespace Peach_HighSchool
             this.InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void Button_Click_2(object sender, RoutedEventArgs e)
         {
             if (options.Visibility == Visibility.Visible)
             {
@@ -43,18 +43,18 @@ namespace Peach_HighSchool
                
         }
 
-        private void Button_Click_1(object sender, RoutedEventArgs e)
-        {
-            Frame.Navigate(typeof(HudPrincipal));
-        }
-
-        private void Button_Click_2(object sender, RoutedEventArgs e)
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
             Frame rootFrame = Window.Current.Content as Frame;
             if (rootFrame.CanGoBack)
             {
                 rootFrame.GoBack();
             }
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(HudPrincipal));
         }
     }
 }

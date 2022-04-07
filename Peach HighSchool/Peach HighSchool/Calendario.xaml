@@ -27,7 +27,7 @@
                Source="Assets/sakura.jpg" Stretch="Fill" Grid.RowSpan="7" VerticalAlignment="Stretch" />
 
 
-        <Button Content="BACK TO MENU" VerticalAlignment="Bottom" Margin="0,0,0,30" 
+        <Button Content="BACK" VerticalAlignment="Bottom" Margin="0,0,0,30" Click="Button_Click"
                 Background="#FFFBDED3" FontSize="35" Grid.Row="3" Grid.Column="1" Height="95" Width="266"/>
 
         <CalendarView Grid.Row="1" Grid.RowSpan="2" Width="auto" Height="auto" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
@@ -51,8 +51,8 @@
 
 
         <StackPanel Grid.Column="2" Grid.Row="2" VerticalAlignment="Center" Margin="100,0,0,0" Spacing="25" >
-            <Button Content="Okinawa Trip 3-A" HorizontalAlignment="Stretch" Height="150" FontSize="40" Background="White" Click="Button_Click"></Button>
-            <Button Content="Sakura" HorizontalAlignment="Stretch" Height="150" FontSize="40" Background="White" Click="Button_Click_1"></Button>
+            <Button Content="Okinawa Trip 3-A" HorizontalAlignment="Stretch" Height="150" FontSize="40" Background="White" Click="Okinawa_Click"></Button>
+            <Button Content="Sakura" HorizontalAlignment="Stretch" Height="150" FontSize="40" Background="White" Click="Sakura_Click"></Button>
         </StackPanel>
         <Rectangle Name="infoTrip" HorizontalAlignment="Right" Grid.Row="2" Grid.Column="3" Stretch="Fill" Margin="0,0,25,0" Stroke="Black" VerticalAlignment="Top" Visibility="Visible" Height="495" RenderTransformOrigin="0.5,0.5" Width="332" Grid.RowSpan="3" >
             <Rectangle.RenderTransform>

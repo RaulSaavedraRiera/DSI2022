@@ -49,7 +49,44 @@ namespace Peach_HighSchool
         }
         private void AlumInMap_Click(object sender, RoutedEventArgs e)
         {
-            //falta grupar todo para poder suprimirlo
+            if (InfoStudent.Visibility == Visibility.Collapsed)
+                InfoStudent.Visibility = Visibility.Visible;
+            else InfoStudent.Visibility = Visibility.Collapsed;
+        }
+
+        private void ToMenuButton_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(MainPage));
+        }
+
+        private void OptionsButton_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(MenuOpciones));
+        }
+
+        private void Tienda_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(Tienda));
+        }
+
+        private void Calendario_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(Calendario));
+        }
+
+        private void Misiones_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(Misiones));
+        }
+
+        private void Club_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(Clubes));
+        }
+
+        private void Alumnos_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(Alumnos));
         }
     }
 }

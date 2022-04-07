@@ -32,8 +32,8 @@
             <RowDefinition Height="288*"/>
         </Grid.RowDefinitions>
 
-        <Image HorizontalAlignment="Stretch" Grid.Column="0" Grid.ColumnSpan="3" 
-               Source="Assets/shop.png" Stretch="Fill" Grid.RowSpan="7" VerticalAlignment="Stretch" />
+        <Image Grid.Column="0" Grid.ColumnSpan="3" 
+               Source="Assets/shop.png" Stretch="Fill" Grid.RowSpan="4" />
 
 
         <TextBox PlaceholderText="500Y" IsReadOnly="True" 
@@ -56,7 +56,7 @@
 
 
         <Button Content="BACK" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="50,0,0,30" 
-                Background="#FFFBDED3" FontSize="35" Grid.Row="3" Grid.Column="0" BorderBrush="Transparent" Height="79" Width="300"/>
+                Background="#FFFBDED3" FontSize="35" Grid.Row="3" Grid.Column="0" BorderBrush="Transparent" Height="79" Width="300" Click="Button_Click"/>
 
         <StackPanel Grid.Column="1" Grid.Row="3" VerticalAlignment="Center" HorizontalAlignment="Center" Orientation="Horizontal" Width="336" Height="60">
             <TextBox  PlaceholderText="SEARCH" FontSize="30" Width="240" IsReadOnly ="False"/>
