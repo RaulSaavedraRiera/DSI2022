@@ -18,4 +18,4 @@ AÑADIR
 - al buscar alumnos y clases que cambie el nombre de la tabla r
 - calendario eter mas eventos y si pica en dia de evento que aparezca a
 - comprar evento refuerzo grwfico r
-- no poder volver a comprar objetos o eventos a
+- no poder volver a comprar objetos o eventos a *
