@@ -82,7 +82,7 @@
 
 
         <Rectangle Grid.Row="0" Margin="20, 40, 80, 100" Stroke="Black" Fill="#FFB064B0" Grid.ColumnSpan="2"/>
-        <Rectangle Grid.Row="0" Margin="20, 120, 140, 110" Stroke="Black" Fill="Yellow" Grid.ColumnSpan="2" Grid.RowSpan="2"/>
+        <Rectangle Margin="20, 120, 140, 110" Stroke="Black" Fill="Yellow" Grid.ColumnSpan="2" Grid.RowSpan="2"/>
         <Image Source="Assets/medal.png" Grid.Row="0" Width="75" Height="75" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,30,0,0" Grid.Column="1"></Image>
         <Image Source="Assets/felicidad.png" Grid.Row="0" Width="50" Height="50" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,120, 80, 0" Grid.Column="1" Grid.RowSpan="2"></Image>
         <TextBox PlaceholderText="$ 500" FontSize="35" Grid.Row="1" Grid.ColumnSpan="1" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="35,0,0,0" Height="60" Width="106"></TextBox>

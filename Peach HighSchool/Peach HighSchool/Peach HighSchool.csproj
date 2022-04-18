@@ -180,6 +180,7 @@
     <Content Include="Assets\sakura.jpg" />
     <Content Include="Assets\sakura.png" />
     <Content Include="Assets\shop.png" />
+    <Content Include="Assets\sold.png" />
     <Content Include="Assets\stars.jpg" />
     <Content Include="Assets\student.png" />
     <Content Include="Assets\tienda.png" />

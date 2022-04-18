@@ -35,5 +35,11 @@ namespace Peach_HighSchool
                 rootFrame.GoBack();
             }
         }
+
+        private void autoSave_Toggled(object sender, RoutedEventArgs e)
+        {
+        
+
+        }
     }
 }

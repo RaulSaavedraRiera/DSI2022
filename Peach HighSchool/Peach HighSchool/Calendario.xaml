@@ -26,6 +26,7 @@
         <Image HorizontalAlignment="Stretch" Grid.Column="0" Grid.ColumnSpan="4" 
                Source="Assets/sakura.jpg" Stretch="Fill" Grid.RowSpan="7" VerticalAlignment="Stretch" />
 
+        
 
         <Button Content="BACK" VerticalAlignment="Bottom" Margin="0,0,0,30" Click="Button_Click"
                 Background="#FFFBDED3" FontSize="35" Grid.Row="3" Grid.Column="1" Height="95" Width="266"/>
@@ -36,6 +37,9 @@
     IsOutOfScopeEnabled="True"
     Language="en"
     CalendarIdentifier="GregorianCalendar" Grid.Column="1" Background="#FFAFFAFF" BorderBrush="White"/>
+
+        <Image Source="/Assets/sakura.png" Width="45" Height="45" Grid.Row="2" Grid.Column="1" Margin="570,360,386,98"/>
+
 
         <TextBox Grid.Column="2" Grid.Row="3" IsReadOnly="true" PlaceholderText="DAYS UNTIL END OF COURSE: 15"
                  VerticalAlignment="Center" HorizontalAlignment="Left" 
@@ -66,6 +70,7 @@
         <TextBlock Name="infoActivity" Grid.Row="2" Grid.Column="3" Text="select a activity"  TextAlignment="Center"
                    HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="45" Margin="25,0,0,0" TextWrapping="Wrap"></TextBlock>
 
-        <Image Source="/Assets/sakura.png" Width="45" Height="45" Grid.Row="2" Grid.Column="1" Margin="570,360,386,98"/>
+        
+        
     </Grid>
 </Page>

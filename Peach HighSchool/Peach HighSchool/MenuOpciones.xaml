@@ -45,10 +45,11 @@
         </Grid.ColumnDefinitions>
         <Image HorizontalAlignment="Right" Grid.Column="2"  Source="Assets/menuOpciones.png" Margin="0,100,-75,0" Grid.ColumnSpan="2" Grid.RowSpan="7"  />
 
-        <ToggleSwitch OffContent="AUTOSAVE" OnContent="AUTOSAVE" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="55" Grid.Column="2" Grid.Row="0" />
-        <ToggleSwitch OffContent="SOUND" OnContent="SOUND" Grid.Column="2" Grid.Row="1"/>
+        <ToggleSwitch Name="autoSave" OffContent="AUTOSAVE" OnContent="AUTOSAVE" HorizontalAlignment="Center" 
+                      VerticalAlignment="Center" FontSize="55" Grid.Column="2" Grid.Row="0" Toggled="autoSave_Toggled" />
+        <ToggleSwitch Name="sound" OffContent="SOUND" OnContent="SOUND" Grid.Column="2" Grid.Row="1"/>
         <Slider Width="500" Grid.Column="2" Grid.Row="2" VerticalAlignment="Center"></Slider>
-        <ToggleSwitch OffContent="MUSIC" OnContent="MUSIC" Grid.Column="2" Grid.Row="3" VerticalAlignment="Center"/>
+        <ToggleSwitch  Name="music" OffContent="MUSIC" OnContent="MUSIC" Grid.Column="2" Grid.Row="3" VerticalAlignment="Center"/>
         <Slider Width="500" Grid.Column="2" Grid.Row="4" VerticalAlignment="Center"></Slider>
         <DropDownButton Content="QUALITY LEVEL" HorizontalAlignment="Center" Width="300" Grid.Column="2" Grid.Row="5" Background="White" FontSize="35" >
             <DropDownButton.Flyout>
@@ -74,7 +75,7 @@
             </TextBlock.RenderTransform>
         </TextBlock>
 
-        <Image Source="/Assets/mascota.jpg" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Row="1" Grid.RowSpan="3" Grid.Column="1" RenderTransformOrigin="0.5,0.5">
+        <Image Name="photo" Source="/Assets/mascota.jpg" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Row="1" Grid.RowSpan="3" Grid.Column="1" RenderTransformOrigin="0.5,0.5">
             <Image.RenderTransform>
                 <CompositeTransform Rotation="-20.673"/>
             </Image.RenderTransform>
