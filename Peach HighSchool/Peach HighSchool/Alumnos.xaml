@@ -157,7 +157,7 @@
             </Button>
         </StackPanel>
 
-        <Button Name="Menu" Grid.Row="9" Grid.Column="9" HorizontalAlignment="Center" VerticalAlignment="Bottom"  Background="Transparent" BorderBrush="Transparent" 
+        <Button Name="Menu" Grid.Row="9" Grid.Column="9" HorizontalAlignment="Center" VerticalAlignment="Bottom"  Background="Transparent" BorderBrush="Transparent" Click="Info_Click" 
                 Width="100" Height="100" Margin="25">
             <Image Source="/Assets/info.png" Width="50" Height="50" />
         </Button>
@@ -179,6 +179,8 @@
             <Button Content="Kiba" Click="Button_ClickKiba"></Button>
         </StackPanel>
 
-
+        <TextBox  Name="Information" Visibility="Collapsed"  Grid.Row="8" Grid.RowSpan="2" Grid.Column="3" Grid.ColumnSpan="4" Header="LOS ALUMNOS" TextWrapping="Wrap" HorizontalAlignment="Left" VerticalAlignment="Top"  Width="590" Height="300"
+                  Text="Aquí tienes toda la información importante sobre los alumnos: desde sus habilidades y puntos fuertes a sus relaciones con otros alumnos para que los conozcas mejor. En la zona derecha puedes buscar tanto clases como alumnos específicos. " Margin="10,-20,10,0"
+                  Background="White" />
     </Grid>
 </Page>
