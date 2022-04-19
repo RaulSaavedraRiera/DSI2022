@@ -33,7 +33,7 @@
         </Grid.RowDefinitions>
 
         <Image Grid.Column="0" Grid.ColumnSpan="3" 
-               Source="Assets/shop.png" Stretch="Fill" Grid.RowSpan="4" />
+               Source="Assets/shop.png" Stretch="Fill" Grid.RowSpan="4" Margin="-57,0,0,0" />
 
 
         <TextBox PlaceholderText="500Y" IsReadOnly="True" 
