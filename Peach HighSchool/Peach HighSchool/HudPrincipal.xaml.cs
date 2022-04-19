@@ -5,6 +5,7 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.UI.Text;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -22,6 +23,7 @@ namespace Peach_HighSchool
     /// </summary>
     public sealed partial class HudPrincipal : Page
     {
+        TextBlock currentVelocity;
         public HudPrincipal()
         {
             this.InitializeComponent();
@@ -91,48 +93,47 @@ namespace Peach_HighSchool
 
         private void n25_PointerPressed(object sender, PointerRoutedEventArgs e)
         {
-            n25.FontStyle = Windows.UI.Text.FontStyle.Oblique;
-            n05.FontStyle = Windows.UI.Text.FontStyle.Normal;
-            n1.FontStyle = Windows.UI.Text.FontStyle.Normal;
-            n2.FontStyle = Windows.UI.Text.FontStyle.Normal;
-            n5.FontStyle = Windows.UI.Text.FontStyle.Normal;
-            
+            if (currentVelocity != null)
+                currentVelocity.FontWeight = FontWeights.Normal;
+
+            currentVelocity = n25;
+            currentVelocity.FontWeight = FontWeights.Bold;
         }
 
         private void n05_PointerPressed(object sender, PointerRoutedEventArgs e)
         {
-            n25.FontStyle = Windows.UI.Text.FontStyle.Normal;
-            n05.FontStyle = Windows.UI.Text.FontStyle.Oblique;
-            n1.FontStyle = Windows.UI.Text.FontStyle.Normal;
-            n2.FontStyle = Windows.UI.Text.FontStyle.Normal;
-            n5.FontStyle = Windows.UI.Text.FontStyle.Normal;
+            if (currentVelocity != null)
+                currentVelocity.FontWeight = FontWeights.Normal;
+
+            currentVelocity = n05;
+            currentVelocity.FontWeight = FontWeights.Bold;
 
         }
         private void n1_PointerPressed(object sender, PointerRoutedEventArgs e)
         {
-            n25.FontStyle = Windows.UI.Text.FontStyle.Normal;
-            n05.FontStyle = Windows.UI.Text.FontStyle.Normal;
-            n1.FontStyle = Windows.UI.Text.FontStyle.Oblique;
-            n2.FontStyle = Windows.UI.Text.FontStyle.Normal;
-            n5.FontStyle = Windows.UI.Text.FontStyle.Normal;
+            if (currentVelocity != null)
+                currentVelocity.FontWeight = FontWeights.Normal;
+
+            currentVelocity = n1;
+            currentVelocity.FontWeight = FontWeights.Bold;
 
         }
         private void n2_PointerPressed(object sender, PointerRoutedEventArgs e)
         {
-            n25.FontStyle = Windows.UI.Text.FontStyle.Normal;
-            n05.FontStyle = Windows.UI.Text.FontStyle.Normal;
-            n1.FontStyle = Windows.UI.Text.FontStyle.Normal;
-            n2.FontStyle = Windows.UI.Text.FontStyle.Oblique;
-            n5.FontStyle = Windows.UI.Text.FontStyle.Normal;
+            if (currentVelocity != null)
+                currentVelocity.FontWeight = FontWeights.Normal;
+
+            currentVelocity = n2;
+            currentVelocity.FontWeight = FontWeights.Bold;
 
         }
         private void n5_PointerPressed(object sender, PointerRoutedEventArgs e)
         {
-            n25.FontStyle = Windows.UI.Text.FontStyle.Normal;
-            n05.FontStyle = Windows.UI.Text.FontStyle.Normal;
-            n1.FontStyle = Windows.UI.Text.FontStyle.Normal;
-            n2.FontStyle = Windows.UI.Text.FontStyle.Normal;
-            n5.FontStyle = Windows.UI.Text.FontStyle.Oblique;
+            if (currentVelocity != null)
+                currentVelocity.FontWeight = FontWeights.Normal;
+
+            currentVelocity = n5;
+            currentVelocity.FontWeight = FontWeights.Bold;
 
         }
     }
