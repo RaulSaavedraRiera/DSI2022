@@ -42,14 +42,16 @@
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="293*"/>
-            <ColumnDefinition Width="456*"/>
+            <ColumnDefinition Width="165*"/>
+            <ColumnDefinition Width="291*"/>
             <ColumnDefinition Width="479*"/>
-            <ColumnDefinition Width="692*"/>
+            <ColumnDefinition Width="296*"/>
+            <ColumnDefinition Width="396*"/>
         </Grid.ColumnDefinitions>
 
 
-        <Image HorizontalAlignment="Left" Grid.Column="0" Grid.ColumnSpan="4"  
-               Source="Assets/mision.jpg" Stretch="Fill" Grid.RowSpan="7" Width="1920"  />
+        <Image HorizontalAlignment="Left" Grid.Column="0" Grid.ColumnSpan="6"  
+               Source="Assets/mision.jpg" Stretch="Fill" Grid.RowSpan="4" Width="1920"  />
 
         <StackPanel Grid.Row="1" Grid.RowSpan="2" HorizontalAlignment="Center" VerticalAlignment="Top" Height="508" Width="201">
             <Button Content="1ªA"></Button>
@@ -63,22 +65,22 @@
             <Button Content="3ªC"></Button>
         </StackPanel>
 
-        <Button Name="Menu" Grid.Row="3" Grid.Column="3" HorizontalAlignment="Right" VerticalAlignment="Bottom"  Background="Transparent" BorderBrush="Transparent" 
-                Width="100" Height="100" Margin="25">
+        <Button Name="Menu" Grid.Row="3" Grid.Column="5" HorizontalAlignment="Right" VerticalAlignment="Bottom"  Background="Transparent" BorderBrush="Transparent"
+                Width="100" Height="100" Margin="0,0,25,25" Click="Info_Click">
             <Image Source="/Assets/info.png" Width="50" Height="50" />
         </Button>
 
         <Button Content="BACK" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="50,0,0,30" Click="Button_Click"
-                Background="#FFFBDED3" FontSize="35" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" BorderBrush="Transparent" Height="88"/>
+                Background="#FFFBDED3" FontSize="35" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" BorderBrush="Transparent" Height="88" Width="300"/>
 
         <TextBox PlaceholderText="STUDENT BODY" IsReadOnly="True" 
-                 HorizontalAlignment="Center" FontSize="30" Grid.Column="3" TextAlignment="Center" VerticalAlignment="Center" Height="54" Width="302"></TextBox>
+                 HorizontalAlignment="Left" FontSize="30" Grid.Column="4" TextAlignment="Center" VerticalAlignment="Center" Height="54" Width="302" Grid.ColumnSpan="2" Margin="195,0,0,0"></TextBox>
 
         <TextBox PlaceholderText="CURRENT MISIONS: 4/4" IsReadOnly="True" 
-                 HorizontalAlignment="Center" Grid.Row="1" FontSize="25" Grid.Column="1" TextAlignment="Center" VerticalAlignment="Center" Height="54" Width="320" Background="#FFF08787"></TextBox>
+                 HorizontalAlignment="Center" Grid.Row="1" FontSize="25" Grid.Column="1" TextAlignment="Center" VerticalAlignment="Center" Height="54" Width="320" Background="#FFF08787" Grid.ColumnSpan="2"/>
 
 
-        <StackPanel Grid.Row="2" Grid.Column="1" Grid.RowSpan="2" HorizontalAlignment="Right" 
+        <StackPanel Grid.Row="2" Grid.Column="2" HorizontalAlignment="Center" 
             VerticalAlignment="Top" Height="508" Width="299">
             <TextBox PlaceholderText="STUDENT" Margin="0" Background="#FFE5ABE5"></TextBox>
             <TextBox PlaceholderText="LUFFY" Margin="0"></TextBox>
@@ -87,7 +89,7 @@
             <TextBox PlaceholderText="SANJI" Margin="0"></TextBox>
         </StackPanel>
 
-        <StackPanel Grid.Row="2" Grid.Column="2" Grid.RowSpan="2" HorizontalAlignment="Center" 
+        <StackPanel Grid.Row="2" Grid.Column="3" HorizontalAlignment="Center" 
             VerticalAlignment="Top" Height="508" Width="480">
             <TextBox PlaceholderText="TARGET" Margin="0" Width="478" Background="#FFE5ABE5"></TextBox>
             <TextBox PlaceholderText="HAVE 2 COOKIE STANS" Margin="0" Width="478"></TextBox>
@@ -96,8 +98,8 @@
             <TextBox PlaceholderText="AVERAGE OF 7" Margin="0" Width="478"></TextBox>
         </StackPanel>
 
-        <StackPanel Grid.Row="2" Grid.Column="3" Grid.RowSpan="2" HorizontalAlignment="Left" 
-            VerticalAlignment="Top" Height="508" Width="299">
+        <StackPanel Grid.Row="2" Grid.Column="4" HorizontalAlignment="Left" 
+            VerticalAlignment="Top" Height="508" Width="299" Grid.ColumnSpan="2">
             <TextBox PlaceholderText="REWARD" Margin="0" Background="#FFE5ABE5"></TextBox>
             <TextBox PlaceholderText="100Y" Margin="0"></TextBox>
             <TextBox PlaceholderText="50xp" Margin="0"></TextBox>
@@ -106,7 +108,11 @@
         </StackPanel>
 
         <TextBox PlaceholderText="CLASS RATING: 3/10" IsReadOnly="True" 
-                 HorizontalAlignment="Center" Grid.Row="3" FontSize="25" Grid.Column="2" TextAlignment="Center" VerticalAlignment="Center" Height="54" Width="377" Background="#FFF08787"></TextBox>
+                 HorizontalAlignment="Center" Grid.Row="3" FontSize="25" Grid.Column="3" TextAlignment="Center" VerticalAlignment="Center" Height="54" Width="377" Background="#FFF08787"></TextBox>
+
+        <TextBox  Name="Information" Visibility="Collapsed"  Grid.Row="2" Grid.Column="2" Grid.ColumnSpan="3" Header="LAS MISIONES" TextWrapping="Wrap" HorizontalAlignment="Left" VerticalAlignment="Bottom"  Width="1075" Height="300"
+                  Text="Las misiones son necesarias para recaudar puntos de prestigio hasta llegar a lo más alto. son dadas por alumnos que confían en ti como jefe del consejo estudiantil."
+                  Background="White" Margin="3,265,0,0"/>
 
     </Grid>
 </Page>
