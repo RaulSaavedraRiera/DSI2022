@@ -88,5 +88,52 @@ namespace Peach_HighSchool
         {
             Frame.Navigate(typeof(Alumnos));
         }
+
+        private void n25_PointerPressed(object sender, PointerRoutedEventArgs e)
+        {
+            n25.FontStyle = Windows.UI.Text.FontStyle.Oblique;
+            n05.FontStyle = Windows.UI.Text.FontStyle.Normal;
+            n1.FontStyle = Windows.UI.Text.FontStyle.Normal;
+            n2.FontStyle = Windows.UI.Text.FontStyle.Normal;
+            n5.FontStyle = Windows.UI.Text.FontStyle.Normal;
+            
+        }
+
+        private void n05_PointerPressed(object sender, PointerRoutedEventArgs e)
+        {
+            n25.FontStyle = Windows.UI.Text.FontStyle.Normal;
+            n05.FontStyle = Windows.UI.Text.FontStyle.Oblique;
+            n1.FontStyle = Windows.UI.Text.FontStyle.Normal;
+            n2.FontStyle = Windows.UI.Text.FontStyle.Normal;
+            n5.FontStyle = Windows.UI.Text.FontStyle.Normal;
+
+        }
+        private void n1_PointerPressed(object sender, PointerRoutedEventArgs e)
+        {
+            n25.FontStyle = Windows.UI.Text.FontStyle.Normal;
+            n05.FontStyle = Windows.UI.Text.FontStyle.Normal;
+            n1.FontStyle = Windows.UI.Text.FontStyle.Oblique;
+            n2.FontStyle = Windows.UI.Text.FontStyle.Normal;
+            n5.FontStyle = Windows.UI.Text.FontStyle.Normal;
+
+        }
+        private void n2_PointerPressed(object sender, PointerRoutedEventArgs e)
+        {
+            n25.FontStyle = Windows.UI.Text.FontStyle.Normal;
+            n05.FontStyle = Windows.UI.Text.FontStyle.Normal;
+            n1.FontStyle = Windows.UI.Text.FontStyle.Normal;
+            n2.FontStyle = Windows.UI.Text.FontStyle.Oblique;
+            n5.FontStyle = Windows.UI.Text.FontStyle.Normal;
+
+        }
+        private void n5_PointerPressed(object sender, PointerRoutedEventArgs e)
+        {
+            n25.FontStyle = Windows.UI.Text.FontStyle.Normal;
+            n05.FontStyle = Windows.UI.Text.FontStyle.Normal;
+            n1.FontStyle = Windows.UI.Text.FontStyle.Normal;
+            n2.FontStyle = Windows.UI.Text.FontStyle.Normal;
+            n5.FontStyle = Windows.UI.Text.FontStyle.Oblique;
+
+        }
     }
 }
