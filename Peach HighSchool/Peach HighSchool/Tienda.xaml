@@ -47,10 +47,10 @@
 
         <StackPanel Orientation="Horizontal" Grid.Row="1" Margin="30,30,30,30" Grid.Column="0" Grid.ColumnSpan="3">
             <Button Content="UPGRADES" Click="Button_ClickUpgrate"></Button>
-            <Button Content="CLOTHES"  Click="Button_ClickUpgrate"></Button>
-            <Button Content="SCHOOL"  Click="Button_ClickUpgrate"></Button>
-            <Button Content="CLUBS MATERIALS"  Click="Button_ClickUpgrate"></Button>
-            <Button Content="STUDY MATERIALS"  Click="Button_ClickUpgrate"></Button>
+            <Button Content="CLOTHES"  Click="Button_ClickClothes"></Button>
+            <Button Content="SCHOOL"  Click="Button_ClickSchool"></Button>
+            <Button Content="CLUBS MATERIALS"  Click="Button_ClickClub"></Button>
+            <Button Content="STUDY MATERIALS"  Click="Button_ClickStudy"></Button>
 
         </StackPanel>
 

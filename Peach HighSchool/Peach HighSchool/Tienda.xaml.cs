@@ -24,6 +24,8 @@ namespace Peach_HighSchool
     public sealed partial class Tienda : Page
     {
     
+        
+
         public Tienda()
         {
             this.InitializeComponent();
@@ -42,24 +44,164 @@ namespace Peach_HighSchool
         private void T1_Click(object sender, RoutedEventArgs e)
         {
             F1.Visibility = Visibility.Collapsed;
+            SC1.Visibility = Visibility.Collapsed;
+            ST1.Visibility = Visibility.Collapsed;
+            C1.Visibility = Visibility.Collapsed;
+            U1.Visibility = Visibility.Collapsed;
             S1.Visibility = Visibility.Visible;
         }
 
         private void T2_Click(object sender, RoutedEventArgs e)
         {
             F2.Visibility = Visibility.Collapsed;
+            SC2.Visibility = Visibility.Collapsed;
+            ST2.Visibility = Visibility.Collapsed;
+            C2.Visibility = Visibility.Collapsed;
+            U2.Visibility = Visibility.Collapsed;
             S2.Visibility = Visibility.Visible;
         }
 
         private void T3_Click(object sender, RoutedEventArgs e)
         {
             F3.Visibility = Visibility.Collapsed;
+            SC3.Visibility = Visibility.Collapsed;
+            ST3.Visibility = Visibility.Collapsed;
+            C3.Visibility = Visibility.Collapsed;
+            U3.Visibility = Visibility.Collapsed;
             S3.Visibility = Visibility.Visible;
         }
 
         private void Button_ClickUpgrate(object sender, RoutedEventArgs e)
         {
+            U1.Visibility = Visibility.Visible;
+            U2.Visibility = Visibility.Visible;
+            U3.Visibility = Visibility.Visible;
 
+            SC1.Visibility = Visibility.Collapsed;
+            SC2.Visibility = Visibility.Collapsed;
+            SC3.Visibility = Visibility.Collapsed; 
+            
+            ST1.Visibility = Visibility.Collapsed;
+            ST2.Visibility = Visibility.Collapsed;
+            ST3.Visibility = Visibility.Collapsed;
+
+            C1.Visibility = Visibility.Collapsed;
+            C2.Visibility = Visibility.Collapsed;
+            C3.Visibility = Visibility.Collapsed;
+
+            F1.Visibility = Visibility.Collapsed;
+            F2.Visibility = Visibility.Collapsed;
+            F3.Visibility = Visibility.Collapsed;
+
+            S1.Visibility = Visibility.Collapsed;
+            S2.Visibility = Visibility.Collapsed;
+            S3.Visibility = Visibility.Collapsed;
+        }
+
+        private void Button_ClickSchool(object sender, RoutedEventArgs e)
+        {
+            U1.Visibility = Visibility.Collapsed;
+            U2.Visibility = Visibility.Collapsed;
+            U3.Visibility = Visibility.Collapsed;
+
+            SC1.Visibility = Visibility.Visible;
+            SC2.Visibility = Visibility.Visible;
+            SC3.Visibility = Visibility.Visible;
+
+            ST1.Visibility = Visibility.Collapsed;
+            ST2.Visibility = Visibility.Collapsed;
+            ST3.Visibility = Visibility.Collapsed;
+
+            C1.Visibility = Visibility.Collapsed;
+            C2.Visibility = Visibility.Collapsed;
+            C3.Visibility = Visibility.Collapsed;
+
+            F1.Visibility = Visibility.Collapsed;
+            F2.Visibility = Visibility.Collapsed;
+            F3.Visibility = Visibility.Collapsed;
+
+            S1.Visibility = Visibility.Collapsed;
+            S2.Visibility = Visibility.Collapsed;
+            S3.Visibility = Visibility.Collapsed;
+        }
+        private void Button_ClickClub(object sender, RoutedEventArgs e)
+        {
+            U1.Visibility = Visibility.Collapsed;
+            U2.Visibility = Visibility.Collapsed;
+            U3.Visibility = Visibility.Collapsed;
+
+            SC1.Visibility = Visibility.Collapsed;
+            SC2.Visibility = Visibility.Collapsed;
+            SC3.Visibility = Visibility.Collapsed;
+
+            ST1.Visibility = Visibility.Collapsed;
+            ST2.Visibility = Visibility.Collapsed;
+            ST3.Visibility = Visibility.Collapsed;
+
+            C1.Visibility = Visibility.Visible;
+            C2.Visibility = Visibility.Visible;
+            C3.Visibility = Visibility.Visible;
+
+            F1.Visibility = Visibility.Collapsed;
+            F2.Visibility = Visibility.Collapsed;
+            F3.Visibility = Visibility.Collapsed;
+
+            S1.Visibility = Visibility.Collapsed;
+            S2.Visibility = Visibility.Collapsed;
+            S3.Visibility = Visibility.Collapsed;
+        }
+        private void Button_ClickClothes(object sender, RoutedEventArgs e)
+        {
+            U1.Visibility = Visibility.Collapsed;
+            U2.Visibility = Visibility.Collapsed;
+            U3.Visibility = Visibility.Collapsed;
+
+            SC1.Visibility = Visibility.Collapsed;
+            SC2.Visibility = Visibility.Collapsed;
+            SC3.Visibility = Visibility.Collapsed;
+
+            ST1.Visibility = Visibility.Collapsed;
+            ST2.Visibility = Visibility.Collapsed;
+            ST3.Visibility = Visibility.Collapsed;
+
+            C1.Visibility = Visibility.Collapsed;
+            C2.Visibility = Visibility.Collapsed;
+            C3.Visibility = Visibility.Collapsed;
+
+            F1.Visibility = Visibility.Visible;
+            F2.Visibility = Visibility.Visible;
+            F3.Visibility = Visibility.Visible;
+
+            S1.Visibility = Visibility.Collapsed;
+            S2.Visibility = Visibility.Collapsed;
+            S3.Visibility = Visibility.Collapsed;
+        }
+
+        private void Button_ClickStudy(object sender, RoutedEventArgs e)
+        {
+            U1.Visibility = Visibility.Collapsed;
+            U2.Visibility = Visibility.Collapsed;
+            U3.Visibility = Visibility.Collapsed;
+
+            SC1.Visibility = Visibility.Collapsed;
+            SC2.Visibility = Visibility.Collapsed;
+            SC3.Visibility = Visibility.Collapsed;
+
+            ST1.Visibility = Visibility.Visible;
+            ST2.Visibility = Visibility.Visible;
+            ST3.Visibility = Visibility.Visible;
+
+            C1.Visibility = Visibility.Collapsed;
+            C2.Visibility = Visibility.Collapsed;
+            C3.Visibility = Visibility.Collapsed;
+
+            F1.Visibility = Visibility.Collapsed;
+            F2.Visibility = Visibility.Collapsed;
+            F3.Visibility = Visibility.Collapsed;
+
+            S1.Visibility = Visibility.Collapsed;
+            S2.Visibility = Visibility.Collapsed;
+            S3.Visibility = Visibility.Collapsed;
         }
     }
 }
