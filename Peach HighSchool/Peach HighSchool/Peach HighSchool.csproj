@@ -161,6 +161,8 @@
     <Content Include="Assets\camiseta1.png" />
     <Content Include="Assets\camiseta2.png" />
     <Content Include="Assets\camiseta3.png" />
+    <Content Include="Assets\chibi.jpg" />
+    <Content Include="Assets\chibi.png" />
     <Content Include="Assets\club.jpg" />
     <Content Include="Assets\clubs.png" />
     <Content Include="Assets\desplegable.png" />
@@ -168,7 +170,6 @@
     <Content Include="Assets\entradaescuela.png" />
     <Content Include="Assets\felicidad.png" />
     <Content Include="Assets\info.png" />
-    <Content Include="Assets\mascota.jpg" />
     <Content Include="Assets\medal.png" />
     <Content Include="Assets\menuInicio.png" />
     <Content Include="Assets\menuOpciones.png" />

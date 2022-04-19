@@ -38,8 +38,41 @@ namespace Peach_HighSchool
 
         private void autoSave_Toggled(object sender, RoutedEventArgs e)
         {
-        
-
+            Grid.SetRow(photo, 0);
+            Grid.SetRowSpan(photo, 1);
         }
+
+        private void music_Toggled(object sender, RoutedEventArgs e)
+        {
+            Grid.SetRow(photo, 2);
+            Grid.SetRowSpan(photo, 2);
+        }
+
+        //music
+        private void Slider_ValueChanged_1(object sender, RangeBaseValueChangedEventArgs e)
+        {
+            Grid.SetRow(photo, 2);
+            Grid.SetRowSpan(photo, 2);
+        }
+
+        private void sound_Toggled(object sender, RoutedEventArgs e)
+        {
+            Grid.SetRow(photo, 1);
+            Grid.SetRowSpan(photo, 2);
+        }
+        //sound
+        private void Slider_ValueChanged(object sender, RangeBaseValueChangedEventArgs e)
+        {
+            Grid.SetRow(photo, 1);
+            Grid.SetRowSpan(photo, 2);
+        }
+
+        private void DropDownButton_Click(object sender, RoutedEventArgs e)
+        {
+            Grid.SetRow(photo, 4);
+            Grid.SetRowSpan(photo, 2);
+        }
+
+
     }
 }
