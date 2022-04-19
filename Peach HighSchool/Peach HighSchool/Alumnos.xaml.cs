@@ -22,6 +22,8 @@ namespace Peach_HighSchool
     /// </summary>
     public sealed partial class Alumnos : Page
     {
+
+       
         public Alumnos()
         {
             this.InitializeComponent();
@@ -111,6 +113,7 @@ namespace Peach_HighSchool
             if (Information.Visibility == Visibility.Collapsed)
                 Information.Visibility = Visibility.Visible;
             else Information.Visibility = Visibility.Collapsed;
+
         }
 
     }
