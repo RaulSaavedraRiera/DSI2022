@@ -115,6 +115,7 @@
         <TextBox Text="STATS" Grid.Row="1" Grid.Column="1" Background="#FFFBDE90" HorizontalAlignment="Center" VerticalAlignment="Center" Height="65" Width="98"/>
         <TextBox Text="SOCIAL LIFE" Grid.Row="5" Grid.Column="1" Background="#FFFBDE90" HorizontalAlignment="Center" VerticalAlignment="Center" Height="65" Width="179"/>
         <TextBox Text="RELATIONS" Grid.Row="1" Grid.Column="4" Background="#63FBDE90" Margin="0,8,0,7"/>
+        <TextBox Name="name" Text="LUFFY" Grid.Row="0" Grid.ColumnSpan="2" Grid.Column="4" Background="Orange" Margin="0,8,0,7"/>
 
         <TextBox Text="HAPINESS" Grid.Row="2" Grid.Column="7" Background="#FFFBDE90" Margin="0,31,0,7" />
         <TextBox Text="80%" Grid.Row="3" Grid.Column="7" VerticalAlignment="Top" Height="65" />
@@ -162,20 +163,20 @@
         </Button>
 
         <StackPanel Grid.Row="2" Grid.RowSpan="7" Grid.Column="8" Grid.ColumnSpan="2" Margin="40,20,40,0">
-            <Button Content="Luffy"></Button>
-            <Button Content="Smoothy"></Button>
-            <Button Content="Miracle"></Button>
-            <Button Content="Jonny"></Button>
-            <Button Content="Kaguya"></Button>
-            <Button Content="Robin"></Button>
-            <Button Content="Zoro"></Button>
-            <Button Content="Richard"></Button>
-            <Button Content="Nami"></Button>
-            <Button Content="Kid"></Button>
-            <Button Content="Law"></Button>
-            <Button Content="Uzumaki"></Button>
-            <Button Content="Sasuke"></Button>
-            <Button Content="Kiba"></Button>
+            <Button Content="Luffy" Click="Button_ClickLuffy"></Button>
+            <Button Content="Smoothy" Click="Button_ClickSmoothy"></Button>
+            <Button Content="Miracle" Click="Button_ClickMiracle"></Button>
+            <Button Content="Jonny" Click="Button_ClickJonny"></Button>
+            <Button Content="Kaguya" Click="Button_ClickKaguya"></Button>
+            <Button Content="Robin" Click="Button_ClickRobin"></Button>
+            <Button Content="Zoro" Click="Button_ClickZoro"></Button>
+            <Button Content="Richard" Click="Button_ClickRichard"></Button>
+            <Button Content="Nami" Click="Button_ClickNami"></Button>
+            <Button Content="Kid" Click="Button_ClickKid"></Button>
+            <Button Content="Law" Click="Button_ClickLaw"></Button>
+            <Button Content="Uzumaki" Click="Button_ClickUzumaki"></Button>
+            <Button Content="Sasuke" Click="Button_ClickSasuke"></Button>
+            <Button Content="Kiba" Click="Button_ClickKiba"></Button>
         </StackPanel>
 
 
