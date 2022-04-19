@@ -35,5 +35,12 @@ namespace Peach_HighSchool
                 rootFrame.GoBack();
             }
         }
+
+        private void Info_Click(object sender, RoutedEventArgs e)
+        {
+            if (Information.Visibility == Visibility.Collapsed)
+                Information.Visibility = Visibility.Visible;
+            else Information.Visibility = Visibility.Collapsed;
+        }
     }
 }
