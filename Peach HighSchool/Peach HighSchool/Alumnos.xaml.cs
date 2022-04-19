@@ -45,64 +45,65 @@ namespace Peach_HighSchool
 
         private void Button_ClickLuffy(object sender, RoutedEventArgs e)
         {
-            name.Text = "LUFFY";
+            AlumSearch.PlaceholderText = name.Text = "LUFFY";
         }
 
         private void Button_ClickSmoothy(object sender, RoutedEventArgs e)
         {
-            name.Text = "SMOOTHY";
+            AlumSearch.PlaceholderText = name.Text = "SMOOTHY";
         }
         private void Button_ClickLaw(object sender, RoutedEventArgs e)
         {
-            name.Text = "LAW";
+            AlumSearch.PlaceholderText = name.Text = "LAW";
         }
         private void Button_ClickKid(object sender, RoutedEventArgs e)
         {
-            name.Text = "KID";
+            AlumSearch.PlaceholderText = name.Text = "KID";
         }
         private void Button_ClickUzumaki(object sender, RoutedEventArgs e)
         {
-            name.Text = "UZUMAKI";
+            AlumSearch.PlaceholderText = name.Text = "UZUMAKI";
         }
         private void Button_ClickRichard(object sender, RoutedEventArgs e)
         {
-            name.Text = "RICHARD";
+            AlumSearch.PlaceholderText = name.Text = "RICHARD";
         }
 
         private void Button_ClickMiracle(object sender, RoutedEventArgs e)
         {
-            name.Text = "MIRACLE";
+            AlumSearch.PlaceholderText = name.Text = "MIRACLE";
         }
         private void Button_ClickJonny(object sender, RoutedEventArgs e)
         {
-            name.Text = "JONNY";
+            AlumSearch.PlaceholderText = name.Text = "JONNY";
         }
         private void Button_ClickZoro(object sender, RoutedEventArgs e)
         {
-            name.Text = "ZORO";
+            AlumSearch.PlaceholderText = name.Text = "ZORO";
         }
 
         private void Button_ClickRobin(object sender, RoutedEventArgs e)
         {
-            name.Text = "ROBIN";
+            AlumSearch.PlaceholderText = name.Text = "ROBIN";
         }
 
         private void Button_ClickNami(object sender, RoutedEventArgs e)
         {
-            name.Text = "NAMI";
+            AlumSearch.PlaceholderText = name.Text = "NAMI";
         }
         private void Button_ClickKaguya(object sender, RoutedEventArgs e)
         {
-            name.Text = "KAGUYA";
+            AlumSearch.PlaceholderText = name.Text = "KAGUYA";
         }
 
         private void Button_ClickSasuke(object sender, RoutedEventArgs e)
         {
-            name.Text = "SASUKE";
+            AlumSearch.PlaceholderText = name.Text = "SASUKE";
         }
         private void Button_ClickKiba(object sender, RoutedEventArgs e)
         {
-            name.Text = "KIBA";
+           AlumSearch.PlaceholderText = name.Text = "KIBA";
+
         }
 
         private void Info_Click(object sender, RoutedEventArgs e)
@@ -111,5 +112,6 @@ namespace Peach_HighSchool
                 Information.Visibility = Visibility.Visible;
             else Information.Visibility = Visibility.Collapsed;
         }
+
     }
 }

@@ -144,14 +144,14 @@
                  HorizontalAlignment="Left" FontSize="30" Grid.Column="8" VerticalAlignment="Center" Height="54" Width="180" Margin="71,0,0,0" Grid.ColumnSpan="2"></TextBox>
 
         <StackPanel Grid.Column="8" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Left" Orientation="Horizontal" Grid.ColumnSpan="2" Margin="11,0,0,0" Height="65" Width="300" >
-            <TextBox  PlaceholderText="Class" FontSize="30" Width="240" IsReadOnly ="False"/>
+            <TextBox Name="ClassSearch" PlaceholderText="2-B" FontSize="30" Width="240" IsReadOnly ="False"/>
             <Button Width=" 40" Height="40" Margin="10" BorderBrush="Black" Background="Transparent">
                 <SymbolIcon Symbol="Find"></SymbolIcon>
             </Button>
         </StackPanel>
 
         <StackPanel Grid.Column="7" Grid.Row="9" VerticalAlignment="Center" HorizontalAlignment="Left" Orientation="Horizontal" Grid.ColumnSpan="3"  Height="65" Width="300" Margin="222,0,0,0" >
-            <TextBox  PlaceholderText="Alumn" FontSize="30" Width="240" IsReadOnly ="False"/>
+            <TextBox Name="AlumSearch" PlaceholderText="LUFFY" FontSize="30" Width="240" IsReadOnly ="False"/>
             <Button Width=" 40" Height="40" Margin="10" BorderBrush="Black" Background="Transparent">
                 <SymbolIcon Symbol="Find"></SymbolIcon>
             </Button>
