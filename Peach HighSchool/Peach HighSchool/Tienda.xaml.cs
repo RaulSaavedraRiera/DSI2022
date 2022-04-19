@@ -56,5 +56,10 @@ namespace Peach_HighSchool
             F3.Visibility = Visibility.Collapsed;
             S3.Visibility = Visibility.Visible;
         }
+
+        private void Button_ClickUpgrate(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
