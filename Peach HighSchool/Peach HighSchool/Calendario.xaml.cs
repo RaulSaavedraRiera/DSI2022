@@ -22,9 +22,33 @@ namespace Peach_HighSchool
     /// </summary>
     public sealed partial class Calendario : Page
     {
+        struct Activity
+        {
+           public bool buy;
+           public int price;
+            public string text;
+            public Image icon;
+
+            public Activity(int price, string text, Image icon)
+            {
+                buy = false;
+                this.price = price;
+                this.text = text;
+                this.icon = icon;
+            }
+        }
+      
+
+        int activityOn = -1;
+        Activity[] activies; 
+
         public Calendario()
         {
             this.InitializeComponent();
+
+            activies = new Activity[2];
+            activies[0] = new Activity(100, "Toda la escuela irá a disfrutar del Sakura a las calles de Tokio.", SakuraIcon);
+            activies[1] = new Activity(500, "Un viaje a Okinawa para toda la clase, disfrutando de la playa y el sol.", OkinawaIcon);
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -38,12 +62,61 @@ namespace Peach_HighSchool
 
         private void Sakura_Click(object sender, RoutedEventArgs e)
         {
-            infoActivity.Text = "Toda la escuela irá a disfrutar del Sakura a las calles de Tokio.";
+            infoActivity.Text = activies[0].text;
+            HideAllActivites();
+            activies[0].icon.Visibility = Visibility.Visible;
+
+            activityOn = 0;
+
+            if (!activies[0].buy)
+                buyActivity.Content = activies[0].price.ToString() + "k";
+            else
+                buyActivity.Content = "Acquired";
         }
 
         private void Okinawa_Click(object sender, RoutedEventArgs e)
         {
-            infoActivity.Text = "Un viaje a Okinawa para toda la clase, disfrutando de la playa y el sol.";
+            infoActivity.Text = activies[1].text;
+            HideAllActivites();
+            activies[1].icon.Visibility = Visibility.Visible;
+
+            activityOn = 1;
+
+            if (!activies[1].buy)
+                buyActivity.Content = activies[1].price.ToString() + "k";
+            else
+                buyActivity.Content = "Acquired";
+        }
+
+        private void Buy_Click(object sender, RoutedEventArgs e)
+        {
+            switch (activityOn)
+            {
+                case 0:
+                    if (!activies[0].buy)
+                    {
+                        activies[0].buy = true;
+                        buyActivity.Content = "Acquired";
+                    }
+                    break;
+                case 1:
+                    if (!activies[1].buy)
+                    {
+                        activies[1].buy = true;
+                        buyActivity.Content = "Acquired";
+                    }
+                    break;
+                default:
+                    break;
+            }
+        }
+
+      void HideAllActivites()
+        {
+            foreach (Activity i in activies)
+            {
+                i.icon.Visibility = Visibility.Collapsed;
+            }
         }
     }
 }
