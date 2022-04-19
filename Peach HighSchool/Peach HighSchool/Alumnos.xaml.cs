@@ -22,8 +22,6 @@ namespace Peach_HighSchool
     /// </summary>
     public sealed partial class Alumnos : Page
     {
-
-       
         public Alumnos()
         {
             this.InitializeComponent();
@@ -104,7 +102,7 @@ namespace Peach_HighSchool
         }
         private void Button_ClickKiba(object sender, RoutedEventArgs e)
         {
-           AlumSearch.PlaceholderText = name.Text = "KIBA";
+            AlumSearch.PlaceholderText = name.Text = "KIBA";
 
         }
 
@@ -113,8 +111,121 @@ namespace Peach_HighSchool
             if (Information.Visibility == Visibility.Collapsed)
                 Information.Visibility = Visibility.Visible;
             else Information.Visibility = Visibility.Collapsed;
+        }
+
+        private void Button_ClickBuscar(object sender, RoutedEventArgs e)
+        {
+            string a = AlumSearch.Text;
+
+            switch (a)
+            {
+                case "LUFFY":
+                    Button_ClickLuffy(sender, e);
+                    break;
+                case "SMOOTHY":
+                    Button_ClickSmoothy(sender, e);
+                    break;
+                case "LAW":
+                    Button_ClickLaw(sender, e);
+                    break;
+                case "KID":
+                    Button_ClickKid(sender, e);
+                    break;
+                case "MIRACLE":
+                    Button_ClickMiracle(sender, e);
+                    break;
+                case "SASUKE":
+                    Button_ClickSasuke(sender, e);
+                    break;
+                case "KIBA":
+                    Button_ClickKiba(sender, e);
+                    break;
+                case "KAGUYA":
+                    Button_ClickKaguya(sender, e);
+                    break;
+                case "NAMI":
+                    Button_ClickNami(sender, e);
+                    break;
+                case "ROBIN":
+                    Button_ClickRobin(sender, e);
+                    break;
+                case "ZORO":
+                    Button_ClickZoro(sender, e);
+                    break;
+                case "RICHARD":
+                    Button_ClickRichard(sender, e);
+                    break;
+                case "UZUMAKI":
+                    Button_ClickUzumaki(sender, e);
+                    break;
+                case "JONNY":
+                    Button_ClickJonny(sender, e);
+                    break;
+            }
 
         }
 
+        //private void AlumSearch_KeyDown(object sender, KeyRoutedEventArgs e)
+        //{
+        //    if (e.Key == Windows.System.VirtualKey.Execute)
+        //    {
+        //        ChangeName(sender, e);
+        //    }
+
+        //}
+
+        //public void ChangeName(object sender, KeyRoutedEventArgs e)
+        //{
+        //    string a = AlumSearch.PlaceholderText;
+
+        //    switch (a)
+        //    {
+        //        case "LUFFY":
+        //            Button_ClickLuffy(sender, e);
+        //            break;
+        //        case "SMOOTHY":
+        //            Button_ClickSmoothy(sender, e);
+        //            break;
+        //        case "LAW":
+        //            Button_ClickLaw(sender, e);
+        //            break;
+        //        case "KID":
+        //            Button_ClickKid(sender, e);
+        //            break;
+        //        case "MIRACLE":
+        //            Button_ClickMiracle(sender, e);
+        //            break;
+        //        case "SASUKE":
+        //            Button_ClickSasuke(sender, e);
+        //            break;
+        //        case "KIBA":
+        //            Button_ClickKiba(sender, e);
+        //            break;
+        //        case "KAGUYA":
+        //            Button_ClickKaguya(sender, e);
+        //            break;
+        //        case "NAMI":
+        //            Button_ClickNami(sender, e);
+        //            break;
+        //        case "ROBIN":
+        //            Button_ClickRobin(sender, e);
+        //            break;
+        //        case "ZORO":
+        //            Button_ClickZoro(sender, e);
+        //            break;
+        //        case "RICHARD":
+        //            Button_ClickRichard(sender, e);
+        //            break;
+        //        case "UZUMAKI":
+        //            Button_ClickUzumaki(sender, e);
+        //            break;
+        //        case "JONNY":
+        //            Button_ClickJonny(sender, e);
+        //            break;
+        //    }
+
+        //}
     }
 }
+
+

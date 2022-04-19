@@ -152,8 +152,8 @@
 
         <StackPanel Grid.Column="7" Grid.Row="9" VerticalAlignment="Center" HorizontalAlignment="Left" Orientation="Horizontal" Grid.ColumnSpan="3"  Height="65" Width="300" Margin="222,0,0,0" >
             <TextBox Name="AlumSearch" PlaceholderText="LUFFY" FontSize="30" Width="240" IsReadOnly ="False"/>
-            <Button Width=" 40" Height="40" Margin="10" BorderBrush="Black" Background="Transparent">
-                <SymbolIcon Symbol="Find"></SymbolIcon>
+            <Button Width=" 40" Height="40" Margin="10" BorderBrush="Black" Background="Transparent" Click="Button_ClickBuscar">
+                <SymbolIcon Symbol="Find" Margin="3,0,0,0" Height="20" VerticalAlignment="Top"/>
             </Button>
         </StackPanel>
 
