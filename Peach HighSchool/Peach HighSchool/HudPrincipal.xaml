@@ -133,7 +133,7 @@
             <Image Source="Assets/student.png"></Image>
         </Button>
 
-        <TextBox Name="instrucciones" Visibility="Collapsed" Grid.Row="0" Grid.RowSpan="4" Grid.Column="0" Grid.ColumnSpan="5" Margin="160,100,160,0" TextWrapping="Wrap" IsReadOnly="True" FontSize="40" Background="White"       Header="COMO JUGAR A PEACH HIGH SCHOOL" TextAlignment="Center" Text="Información sobre la aventura y la tareas que deben ser realizadas para completar la aventura. Tenemos diferente tipos de opciones entre ellas"  />
+        <TextBox Name="instrucciones" Visibility="Collapsed" Grid.Row="1" Grid.RowSpan="4" Grid.Column="0" Grid.ColumnSpan="5" Margin="160,100,160,50" TextWrapping="Wrap" IsReadOnly="True" FontSize="40" Background="White"       Header="COMO JUGAR A PEACH HIGH SCHOOL" TextAlignment="Center" Text="Información sobre la aventura y la tareas que deben ser realizadas para completar la aventura. Tenemos diferente tipos de opciones entre ellas"  />
 
 
 

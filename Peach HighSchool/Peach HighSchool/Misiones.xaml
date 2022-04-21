@@ -29,6 +29,7 @@
             <Setter Property="FontSize" Value="25"/>
             <Setter Property="Margin" Value="3"/>
             <Setter Property="Background" Value="White"/>
+            <Setter Property="IsReadOnly" Value="true"/>
         </Style>
 
     </Page.Resources>

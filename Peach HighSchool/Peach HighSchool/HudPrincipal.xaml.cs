@@ -32,6 +32,8 @@ namespace Peach_HighSchool
 
         private void Desplegable_Click(object sender, RoutedEventArgs e)
         {
+            instrucciones.Visibility = Visibility.Collapsed;
+
             if (desplegable.Visibility == Visibility.Collapsed)
                 desplegable.Visibility = Visibility.Visible;
             else desplegable.Visibility = Visibility.Collapsed;
@@ -39,6 +41,8 @@ namespace Peach_HighSchool
 
         private void Menu_Click(object sender, RoutedEventArgs e)
         {
+            instrucciones.Visibility = Visibility.Collapsed;
+
             if (menus.Visibility == Visibility.Collapsed)
                 menus.Visibility = Visibility.Visible;
             else menus.Visibility = Visibility.Collapsed;
@@ -52,6 +56,8 @@ namespace Peach_HighSchool
         }
         private void AlumInMap_Click(object sender, RoutedEventArgs e)
         {
+            instrucciones.Visibility = Visibility.Collapsed;
+
             if (InfoStudent.Visibility == Visibility.Collapsed)
                 InfoStudent.Visibility = Visibility.Visible;
             else InfoStudent.Visibility = Visibility.Collapsed;

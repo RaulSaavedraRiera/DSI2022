@@ -61,7 +61,7 @@
             </DropDownButton.Flyout>
         </DropDownButton>
 
-        <Button Content="SAVE" HorizontalAlignment="Center"
+        <Button Content="SAVE" HorizontalAlignment="Center" Click="Button_Click"
                 Background="#FFCB6B87" FontSize="30" Grid.Column="2" Grid.Row="6" Width="272"/>
 
 
