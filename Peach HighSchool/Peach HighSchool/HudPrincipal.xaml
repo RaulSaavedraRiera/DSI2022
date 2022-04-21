@@ -8,9 +8,20 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
     <Page.Resources>
-        <Style TargetType="TextBox">
+
+        <ResourceDictionary>
+            <ResourceDictionary.ThemeDictionaries>
+                <ResourceDictionary x:Key="Light">
+                    <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#FFE5ABE5"></SolidColorBrush>
+                    <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#FFE5ABE5"></SolidColorBrush>
+                </ResourceDictionary>
+            </ResourceDictionary.ThemeDictionaries>
+
+            <Style TargetType="TextBox">
             <Setter Property="IsReadOnly" Value="True"/>
-        </Style>
+            </Style>
+        </ResourceDictionary>
+
     </Page.Resources>
 
     <Grid>

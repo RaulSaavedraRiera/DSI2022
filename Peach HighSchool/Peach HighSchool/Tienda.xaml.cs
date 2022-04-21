@@ -165,18 +165,12 @@ namespace Peach_HighSchool
 
         void ActualiceScreen()
         {
-            foreach (Item i in objects)            
+            foreach (Item i in objects)
                 i.o.Visibility = Visibility.Collapsed;
 
             objects[currentZone * 3].o.Visibility = Visibility.Visible;
             objects[currentZone * 3 + 1].o.Visibility = Visibility.Visible;
             objects[currentZone * 3 + 2].o.Visibility = Visibility.Visible;
-            
-        }
-
-        private void T1_PointerEntered(object sender, PointerRoutedEventArgs e)
-        {
-            //T1.Background = LabelInternet2.SetDynamicResource(Label.TextColorProperty, "Purple");
 
         }
     }

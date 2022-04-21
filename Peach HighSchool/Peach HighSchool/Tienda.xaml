@@ -10,23 +10,25 @@
     RequestedTheme="Light">
 
     <Page.Resources>
-        <Style TargetType="Button">
-            <Setter Property="HorizontalAlignment" Value="Center"/>
-            <Setter Property="Height" Value="50"/>
-            <Setter Property="Width" Value="300"/>
-            <Setter Property="FontSize" Value="25"/>
-            <Setter Property="Background" Value="#FFE5ABE5"></Setter>
-        </Style>
         
-         <!--<ResourceDictionary>
+        <ResourceDictionary>
             <ResourceDictionary.ThemeDictionaries>
                 <ResourceDictionary x:Key="Light">
-                    <SolidColorBrush x:Key="ButtonBackground" Color="#FFE5ABE5"></SolidColorBrush>
                     <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#FFE5ABE5"></SolidColorBrush>
                     <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#FFE5ABE5"></SolidColorBrush>
                 </ResourceDictionary>
             </ResourceDictionary.ThemeDictionaries>
-        </ResourceDictionary>-->
+
+            <Style TargetType="Button">
+                <Setter Property="HorizontalAlignment" Value="Center"/>
+                <Setter Property="Height" Value="50"/>
+                <Setter Property="Width" Value="300"/>
+                <Setter Property="FontSize" Value="25"/>
+                <Setter Property="Background" Value="#FFE5ABE5"></Setter>
+            </Style>
+        </ResourceDictionary>
+
+      
     </Page.Resources>
 
     <Grid Margin="10,0,-10,0">
@@ -76,7 +78,7 @@
         </StackPanel>
 
         <StackPanel Orientation="Horizontal" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" HorizontalAlignment="Center" VerticalAlignment="Center">
-            <Button Width="400" Height="400" Background="#FFEDE3ED" Name="T1" Click="T1_Click" PointerEntered="T1_PointerEntered">
+            <Button Width="400" Height="400" Background="#FFEDE3ED" Name="T1" Click="T1_Click">
                 <StackPanel>
                     <TextBox PlaceholderText="100Y" TextAlignment="Center" Margin="20" IsReadOnly="True"/>
                     <Image Name="S1" Source="/Assets/sold.png" Height="210" Width="255" Visibility="Collapsed"/>

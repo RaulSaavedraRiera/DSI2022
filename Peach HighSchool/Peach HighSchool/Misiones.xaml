@@ -10,6 +10,14 @@
 
 
     <Page.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.ThemeDictionaries>
+                <ResourceDictionary x:Key="Light">
+                    <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#FFE5ABE5"></SolidColorBrush>
+                    <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#FFE5ABE5"></SolidColorBrush>
+                </ResourceDictionary>
+            </ResourceDictionary.ThemeDictionaries>
+        
         <Style TargetType="Button">
             <Setter Property="HorizontalAlignment" Value="Center"/>
             <Setter Property="Grid.Column" Value="2"/>
@@ -31,6 +39,9 @@
             <Setter Property="Background" Value="White"/>
             <Setter Property="IsReadOnly" Value="true"/>
         </Style>
+
+        </ResourceDictionary>
+
 
     </Page.Resources>
 

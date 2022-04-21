@@ -9,7 +9,15 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Page.Resources>
-        <Style TargetType="Button">
+
+        <ResourceDictionary>
+            <ResourceDictionary.ThemeDictionaries>
+                <ResourceDictionary x:Key="Light">
+                    <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#FFE8ABBD"></SolidColorBrush>
+                    <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#FFE8ABBD"></SolidColorBrush>
+                </ResourceDictionary>
+            </ResourceDictionary.ThemeDictionaries>
+            <Style TargetType="Button">
             <Setter Property="HorizontalAlignment" Value="Left"/>
             <Setter Property="BorderBrush" Value="Black"/>
             <Setter Property="Grid.Column" Value="1"/>
@@ -19,6 +27,8 @@
             <Setter Property="FontSize" Value="33"/>
 
         </Style>
+            </ResourceDictionary>
+
     </Page.Resources>
 
     <Grid>
