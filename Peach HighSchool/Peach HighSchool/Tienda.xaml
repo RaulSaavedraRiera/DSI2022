@@ -36,7 +36,7 @@
                Source="Assets/shop.png" Stretch="Fill" Grid.RowSpan="4" Margin="-57,0,0,0" />
 
 
-        <TextBox PlaceholderText="500Y" IsReadOnly="True" 
+        <TextBox Name="price" IsReadOnly="True" 
                  HorizontalAlignment="Center" FontSize="30" Grid.Column="2" TextAlignment="Center" VerticalAlignment="Center" 
                  Height="54" Width="302" Background="White"></TextBox>
 
@@ -68,8 +68,7 @@
         <StackPanel Orientation="Horizontal" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" HorizontalAlignment="Center" VerticalAlignment="Center">
             <Button Width="400" Height="400" Background="#FFEDE3ED" Name="T1" Click="T1_Click">
                 <StackPanel>
-                    <TextBox PlaceholderText="UNIFORM 1
-                             500Y"  Margin="20" IsReadOnly="True"/>
+                    <TextBox PlaceholderText="100Y" TextAlignment="Center" Margin="20" IsReadOnly="True"/>
                     <Image Name="S1" Source="/Assets/sold.png" Height="210" Width="255" Visibility="Collapsed"/>
                     <Image Name="F1" Source="/Assets/camiseta1.png" Height="210" Width="255" />
                     <Image Name="U1" Source="/Assets/clean.png" Height="210" Width="255"  Visibility="Collapsed"/>
@@ -80,8 +79,7 @@
             </Button>
             <Button Width="400" Height="400" Background="#FFEDE3ED" Name="T2" Click="T2_Click">
                 <StackPanel>
-                    <TextBox PlaceholderText="UNIFORM 2 
-                             500Y" Margin="20" IsReadOnly="True"/>
+                    <TextBox PlaceholderText="200Y" TextAlignment="Center" Margin="20" IsReadOnly="True"/>
                     <Image Name="S2" Source="/Assets/sold.png" Height="210" Width="255" Visibility="Collapsed"/>
                     <Image Name="F2" Source="/Assets/camiseta2.png" Height="210" Width="255" />
                     <Image Name="U2" Source="/Assets/orde.png" Height="210" Width="255"  Visibility="Collapsed"/>
@@ -92,8 +90,7 @@
             </Button>
             <Button Width="400" Height="400" Background="#FFEDE3ED" Name="T3" Click="T3_Click">
                 <StackPanel>
-                    <TextBox PlaceholderText="UNIFORM 3
-                             500Y" Margin="20" IsReadOnly="True"/>
+                    <TextBox PlaceholderText="500Y" TextAlignment="Center" Margin="20" IsReadOnly="True"/>
                     <Image Name="S3" Source="/Assets/sold.png" Height="210" Width="255" Visibility="Collapsed"/>
                     <Image Name="F3" Source="/Assets/camiseta3.png" Height="210" Width="255" />
                     <Image Name="U3" Source="/Assets/light.png" Height="210" Width="255"  Visibility="Collapsed"/>

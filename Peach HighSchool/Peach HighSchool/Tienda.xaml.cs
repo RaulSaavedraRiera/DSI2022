@@ -23,6 +23,8 @@ namespace Peach_HighSchool
     /// </summary>
     public sealed partial class Tienda : Page
     {
+
+        
         struct Item
         {
             public Image o;
@@ -37,6 +39,7 @@ namespace Peach_HighSchool
 
         Item[] objects;
         int currentZone = 1;
+        int money = 2000;
 
         public Tienda()
         {
@@ -70,7 +73,7 @@ namespace Peach_HighSchool
             objects[13] = new Item(ST2);
             objects[14] = new Item(ST3);
 
-
+            price.PlaceholderText = money.ToString();
 
         }
 
@@ -85,24 +88,51 @@ namespace Peach_HighSchool
 
         private void T1_Click(object sender, RoutedEventArgs e)
         {
-            objects[currentZone * 3].o.Visibility = Visibility.Collapsed;
-            objects[currentZone * 3].o = S1;
-            objects[currentZone * 3].o.Visibility = Visibility.Visible;
-            
+
+            if (money-100 >= 0 && objects[currentZone * 3].o != S1)
+            {
+
+                objects[currentZone * 3].o.Visibility = Visibility.Collapsed;
+                objects[currentZone * 3].o = S1;
+                objects[currentZone * 3].o.Visibility = Visibility.Visible;
+
+                money -= 100;
+
+                price.PlaceholderText = money.ToString();
+            }
         }
 
         private void T2_Click(object sender, RoutedEventArgs e)
         {
-            objects[currentZone * 3 + 1].o.Visibility = Visibility.Collapsed;
-            objects[currentZone * 3 + 1].o = S2;
-            objects[currentZone * 3 + 1].o.Visibility = Visibility.Visible;
+            if (money-200 >= 0 && objects[currentZone * 3 + 1].o != S2)
+            {
+                money -= 200;
+                objects[currentZone * 3 + 1].o.Visibility = Visibility.Collapsed;
+                objects[currentZone * 3 + 1].o = S2;
+                objects[currentZone * 3 + 1].o.Visibility = Visibility.Visible;
+
+               
+                price.PlaceholderText = money.ToString();
+            }
+
         }
 
         private void T3_Click(object sender, RoutedEventArgs e)
         {
-            objects[currentZone * 3 + 2].o.Visibility = Visibility.Collapsed;
-            objects[currentZone * 3 + 2].o = S3;
-            objects[currentZone * 3 + 2].o.Visibility = Visibility.Visible;
+
+            if (money-500 >= 0 && objects[currentZone * 3 + 2].o != S3)
+            {
+                objects[currentZone * 3 + 2].o.Visibility = Visibility.Collapsed;
+                objects[currentZone * 3 + 2].o = S3;
+                objects[currentZone * 3 + 2].o.Visibility = Visibility.Visible;
+
+
+                money -= 500;
+
+                price.PlaceholderText = money.ToString();
+            }
+               
+
         }
 
         private void Button_ClickUpgrate(object sender, RoutedEventArgs e)
