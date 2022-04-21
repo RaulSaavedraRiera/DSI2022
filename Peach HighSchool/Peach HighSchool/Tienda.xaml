@@ -76,7 +76,7 @@
         </StackPanel>
 
         <StackPanel Orientation="Horizontal" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" HorizontalAlignment="Center" VerticalAlignment="Center">
-            <Button Width="400" Height="400" Background="#FFEDE3ED" Name="T1" Click="T1_Click">
+            <Button Width="400" Height="400" Background="#FFEDE3ED" Name="T1" Click="T1_Click" PointerEntered="T1_PointerEntered">
                 <StackPanel>
                     <TextBox PlaceholderText="100Y" TextAlignment="Center" Margin="20" IsReadOnly="True"/>
                     <Image Name="S1" Source="/Assets/sold.png" Height="210" Width="255" Visibility="Collapsed"/>

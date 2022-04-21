@@ -173,5 +173,11 @@ namespace Peach_HighSchool
             objects[currentZone * 3 + 2].o.Visibility = Visibility.Visible;
             
         }
+
+        private void T1_PointerEntered(object sender, PointerRoutedEventArgs e)
+        {
+            //T1.Background = LabelInternet2.SetDynamicResource(Label.TextColorProperty, "Purple");
+
+        }
     }
 }
