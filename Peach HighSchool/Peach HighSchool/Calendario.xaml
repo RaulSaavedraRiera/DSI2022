@@ -10,7 +10,7 @@
 
     <Grid>
         <Viewbox Stretch="Uniform" StretchDirection="Both">
-            <Grid Width="1920" Height="1080" >
+            <Grid Height="1277" Width="2246">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="55*"/>
                     <ColumnDefinition Width="175*"/>
@@ -34,7 +34,7 @@
                 </Grid.RowDefinitions>
 
                 <Image Grid.Column="0" Grid.ColumnSpan="9" 
-               Source="Assets/sakura.jpg" Stretch="Fill" Grid.RowSpan="8" />
+               Source="Assets/sakura.jpg" Stretch="Fill" Grid.RowSpan="8" Margin="-11,0,-12,0" />
 
 
 
@@ -66,14 +66,14 @@
                   FontSize="60" Background="#FFAFFAFF" FontWeight="Bold" Grid.ColumnSpan="4"/>
 
 
-                <TextBox Grid.Column="7" Grid.Row="0" IsReadOnly="true" PlaceholderText="CALENDAR" Margin="0,25,0,0"
+                <TextBox Grid.Column="7" Grid.Row="0" IsReadOnly="true" PlaceholderText="CALENDAR" Margin="0,25,-10,0"
                  VerticalAlignment="Top" HorizontalAlignment="Center"  TextAlignment="Center"
                   FontSize="60" Background="#FFE6E6E6" FontWeight="Normal"/>
 
 
-                <StackPanel Grid.Column="5" Grid.Row="3" Grid.RowSpan="3" Spacing="80" >
-                    <Button Content="Okinawa Trip 3-A" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontSize="50" Background="White" Click="Okinawa_Click"></Button>
-                    <Button Content="Sakura" HorizontalAlignment="Stretch" FontSize="50" Background="White" Click="Sakura_Click"></Button>
+                <StackPanel Grid.Column="5" Grid.Row="3" Grid.RowSpan="3" Spacing="50" Margin="30, 0,0,0" >
+                    <Button Content="Okinawa Trip 3-A" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontSize="50" Background="White" Click="Okinawa_Click" Height="200"></Button>
+                    <Button Content="Sakura" HorizontalAlignment="Stretch" FontSize="50" Background="White" Click="Sakura_Click" Height="200"></Button>
                 </StackPanel>
                 <Rectangle Name="infoTrip" Grid.Row="2" Grid.Column="7" Stretch="Fill" Stroke="Black" Grid.ColumnSpan="1" Grid.RowSpan="5" />
 
