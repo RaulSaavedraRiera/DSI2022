@@ -16,6 +16,7 @@
                 <ResourceDictionary x:Key="Light">
                     <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#FFE5ABE5"></SolidColorBrush>
                     <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#FFE5ABE5"></SolidColorBrush>
+                    <SolidColorBrush x:Key="BlockBackgroundBrush" Color="#FFE5ABE5"></SolidColorBrush>
                 </ResourceDictionary>
             </ResourceDictionary.ThemeDictionaries>
 
@@ -55,7 +56,7 @@
 
         <TextBox PlaceholderText="STORE" IsReadOnly="True" 
                  HorizontalAlignment="Center" FontSize="30" TextAlignment="Center" VerticalAlignment="Center" 
-                 Height="54" Width="302" Background="White"/>
+                 Height="54" Width="302" Background="White" SelectionHighlightColor="White" SelectionHighlightColorWhenNotFocused="White"/>
 
         <StackPanel Orientation="Horizontal" Grid.Row="1" Margin="30,30,30,30" Grid.Column="0" Grid.ColumnSpan="3">
             <Button Content="UPGRADES" Click="Button_ClickUpgrate"></Button>
