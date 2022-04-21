@@ -6,8 +6,8 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+    RequestedTheme="Light">
 
     <Page.Resources>
         <Style TargetType="Button">
@@ -17,6 +17,16 @@
             <Setter Property="FontSize" Value="25"/>
             <Setter Property="Background" Value="#FFE5ABE5"></Setter>
         </Style>
+        
+         <!--<ResourceDictionary>
+            <ResourceDictionary.ThemeDictionaries>
+                <ResourceDictionary x:Key="Light">
+                    <SolidColorBrush x:Key="ButtonBackground" Color="#FFE5ABE5"></SolidColorBrush>
+                    <SolidColorBrush x:Key="ButtonBackgroundPointerOver" Color="#FFE5ABE5"></SolidColorBrush>
+                    <SolidColorBrush x:Key="ButtonBackgroundPressed" Color="#FFE5ABE5"></SolidColorBrush>
+                </ResourceDictionary>
+            </ResourceDictionary.ThemeDictionaries>
+        </ResourceDictionary>-->
     </Page.Resources>
 
     <Grid Margin="10,0,-10,0">
