@@ -11,7 +11,8 @@
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="55*"/>
-            <ColumnDefinition Width="647*"/>
+            <ColumnDefinition Width="175*"/>
+            <ColumnDefinition Width="472*"/>
             <ColumnDefinition Width="60*"/>
             <ColumnDefinition Width="290*"/>
             <ColumnDefinition Width="448*"/>
@@ -31,57 +32,57 @@
         </Grid.RowDefinitions>
 
 
-        <Image Grid.Column="0" Grid.ColumnSpan="8" 
+        <Image Grid.Column="0" Grid.ColumnSpan="9" 
                Source="Assets/sakura.jpg" Stretch="Fill" Grid.RowSpan="8" />
 
 
 
-        <Button Content="BACK" VerticalAlignment="Bottom" Margin="0,0,0,30" Click="Button_Click"
-                Background="#FFFBDED3" FontSize="35" Grid.Row="7" Grid.Column="1" Height="95" Width="266"/>
+        <Button Content="BACK" VerticalAlignment="Bottom" HorizontalAlignment="Stretch" Click="Button_Click"
+                Background="#FFFBDED3" FontSize="35" Grid.Row="7" Grid.Column="1" Margin="0, 0, 0, 20"/>
 
         <CalendarView Grid.Row="1" Grid.RowSpan="6" Width="auto" Height="auto" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
     SelectionMode="Single"
     IsGroupLabelVisible="True"
     IsOutOfScopeEnabled="True"
     Language="en"
-    CalendarIdentifier="GregorianCalendar" Grid.Column="1" Background="#FFAFFAFF" BorderBrush="White" Grid.ColumnSpan="3"/>
+    CalendarIdentifier="GregorianCalendar" Grid.Column="1" Background="#FFAFFAFF" BorderBrush="White" Grid.ColumnSpan="4"/>
 
-        <Button Grid.Row="4" Grid.Column="2" Background="Transparent" Click="Sakura_Click" HorizontalAlignment="Stretch" >
+        <Button Grid.Row="4" Grid.Column="3" Background="Transparent" Click="Sakura_Click" HorizontalAlignment="Stretch" >
             <Image Source="/Assets/sakura.png"/>
         </Button>
 
-        <Button Grid.Row="2" Grid.Column="2" Background="Transparent" Click="Okinawa_Click" HorizontalAlignment="Stretch" >
+        <Button Grid.Row="2" Grid.Column="3" Background="Transparent" Click="Okinawa_Click" HorizontalAlignment="Stretch" >
             <Image Source="/Assets/okinawa.png"/>
         </Button>
 
-        
-        <TextBox Grid.Column="4" Grid.Row="7" IsReadOnly="true" PlaceholderText="DAYS UNTIL END OF COURSE: 15"
+
+        <TextBox Grid.Column="5" Grid.Row="7" IsReadOnly="true" PlaceholderText="DAYS UNTIL END OF COURSE: 15"
                  VerticalAlignment="Center" HorizontalAlignment="Left" 
-                  FontSize="45" Background="#FFAFFAFF" FontWeight="Bold" Grid.ColumnSpan="3" Margin="77,0,0,0" Height="73" Width="714"></TextBox>
+                  FontSize="45" Background="#FFAFFAFF" FontWeight="Bold" Grid.ColumnSpan="3" Margin="30,0,0,0"></TextBox>
 
-        <TextBox Grid.Column="4" Grid.Row="1" IsReadOnly="true" PlaceholderText="21 March" Margin="50,0,50,0"
+        <TextBox Grid.Column="5" Grid.Row="1" IsReadOnly="true" PlaceholderText="21 March" Margin="50,0,50,0"
                  VerticalAlignment="Center"  TextAlignment="Center"
-                  FontSize="60" Background="#FFAFFAFF" FontWeight="Bold" Grid.ColumnSpan="4" Height="93"/>
+                  FontSize="60" Background="#FFAFFAFF" FontWeight="Bold" Grid.ColumnSpan="4"/>
 
-        <TextBox Grid.Column="6" Grid.Row="0" IsReadOnly="true" PlaceholderText="CALENDAR" Margin="0,25,0,0"
+        <TextBox Grid.Column="7" Grid.Row="0" IsReadOnly="true" PlaceholderText="CALENDAR" Margin="0,25,0,0"
                  VerticalAlignment="Top" HorizontalAlignment="Center"  TextAlignment="Center"
-                  FontSize="60" Background="#FFE6E6E6" FontWeight="Normal" Height="93" Width="315"/>
+                  FontSize="60" Background="#FFE6E6E6" FontWeight="Normal"/>
 
 
-        <StackPanel Grid.Column="4" Grid.Row="3" Grid.RowSpan="3" VerticalAlignment="Top" Margin="100,14,0,0" Spacing="25" Height="325" >
-            <Button Content="Okinawa Trip 3-A" HorizontalAlignment="Stretch" Height="150" FontSize="40" Background="White" Click="Okinawa_Click"></Button>
-            <Button Content="Sakura" HorizontalAlignment="Stretch" Height="150" FontSize="40" Background="White" Click="Sakura_Click"></Button>
+        <StackPanel Grid.Column="5" Grid.Row="3" Grid.RowSpan="3" Spacing="150" >
+            <Button Content="Okinawa Trip 3-A" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontSize="50" Background="White" Click="Okinawa_Click"></Button>
+            <Button Content="Sakura" HorizontalAlignment="Stretch" FontSize="50" Background="White" Click="Sakura_Click"></Button>
         </StackPanel>
-        <Rectangle Name="infoTrip" Grid.Row="2" Grid.Column="6" Stretch="Fill" Stroke="Black" Grid.ColumnSpan="1" Grid.RowSpan="5" />
+        <Rectangle Name="infoTrip" Grid.Row="2" Grid.Column="7" Stretch="Fill" Stroke="Black" Grid.ColumnSpan="1" Grid.RowSpan="5" />
 
         <Button Name="buyActivity" Content="Select one" HorizontalAlignment="Stretch" Click="Buy_Click"
-                Background="#FFAFFAFF" FontSize="35" Grid.Row="6" Grid.Column="6" Height="60" />
+                Background="#FFAFFAFF" FontSize="35" Grid.Row="6" Grid.Column="7" Height="60" />
 
-        <TextBlock Name="infoActivity" Grid.Row="3" Grid.RowSpan="3" Grid.Column="6" Text="select a activity"  TextAlignment="Center"
+        <TextBlock Name="infoActivity" Grid.Row="3" Grid.Column="7" Text="select a activity"  TextAlignment="Center"
                    HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="45" TextWrapping="Wrap" />
 
-        <Image Name="OkinawaIcon" Source="/Assets/okinawa.png" Grid.Row="1" Grid.RowSpan="2" Grid.Column="4" HorizontalAlignment="Left" Visibility="Collapsed"/>
-        <Image Name="SakuraIcon" Source="/Assets/sakura.png" Grid.Row="1" Grid.RowSpan="2" Grid.Column="4" HorizontalAlignment="Left" Visibility="Collapsed"/>
+        <Image Name="OkinawaIcon" Source="/Assets/okinawa.png" Grid.Row="1" Grid.RowSpan="2" Grid.Column="5" HorizontalAlignment="Left" Visibility="Collapsed"/>
+        <Image Name="SakuraIcon" Source="/Assets/sakura.png" Grid.Row="1" Grid.RowSpan="2" Grid.Column="5" HorizontalAlignment="Left" Visibility="Collapsed"/>
 
 
     </Grid>

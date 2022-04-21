@@ -27,6 +27,7 @@ namespace Peach_HighSchool
         public HudPrincipal()
         {
             this.InitializeComponent();
+            currentVelocity = n1;
         }
 
         private void Desplegable_Click(object sender, RoutedEventArgs e)
