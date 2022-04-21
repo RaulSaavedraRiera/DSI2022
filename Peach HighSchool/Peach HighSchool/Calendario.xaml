@@ -69,7 +69,7 @@
                   FontSize="60" Background="#FFE6E6E6" FontWeight="Normal"/>
 
 
-        <StackPanel Grid.Column="5" Grid.Row="3" Grid.RowSpan="3" Spacing="150" >
+        <StackPanel Grid.Column="5" Grid.Row="3" Grid.RowSpan="3" Spacing="80" >
             <Button Content="Okinawa Trip 3-A" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontSize="50" Background="White" Click="Okinawa_Click"></Button>
             <Button Content="Sakura" HorizontalAlignment="Stretch" FontSize="50" Background="White" Click="Sakura_Click"></Button>
         </StackPanel>
@@ -78,8 +78,8 @@
         <Button Name="buyActivity" Content="Select one" HorizontalAlignment="Stretch" Click="Buy_Click"
                 Background="#FFAFFAFF" FontSize="35" Grid.Row="6" Grid.Column="7" Height="60" />
 
-        <TextBlock Name="infoActivity" Grid.Row="3" Grid.Column="7" Text="select a activity"  TextAlignment="Center"
-                   HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="45" TextWrapping="Wrap" />
+        <TextBlock Name="infoActivity" Grid.Row="3" Grid.Column="7" Grid.RowSpan="3" Text="select a activity"  TextAlignment="Center"
+                   HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="40" TextWrapping="Wrap" />
 
         <Image Name="OkinawaIcon" Source="/Assets/okinawa.png" Grid.Row="1" Grid.RowSpan="2" Grid.Column="5" HorizontalAlignment="Left" Visibility="Collapsed"/>
         <Image Name="SakuraIcon" Source="/Assets/sakura.png" Grid.Row="1" Grid.RowSpan="2" Grid.Column="5" HorizontalAlignment="Left" Visibility="Collapsed"/>
