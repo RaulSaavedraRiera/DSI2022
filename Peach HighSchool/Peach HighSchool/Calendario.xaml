@@ -64,15 +64,12 @@
                  VerticalAlignment="Center"  TextAlignment="Center"
                   FontSize="60" Background="#FFAFFAFF" FontWeight="Bold" Grid.ColumnSpan="4"/>
 
+        
         <TextBox Grid.Column="7" Grid.Row="0" IsReadOnly="true" PlaceholderText="CALENDAR" Margin="0,25,0,0"
                  VerticalAlignment="Top" HorizontalAlignment="Center"  TextAlignment="Center"
                   FontSize="60" Background="#FFE6E6E6" FontWeight="Normal"/>
 
-
-        <StackPanel Grid.Column="5" Grid.Row="3" Grid.RowSpan="3" Spacing="80" >
-            <Button Content="Okinawa Trip 3-A" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontSize="50" Background="White" Click="Okinawa_Click"></Button>
-            <Button Content="Sakura" HorizontalAlignment="Stretch" FontSize="50" Background="White" Click="Sakura_Click"></Button>
-        </StackPanel>
+      
         <Rectangle Name="infoTrip" Grid.Row="2" Grid.Column="7" Stretch="Fill" Stroke="Black" Grid.ColumnSpan="1" Grid.RowSpan="5" />
 
         <Button Name="buyActivity" Content="Select one" HorizontalAlignment="Stretch" Click="Buy_Click"
@@ -84,6 +81,13 @@
         <Image Name="OkinawaIcon" Source="/Assets/okinawa.png" Grid.Row="1" Grid.RowSpan="2" Grid.Column="5" HorizontalAlignment="Left" Visibility="Collapsed"/>
         <Image Name="SakuraIcon" Source="/Assets/sakura.png" Grid.Row="1" Grid.RowSpan="2" Grid.Column="5" HorizontalAlignment="Left" Visibility="Collapsed"/>
 
+
+        <Viewbox Stretch="Uniform" StretchDirection="Both" Grid.Column="5" Grid.ColumnSpan="1" Grid.Row="3" Grid.RowSpan="3" Margin="10,0,0,0">            
+                <StackPanel Spacing="80" >
+                    <Button Content="Okinawa Trip 3-A" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontSize="50" Background="White" Click="Okinawa_Click"></Button>
+                    <Button Content="Sakura" HorizontalAlignment="Stretch" FontSize="50" Background="White" Click="Sakura_Click"></Button>
+                </StackPanel>            
+        </Viewbox>
 
     </Grid>
 </Page>
