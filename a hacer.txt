@@ -2,20 +2,20 @@
 CORREGIR 
 
 - ajustar todo a cuadricula a r 
-- informacion en todos r
-- hud student information r
-- arreglar bug calendario a
-- crear muñeñca dinamica a
--textos calendario ajustrar a cuadrado r
+- informacion en todos *
+- hud student information *
+- arreglar bug calendario *
+- crear muñeñca dinamica *
+-textos calendario ajustrar a cuadrado *
 - alumnos objetos cuadricula *
 - textbox no se cambie al pulsar a
-- poder seleccionar diferentes velocidades ( se ponga oscuro r
+- poder seleccionar diferentes velocidades ( se ponga oscuro *
 - nombres en ingles o en español a
 
 AÑADIR
 
-- tienda al comprar aparezca en pantalla unos segundos a
-- al buscar alumnos y clases que cambie el nombre de la tabla r
+- tienda al comprar aparezca en pantalla unos segundos *
+- al buscar alumnos y clases que cambie el nombre de la tabla *
 - calendario eter mas eventos y si pica en dia de evento que aparezca a
-- comprar evento refuerzo grwfico r
+- comprar evento refuerzo grwfico *
 - no poder volver a comprar objetos o eventos a *
