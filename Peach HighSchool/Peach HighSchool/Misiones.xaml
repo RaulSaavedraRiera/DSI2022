@@ -68,15 +68,15 @@
                Source="Assets/mision.jpg" Stretch="Fill" Grid.RowSpan="4" Width="1920"  />
 
         <StackPanel Grid.Row="1" Grid.RowSpan="2" HorizontalAlignment="Center" VerticalAlignment="Top" Height="508" Width="201">
-            <Button Content="1ªA" TabIndex="4"></Button>
-            <Button Content="1ªB"></Button>
-            <Button Content="1ªC"></Button>
-            <Button Content="2ªA"></Button>
-            <Button Content="2ªB"></Button>
-            <Button Content="2ªC"></Button>
-            <Button Content="3ªA"></Button>
-            <Button Content="3ªB"></Button>
-            <Button Content="3ªC"></Button>
+            <Button Content="1ªA" TabIndex="4" Click="ChangeClass_click"></Button>
+            <Button Content="1ªB" Click="ChangeClass_click"></Button>
+            <Button Content="1ªC" Click="ChangeClass_click"></Button>
+            <Button Content="2ªA" Click="ChangeClass_click"></Button>
+            <Button Content="2ªB" Click="ChangeClass_click"></Button>
+            <Button Content="2ªC" Click="ChangeClass_click"></Button>
+            <Button Content="3ªA" Click="ChangeClass_click"></Button>
+            <Button Content="3ªB" Click="ChangeClass_click"></Button>
+            <Button Content="3ªC" Click="ChangeClass_click"></Button>
         </StackPanel>
 
         <Button Name="Menu" Grid.Row="3" Grid.Column="5" HorizontalAlignment="Right" VerticalAlignment="Bottom"  Background="Transparent" BorderBrush="Transparent"
@@ -89,18 +89,24 @@
 
         <TextBox PlaceholderText="STUDENT BODY" IsReadOnly="True" 
                  HorizontalAlignment="Left" FontSize="30" Grid.Column="4" TextAlignment="Center" VerticalAlignment="Center" Height="54" Width="302" Grid.ColumnSpan="2" Margin="195,0,0,0"></TextBox>
+        
+        <TextBox Name="moneyT" PlaceholderText="500$" IsReadOnly="True" 
+                 HorizontalAlignment="Right" FontSize="30" Grid.Column="4" TextAlignment="Center" VerticalAlignment="Center" Height="54" Width="150" Grid.ColumnSpan="2" Margin="0,0,20,0" Background="#FFFFE281"></TextBox>
 
-        <TextBox PlaceholderText="CURRENT MISIONS: 4/4" IsReadOnly="True" 
+        <TextBox Name="expT" PlaceholderText="150xP" IsReadOnly="True" 
+                 HorizontalAlignment="Right" FontSize="30" Grid.Row="1" VerticalAlignment="Top" Grid.Column="4" TextAlignment="Center" Height="54" Width="150" Grid.ColumnSpan="2" Margin="0,0,20,0" Background="#FFA6A6FF"></TextBox>
+
+<TextBox PlaceholderText="CURRENT MISIONS: 4/4" IsReadOnly="True" 
                  HorizontalAlignment="Center" Grid.Row="1" FontSize="25" Grid.Column="1" TextAlignment="Center" VerticalAlignment="Center" Height="54" Width="320" Background="#FFF08787" Grid.ColumnSpan="2"/>
 
 
         <StackPanel Grid.Row="2" Grid.Column="2" HorizontalAlignment="Center" 
             VerticalAlignment="Top" Height="508" Width="299">
             <TextBox PlaceholderText="STUDENT" Margin="0" Background="#FFE5ABE5"></TextBox>
-            <TextBox PlaceholderText="LUFFY" Margin="0"></TextBox>
-            <TextBox PlaceholderText="ROBIN" Margin="0"></TextBox>
-            <TextBox PlaceholderText="ZORO" Margin="0"></TextBox>
-            <TextBox PlaceholderText="SANJI" Margin="0"></TextBox>
+            <TextBox Name="student1" PlaceholderText="LUFFY" Margin="0"></TextBox>
+            <TextBox Name="student2" PlaceholderText="ROBIN" Margin="0"></TextBox>
+            <TextBox Name="student3" PlaceholderText="ZORO" Margin="0"></TextBox>
+            <TextBox Name="student4" PlaceholderText="SANJI" Margin="0"></TextBox>
         </StackPanel>
 
         <StackPanel Grid.Row="2" Grid.Column="3" HorizontalAlignment="Center" 
@@ -115,10 +121,10 @@
         <StackPanel Grid.Row="2" Grid.Column="4" HorizontalAlignment="Left" 
             VerticalAlignment="Top" Height="508" Width="299" Grid.ColumnSpan="2">
             <TextBox PlaceholderText="REWARD" Margin="0" Background="#FFE5ABE5"></TextBox>
-            <TextBox PlaceholderText="100Y" Margin="0" IsTabStop="True" TabIndex="0"></TextBox>
-            <TextBox PlaceholderText="50xp" Margin="0" IsTabStop="True" TabIndex="1"></TextBox>
-            <TextBox PlaceholderText="150Y" Margin="0" IsTabStop="True" TabIndex="2"></TextBox>
-            <TextBox PlaceholderText="REWARD" Margin="0" IsTabStop="True" TabIndex="3"></TextBox>
+            <TextBox PlaceholderText="100Y" Margin="0" IsTabStop="True" TabIndex="0" KeyDown="Reward_KeyDown"></TextBox>
+            <TextBox PlaceholderText="50xp" Margin="0" IsTabStop="True" TabIndex="1" KeyDown="Reward_KeyDown"></TextBox>
+            <TextBox PlaceholderText="150Y" Margin="0" IsTabStop="True" TabIndex="2" KeyDown="Reward_KeyDown"></TextBox>
+            <TextBox PlaceholderText="REWARD" Margin="0" IsTabStop="True" TabIndex="3" KeyDown="Reward_KeyDown"></TextBox>
         </StackPanel>
 
         <TextBox PlaceholderText="CLASS RATING: 3/10" IsReadOnly="True" 

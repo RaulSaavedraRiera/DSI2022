@@ -118,7 +118,7 @@
             </Grid.ColumnDefinitions>
 
             <Rectangle Grid.Row="2" Grid.RowSpan="3" Grid.ColumnSpan="3" Margin="20,160,20,20" Stroke="Black" Fill="#FFFFEABE"/>
-            <TextBox TextAlignment="Center" PlaceholderText="HINATA HYUGA" FontSize="35" Grid.Row="2" Grid.ColumnSpan="3" VerticalAlignment="Top" Margin="35,176,35,0" Background="#FFFFA92C" FontWeight="Bold" Height="60" />
+            <TextBox  Name="studentName" TextAlignment="Center" PlaceholderText="HINATA HYUGA" FontSize="35" Grid.Row="2" Grid.ColumnSpan="3" VerticalAlignment="Top" Margin="35,176,35,0" Background="#FFFFA92C" FontWeight="Bold" Height="60" />
             <TextBox TextAlignment="Center" PlaceholderText="Happy: 50%" FontSize="35" Grid.Row="2" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="35,0,0,0" Background="#CCFFBA57" FontWeight="Bold" Height="60" Width="218" />
             <TextBox TextAlignment="Center" PlaceholderText="Read Club" FontSize="35" Grid.Row="2" Grid.Column="1" VerticalAlignment="Bottom" Margin="182,0,35,0" Background="#CCFFBA57" FontWeight="Bold" Grid.ColumnSpan="2" Height="60" />
             <TextBox TextAlignment="Center" PlaceholderText="Social Life" FontSize="35" Grid.Row="3" Grid.ColumnSpan="2" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="271,20,0,0" Background="#CCFFBA57" FontWeight="Bold" Height="60" Width="187" ></TextBox>
@@ -143,6 +143,10 @@
 
         <Button Name="AlumInMap" Background="Transparent" Grid.Column="3" Grid.Row="3" HorizontalAlignment="Right" Click="AlumInMap_Click" Height="280" Width="100">
             <Image Margin="-60,-30,-60,-20" Source="Assets/student.png"></Image>
+        </Button>
+
+        <Button Name="Alum2InMap" Background="Transparent" Grid.Column="3" Grid.Row="3" HorizontalAlignment="Left" Click="AlumInMap2_Click" Height="320" Width="130">
+            <Image Margin="-60,0,-60,0" Source="Assets/boyAnime.png"></Image>
         </Button>
 
         <TextBox Name="instrucciones" Visibility="Collapsed" Grid.Row="2" Grid.RowSpan="3" Grid.Column="0" Grid.ColumnSpan="5" Margin="160,5,160,50" TextWrapping="Wrap" IsReadOnly="True" FontSize="40" Background="White"       Header="COMO JUGAR A PEACH HIGH SCHOOL" TextAlignment="Center" Text="Información sobre la aventura y la tareas que deben ser realizadas para completar la aventura. Tenemos diferente tipos de opciones entre ellas"  />

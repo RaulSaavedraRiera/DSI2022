@@ -34,7 +34,7 @@ namespace Peach_HighSchool
         {
             instrucciones.Visibility = Visibility.Collapsed;
             menus.Visibility = Visibility.Collapsed;
-          
+
             if (desplegable.Visibility == Visibility.Collapsed)
                 desplegable.Visibility = Visibility.Visible;
             else desplegable.Visibility = Visibility.Collapsed;
@@ -59,14 +59,36 @@ namespace Peach_HighSchool
         }
         private void AlumInMap_Click(object sender, RoutedEventArgs e)
         {
+            string nameT = "Hinata Hyuga";
             instrucciones.Visibility = Visibility.Collapsed;
             menus.Visibility = Visibility.Collapsed;
             desplegable.Visibility = Visibility.Collapsed;
 
 
+
             if (InfoStudent.Visibility == Visibility.Collapsed)
                 InfoStudent.Visibility = Visibility.Visible;
-            else InfoStudent.Visibility = Visibility.Collapsed;
+            else if (studentName.PlaceholderText == nameT)
+                InfoStudent.Visibility = Visibility.Collapsed;
+
+            studentName.PlaceholderText = nameT;
+        }
+
+        private void AlumInMap2_Click(object sender, RoutedEventArgs e)
+        {
+            string nameT = "Tuti Fruti";
+            instrucciones.Visibility = Visibility.Collapsed;
+            menus.Visibility = Visibility.Collapsed;
+            desplegable.Visibility = Visibility.Collapsed;
+
+
+
+            if (InfoStudent.Visibility == Visibility.Collapsed)
+                InfoStudent.Visibility = Visibility.Visible;
+            else if (studentName.PlaceholderText == nameT)
+                InfoStudent.Visibility = Visibility.Collapsed;
+
+            studentName.PlaceholderText = nameT;
         }
 
         private void ToMenuButton_Click(object sender, RoutedEventArgs e)

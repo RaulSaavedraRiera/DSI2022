@@ -23,6 +23,11 @@ namespace Peach_HighSchool
     /// </summary>
     public sealed partial class Misiones : Page
     {
+        int money = 300;
+        int xp = 150;
+
+        int mode = 0;
+
         public Misiones()
         {
             this.InitializeComponent();
@@ -61,6 +66,44 @@ namespace Peach_HighSchool
             if (Information.Visibility == Visibility.Collapsed)
                 Information.Visibility = Visibility.Visible;
             else Information.Visibility = Visibility.Collapsed;
+        }
+
+        private void Reward_KeyDown(object sender, KeyRoutedEventArgs e)
+        {
+            if(e.Key == Windows.System.VirtualKey.Enter || e.Key == Windows.System.VirtualKey.GamepadA)
+            {
+                var a = sender as TextBox;
+                if(a.PlaceholderText == "REWARD")
+                {
+                    money += 50;
+                    xp += 25;
+
+                    moneyT.PlaceholderText = money.ToString() + "$";
+                    expT.PlaceholderText = xp.ToString() + "Xp";
+
+                    a.PlaceholderText = "COMPLETE";
+                }
+            }
+        }
+
+        private void ChangeClass_click(object sender, RoutedEventArgs e)
+        {
+            if(mode == 0)
+            {
+                mode = 1;
+                student1.PlaceholderText = "MIMOTO";
+                student2.PlaceholderText = "SUSANNE";
+                student3.PlaceholderText = "ROGER";
+                student4.PlaceholderText = "MARA";
+            }
+            else
+            {
+                mode = 0;
+                student1.PlaceholderText = "LUFFY";
+                student2.PlaceholderText = "ROBIN";
+                student3.PlaceholderText = "ZORO";
+                student4.PlaceholderText = "SANJI";
+            }
         }
     }
 }
