@@ -27,6 +27,10 @@
                 <Setter Property="FontSize" Value="25"/>
                 <Setter Property="Background" Value="#FFE5ABE5"></Setter>
             </Style>
+
+            <Style TargetType="TextBox">               
+                <Setter Property="IsTabStop" Value="false"></Setter>
+            </Style>
         </ResourceDictionary>
 
       
@@ -59,27 +63,27 @@
                  Height="54" Width="302" Background="White" SelectionHighlightColor="White" SelectionHighlightColorWhenNotFocused="White"/>
 
         <StackPanel Orientation="Horizontal" Grid.Row="1" Margin="30,30,30,30" Grid.Column="0" Grid.ColumnSpan="3">
-            <Button Content="UPGRADES" Click="Button_ClickUpgrate"></Button>
-            <Button Content="CLOTHES"  Click="Button_ClickClothes"></Button>
-            <Button Content="SCHOOL"  Click="Button_ClickSchool"></Button>
-            <Button Content="CLUBS MATERIALS"  Click="Button_ClickClub"></Button>
-            <Button Content="STUDY MATERIALS"  Click="Button_ClickStudy"></Button>
+            <Button Content="UPGRADES" Click="Button_ClickUpgrate" TabIndex="4"></Button>
+            <Button Content="CLOTHES"  Click="Button_ClickClothes" TabIndex="5"></Button>
+            <Button Content="SCHOOL"  Click="Button_ClickSchool" TabIndex="6"></Button>
+            <Button Content="CLUBS MATERIALS"  Click="Button_ClickClub" TabIndex="7"></Button>
+            <Button Content="STUDY MATERIALS"  Click="Button_ClickStudy" TabIndex="8"></Button>
 
         </StackPanel>
 
 
-        <Button Content="BACK" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="50,0,0,30" 
+        <Button Content="BACK" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="50,0,0,30" TabIndex="10"
                 Background="#FFFBDED3" FontSize="35" Grid.Row="3" Grid.Column="0" BorderBrush="Transparent" Height="79" Width="300" Click="Button_Click"/>
 
         <StackPanel Grid.Column="1" Grid.Row="3" VerticalAlignment="Center" HorizontalAlignment="Center" Orientation="Horizontal" Width="336" Height="60">
-            <TextBox  PlaceholderText="SEARCH" FontSize="30" Width="240" IsReadOnly ="False"/>
+            <TextBox  PlaceholderText="SEARCH" FontSize="30" Width="240" IsReadOnly ="False" IsTabStop="True" TabIndex="9"/>
             <Button Width=" 40" Height="40" Margin="10" BorderBrush="Black" Background="Transparent">
                 <SymbolIcon Symbol="Find"></SymbolIcon>
             </Button>
         </StackPanel>
 
         <StackPanel Orientation="Horizontal" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" HorizontalAlignment="Center" VerticalAlignment="Center">
-            <Button Width="400" Height="400" Background="#FFEDE3ED" Name="T1" Click="T1_Click">
+            <Button Width="400" Height="400" Background="#FFEDE3ED" Name="T1" Click="T1_Click" TabIndex="0">
                 <StackPanel>
                     <TextBox PlaceholderText="100Y" TextAlignment="Center" Margin="20" IsReadOnly="True"/>
                     <Image Name="S1" Source="/Assets/sold.png" Height="210" Width="255" Visibility="Collapsed"/>
@@ -90,7 +94,7 @@
                     <Image Name="ST1" Source="/Assets/pluma.png" Height="210" Width="255"  Visibility="Collapsed"/>
                 </StackPanel>
             </Button>
-            <Button Width="400" Height="400" Background="#FFEDE3ED" Name="T2" Click="T2_Click">
+            <Button Width="400" Height="400" Background="#FFEDE3ED" Name="T2" Click="T2_Click" TabIndex="1">
                 <StackPanel>
                     <TextBox PlaceholderText="200Y" TextAlignment="Center" Margin="20" IsReadOnly="True"/>
                     <Image Name="S2" Source="/Assets/sold.png" Height="210" Width="255" Visibility="Collapsed"/>
@@ -101,7 +105,7 @@
                     <Image Name="ST2" Source="/Assets/pencil.png" Height="210" Width="255"  Visibility="Collapsed"/>
                 </StackPanel>
             </Button>
-            <Button Width="400" Height="400" Background="#FFEDE3ED" Name="T3" Click="T3_Click">
+            <Button Width="400" Height="400" Background="#FFEDE3ED" Name="T3" Click="T3_Click" TabIndex="2">
                 <StackPanel>
                     <TextBox PlaceholderText="500Y" TextAlignment="Center" Margin="20" IsReadOnly="True"/>
                     <Image Name="S3" Source="/Assets/sold.png" Height="210" Width="255" Visibility="Collapsed"/>
