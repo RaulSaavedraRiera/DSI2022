@@ -77,7 +77,7 @@
             <TextBox Text="CREATIVITY"></TextBox>
         </StackPanel>
 
-        <StackPanel Grid.Row="6" Grid.Column="1" Grid.RowSpan="3">
+        <StackPanel Grid.Row="6" Grid.Column="1" Grid.RowSpan="4" Margin="0, -20, 0, 0">
             <TextBox Text="POPULARITY"></TextBox>
             <TextBox Text="POSITION IN CLASS"></TextBox>
             <TextBox Text="COUPLE"></TextBox>
@@ -85,7 +85,7 @@
             <TextBox Text="ACADEMIC MEAN"></TextBox>
         </StackPanel>
 
-        <StackPanel Grid.Row="6" Grid.Column="2" Grid.RowSpan="3">
+        <StackPanel Grid.Row="6" Grid.Column="2" Grid.RowSpan="4"  Margin="0, -20, 0, 0">
             <TextBox Text="HIGH"></TextBox>
             <TextBox Text="DELEGATE"></TextBox>
             <TextBox Text="---"></TextBox>
@@ -113,7 +113,7 @@
             <TextBox Text="CLASMATE" Height="80"></TextBox>
         </StackPanel>
         <TextBox Text="STATS" Grid.Row="1" Grid.Column="1" Background="#FFFBDE90" HorizontalAlignment="Center" VerticalAlignment="Center" Height="65" Width="98"/>
-        <TextBox Text="SOCIAL LIFE" Grid.Row="5" Grid.Column="1" Background="#FFFBDE90" HorizontalAlignment="Center" VerticalAlignment="Center" Height="65" Width="179"/>
+        <TextBox Text="SOCIAL LIFE" Grid.Row="5" Grid.Column="1" Background="#FFFBDE90" HorizontalAlignment="Center" VerticalAlignment="top" Height="65" Width="179" Margin="0, 5, 0, 0"/>
         <TextBox Text="RELATIONS" Grid.Row="1" Grid.Column="4" Background="#63FBDE90" Margin="0,8,0,7"/>
         <TextBox Name="name" Text="LUFFY" Grid.Row="0" Grid.ColumnSpan="2" Grid.Column="4" Background="Orange" Margin="0,8,0,7"/>
 
@@ -124,6 +124,8 @@
         <TextBox Text="CURRENT CLUB" Grid.Row="7" Grid.Column="7" Background="#FFFBDE90" Margin="0,9,0,9" />
         <TextBox Text="READ CLUB" Grid.Row="8" Grid.Column="7" VerticalAlignment="Top" Height="65" />
 
+        <Rectangle Stroke="Black" Fill="#FFFBDE90" Grid.Column="4" Grid.Row="8" Grid.ColumnSpan="2"/>
+        
         <Button Name="Desplegable" Grid.Row="8" Grid.Column="4" Click="Desplegable_Click" Height="63" Width="70" HorizontalAlignment="Left">
             <Image Source="/Assets/tienda.png" Width="50" Height="50" />
         </Button>
