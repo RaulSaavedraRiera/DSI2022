@@ -22,6 +22,8 @@ namespace Peach_HighSchool
     /// </summary>
     public sealed partial class Calendario : Page
     {
+
+        int cMoney = 500;
         struct Activity
         {
            public bool buy;
@@ -93,17 +95,19 @@ namespace Peach_HighSchool
             switch (activityOn)
             {
                 case 0:
-                    if (!activies[0].buy)
+                    if (!activies[0].buy && activies[0].price < cMoney)
                     {
                         activies[0].buy = true;
                         buyActivity.Content = "Acquired";
+                        money.Text = (cMoney - activies[0].price).ToString() + "$";
                     }
                     break;
                 case 1:
-                    if (!activies[1].buy)
+                    if (!activies[1].buy && activies[1].price < cMoney)
                     {
                         activies[1].buy = true;
                         buyActivity.Content = "Acquired";
+                        money.Text = (cMoney - activies[1].price).ToString() + "$";
                     }
                     break;
                 default:

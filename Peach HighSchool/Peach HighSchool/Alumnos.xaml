@@ -11,6 +11,7 @@
     <Page.Resources>
         <Style TargetType="TextBox">
             <Setter Property="IsReadOnly" Value="true"></Setter>
+            <Setter Property="IsTabStop" Value="False"/>
             <Setter Property="Height" Value="65"></Setter>
             <Setter Property="FontSize" Value="30"></Setter>
             <Setter Property="TextAlignment" Value="Center"></Setter>
@@ -125,8 +126,8 @@
         <TextBox Text="READ CLUB" Grid.Row="8" Grid.Column="7" VerticalAlignment="Top" Height="65" />
 
         <Rectangle Stroke="Black" Fill="#FFFBDE90" Grid.Column="4" Grid.Row="8" Grid.ColumnSpan="2"/>
-        
-        <Button Name="Desplegable" Grid.Row="8" Grid.Column="4" Click="Desplegable_Click" Height="63" Width="70" HorizontalAlignment="Left">
+
+        <Button Name="Desplegable" Grid.Row="8" Grid.Column="4" Click="Desplegable_Click" Height="63" Width="70" HorizontalAlignment="Left" TabIndex="2">
             <Image Source="/Assets/tienda.png" Width="50" Height="50" />
         </Button>
         <StackPanel Name="desplegable" Grid.Row="8" Grid.ColumnSpan="2" Grid.Column="4" HorizontalAlignment="Center" VerticalAlignment="Center" Spacing="50" 
@@ -139,27 +140,27 @@
             </Button>
         </StackPanel>
 
-        <Button Content="BACK" VerticalAlignment="Bottom" Margin="0,0,0,30"  Click="Button_Click"
+        <Button Content="BACK" VerticalAlignment="Bottom" Margin="0,0,0,30"  Click="Button_Click" TabIndex="4"
                 Background="#FFFBDED3" FontSize="35" Grid.Row="9" Grid.Column="1"  Height="95" Width="266"/>
 
         <TextBox PlaceholderText="ALUMNS" IsReadOnly="True" PlaceholderForeground="#FFDAA74F" 
                  HorizontalAlignment="Left" FontSize="30" Grid.Column="8" VerticalAlignment="Center" Height="54" Width="180" Margin="71,0,0,0" Grid.ColumnSpan="2"></TextBox>
 
         <StackPanel Grid.Column="8" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Left" Orientation="Horizontal" Grid.ColumnSpan="2" Margin="11,0,0,0" Height="65" Width="300" >
-            <TextBox Name="ClassSearch" PlaceholderText="2-B" FontSize="30" Width="240" IsReadOnly ="False"/>
+            <TextBox Name="ClassSearch" PlaceholderText="2-B" FontSize="30" Width="240" IsReadOnly ="False" IsTabStop="True" TabIndex="1"/>
             <Button Width=" 40" Height="40" Margin="10" BorderBrush="Black" Background="Transparent">
                 <SymbolIcon Symbol="Find"></SymbolIcon>
             </Button>
         </StackPanel>
 
-        <StackPanel Grid.Column="7" Grid.Row="9" VerticalAlignment="Center" HorizontalAlignment="Left" Orientation="Horizontal" Grid.ColumnSpan="3"  Height="65" Width="300" Margin="222,0,0,0" >
-            <TextBox Name="AlumSearch" PlaceholderText="LUFFY" FontSize="30" Width="240" IsReadOnly ="False"/>
+        <StackPanel Grid.Column="7" Grid.Row="9" VerticalAlignment="Center" HorizontalAlignment="Left" Orientation="Horizontal" Grid.ColumnSpan="3"  Height="65" Width="320" Margin="222,0,0,0" >
+            <TextBox Name="AlumSearch" PlaceholderText="LUFFY" FontSize="30" Width="240" IsReadOnly ="False" IsTabStop="True" TabIndex="0"/>
             <Button Width=" 40" Height="40" Margin="10" BorderBrush="Black" Background="Transparent" Click="Button_ClickBuscar">
                 <SymbolIcon Symbol="Find" Margin="3,0,0,0" Height="20" VerticalAlignment="Top"/>
             </Button>
         </StackPanel>
 
-        <Button Name="Menu" Grid.Row="9" Grid.Column="9" HorizontalAlignment="Center" VerticalAlignment="Bottom"  Background="Transparent" BorderBrush="Transparent" Click="Info_Click" 
+        <Button Name="Menu" Grid.Row="9" Grid.Column="9" HorizontalAlignment="Center" VerticalAlignment="Bottom"  Background="Transparent" BorderBrush="Transparent" Click="Info_Click" TabIndex="3"
                 Width="100" Height="100" Margin="25">
             <Image Source="/Assets/info.png" Width="50" Height="50" />
         </Button>
