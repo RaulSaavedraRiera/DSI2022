@@ -23,11 +23,11 @@ namespace Peach_HighSchool
     /// </summary>
     public sealed partial class HudPrincipal : Page
     {
-        TextBlock currentVelocity;
+        int currentVelocity;
         public HudPrincipal()
         {
             this.InitializeComponent();
-            currentVelocity = n1;
+            currentVelocity = 1;
         }
 
         private void Desplegable_Click(object sender, RoutedEventArgs e)
@@ -98,50 +98,77 @@ namespace Peach_HighSchool
             Frame.Navigate(typeof(Alumnos));
         }
 
-        private void n25_PointerPressed(object sender, PointerRoutedEventArgs e)
+        private void n1_Click(object sender, RoutedEventArgs e)
         {
-            if (currentVelocity != null)
-                currentVelocity.FontWeight = FontWeights.Normal;
-
-            currentVelocity = n25;
-            currentVelocity.FontWeight = FontWeights.Bold;
+            switch (currentVelocity)
+            {
+                case 0:
+                    n05.Text = "x0.5";
+                    n1.Content = "x1.0";
+                    n2.Text = "x2.0";
+                    currentVelocity = 1;
+                    break;
+                case 1:
+                    n05.Text = "x1.0";
+                    n1.Content = "x2.0";
+                    n2.Text = "x0.5";
+                    currentVelocity = 2;
+                    break;
+                case 2:
+                    n05.Text = "x2.0";
+                    n1.Content = "x0.5";
+                    n2.Text = "x1.0";
+                    currentVelocity = 0;
+                    break;
+            }
         }
 
-        private void n05_PointerPressed(object sender, PointerRoutedEventArgs e)
-        {
-            if (currentVelocity != null)
-                currentVelocity.FontWeight = FontWeights.Normal;
+        //private void n25_PointerPressed(object sender, PointerRoutedEventArgs e)
+        //{
+        //    if (currentVelocity != null)
+        //        currentVelocity.FontWeight = FontWeights.Normal;
 
-            currentVelocity = n05;
-            currentVelocity.FontWeight = FontWeights.Bold;
+        //    currentVelocity = n25;
+        //    currentVelocity.FontWeight = FontWeights.Bold;
+        //}
 
-        }
-        private void n1_PointerPressed(object sender, PointerRoutedEventArgs e)
-        {
-            if (currentVelocity != null)
-                currentVelocity.FontWeight = FontWeights.Normal;
+        //private void n05_PointerPressed(object sender, PointerRoutedEventArgs e)
+        //{
+        //    if (currentVelocity != null)
+        //        currentVelocity.FontWeight = FontWeights.Normal;
 
-            currentVelocity = n1;
-            currentVelocity.FontWeight = FontWeights.Bold;
+        //    currentVelocity = n05;
+        //    currentVelocity.FontWeight = FontWeights.Bold;
 
-        }
-        private void n2_PointerPressed(object sender, PointerRoutedEventArgs e)
-        {
-            if (currentVelocity != null)
-                currentVelocity.FontWeight = FontWeights.Normal;
+        //}
+        //private void velocity_PointerPressed(object sender, PointerRoutedEventArgs e)
+        //{
+        //    if (currentVelocity != null)
+        //        currentVelocity.FontWeight = FontWeights.Normal;
 
-            currentVelocity = n2;
-            currentVelocity.FontWeight = FontWeights.Bold;
+        //    currentVelocity = n1;
+        //    currentVelocity.FontWeight = FontWeights.Bold;
 
-        }
-        private void n5_PointerPressed(object sender, PointerRoutedEventArgs e)
-        {
-            if (currentVelocity != null)
-                currentVelocity.FontWeight = FontWeights.Normal;
+        //}
 
-            currentVelocity = n5;
-            currentVelocity.FontWeight = FontWeights.Bold;
 
-        }
+        //private void n2_PointerPressed(object sender, PointerRoutedEventArgs e)
+        //{
+        //    if (currentVelocity != null)
+        //        currentVelocity.FontWeight = FontWeights.Normal;
+
+        //    currentVelocity = n2;
+        //    currentVelocity.FontWeight = FontWeights.Bold;
+
+        //}
+        //private void n5_PointerPressed(object sender, PointerRoutedEventArgs e)
+        //{
+        //    if (currentVelocity != null)
+        //        currentVelocity.FontWeight = FontWeights.Normal;
+
+        //    currentVelocity = n5;
+        //    currentVelocity.FontWeight = FontWeights.Bold;
+
+        //}
     }
 }
