@@ -5,6 +5,7 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.UI.Core;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -25,6 +26,25 @@ namespace Peach_HighSchool
         public Misiones()
         {
             this.InitializeComponent();
+            Window.Current.Dispatcher.AcceleratorKeyActivated += AccelertorKeyActivedHandle;
+        }
+
+        private void AccelertorKeyActivedHandle(CoreDispatcher sender, AcceleratorKeyEventArgs args)
+        {
+            if (args.EventType.ToString().Contains("Down"))
+            {
+
+                if (args.VirtualKey == Windows.System.VirtualKey.GamepadB)
+                {
+                    Frame rootFrame = Window.Current.Content as Frame;
+                    if (rootFrame.CanGoBack)
+                    {
+                        rootFrame.GoBack();
+                    }
+                }
+
+
+            }
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)

@@ -12,6 +12,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using Windows.UI.Core;
 
 // La plantilla de elemento Página en blanco está documentada en https://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -25,6 +26,25 @@ namespace Peach_HighSchool
         public MenuOpciones()
         {
             this.InitializeComponent();
+            Window.Current.Dispatcher.AcceleratorKeyActivated += AccelertorKeyActivedHandle;
+        }
+
+        private void AccelertorKeyActivedHandle(CoreDispatcher sender, AcceleratorKeyEventArgs args)
+        {
+            if (args.EventType.ToString().Contains("Down"))
+            {
+
+                if (args.VirtualKey == Windows.System.VirtualKey.GamepadB)
+                {
+                    Frame rootFrame = Window.Current.Content as Frame;
+                    if (rootFrame.CanGoBack)
+                    {
+                        rootFrame.GoBack();
+                    }
+                }
+
+
+            }
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)

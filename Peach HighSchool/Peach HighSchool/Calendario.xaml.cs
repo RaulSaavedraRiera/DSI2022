@@ -5,6 +5,7 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.UI.Core;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -26,8 +27,8 @@ namespace Peach_HighSchool
         int cMoney = 500;
         struct Activity
         {
-           public bool buy;
-           public int price;
+            public bool buy;
+            public int price;
             public string text;
             public Image icon;
 
@@ -39,10 +40,10 @@ namespace Peach_HighSchool
                 this.icon = icon;
             }
         }
-      
+
 
         int activityOn = -1;
-        Activity[] activies; 
+        Activity[] activies;
 
         public Calendario()
         {
@@ -51,6 +52,26 @@ namespace Peach_HighSchool
             activies = new Activity[2];
             activies[0] = new Activity(100, "Toda la escuela irá a disfrutar del Sakura a las calles de Tokio.", SakuraIcon);
             activies[1] = new Activity(500, "Un viaje a Okinawa para toda la clase, disfrutando de la playa y el sol.", OkinawaIcon);
+
+            Window.Current.Dispatcher.AcceleratorKeyActivated += AccelertorKeyActivedHandle;
+        }
+
+        private void AccelertorKeyActivedHandle(CoreDispatcher sender, AcceleratorKeyEventArgs args)
+        {
+            if (args.EventType.ToString().Contains("Down"))
+            {
+
+                if (args.VirtualKey == Windows.System.VirtualKey.GamepadB)
+                {
+                    Frame rootFrame = Window.Current.Content as Frame;
+                    if (rootFrame.CanGoBack)
+                    {
+                        rootFrame.GoBack();
+                    }
+                }
+
+
+            }
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -115,7 +136,7 @@ namespace Peach_HighSchool
             }
         }
 
-      void HideAllActivites()
+        void HideAllActivites()
         {
             foreach (Activity i in activies)
             {

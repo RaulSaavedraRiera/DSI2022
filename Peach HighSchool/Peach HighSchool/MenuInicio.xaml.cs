@@ -5,6 +5,7 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.UI.Core;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -22,11 +23,31 @@ namespace Peach_HighSchool
     /// </summary>
     public sealed partial class MenuInicio : Page
     {
-        
+
         public MenuInicio()
         {
             this.InitializeComponent();
+            Window.Current.Dispatcher.AcceleratorKeyActivated += AccelertorKeyActivedHandle;
         }
+
+        private void AccelertorKeyActivedHandle(CoreDispatcher sender, AcceleratorKeyEventArgs args)
+        {
+            if (args.EventType.ToString().Contains("Down"))
+            {
+
+                if (args.VirtualKey == Windows.System.VirtualKey.GamepadB)
+                {
+                    Frame rootFrame = Window.Current.Content as Frame;
+                    if (rootFrame.CanGoBack)
+                    {
+                        rootFrame.GoBack();
+                    }
+                }
+
+
+            }
+        }
+
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
@@ -40,7 +61,7 @@ namespace Peach_HighSchool
                 options.Visibility = Visibility.Visible;
                 optionsPanel.Visibility = Visibility.Visible;
             }
-               
+
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -68,5 +89,7 @@ namespace Peach_HighSchool
             Grid.SetRow(photo, 2);
             Grid.SetRowSpan(photo, 3);
         }
+
+       
     }
 }
