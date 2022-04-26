@@ -34,10 +34,10 @@
             <ColumnDefinition Width="165*"/>
             <ColumnDefinition Width="41*"/>
         </Grid.ColumnDefinitions>
-        <Button Content="START NEW GAME" VerticalAlignment="Top" 
+        <Button Content="START NEW GAME" VerticalAlignment="Top"  TabIndex="6"
                 Background="#FFCB6B87" FontSize="35" Grid.Column="2" Margin="201,70,0,0" Grid.Row="6" Height="60" Width="307" Click="Button_Click_1"/>
 
-        <Button Content="BACK TO MENU" VerticalAlignment="Bottom" Margin="50,0,0,30" 
+        <Button Content="BACK TO MENU" VerticalAlignment="Bottom" Margin="50,0,0,30" TabIndex="7"
                 Background="#FFFBDED3" FontSize="35" Grid.Row="6" Grid.Column="1" Height="60" Width="266" Click="Button_Click"/>
 
         <Image HorizontalAlignment="Left" Grid.Column="3"  Source="Assets/menuInicio.png" Margin="0,18,0,0" Grid.RowSpan="6" Grid.Row="1" Width="292" />
@@ -48,13 +48,13 @@
                  HorizontalAlignment="Left" VerticalAlignment="Top" Margin="16,25,0,0" FontSize="30" FontWeight="Normal" FontStyle="Italic" Grid.Column="2" Grid.Row="0" Grid.RowSpan="2" Height="213" Width="649"/>
 
         <TextBox PlaceholderText="YOUR ACADEMY NAME" HorizontalAlignment="Left"  VerticalAlignment="Center" FontSize="35" 
-                 Grid.Column="2" Margin="161,0,0,0" Grid.Row="3" Height="60" Width="386" PointerEntered="Pressed"/>
+                 Grid.Column="2" Margin="161,0,0,0" Grid.Row="3" Height="60" Width="386" TextChanging="TextBox_TextChanging" TabIndex="0"/>
 
         <StackPanel HorizontalAlignment="Left" VerticalAlignment="Center" Margin="229,0,0,0" Spacing="15" Grid.Column="2" Grid.Row="4" Height="209" Width="251" Grid.RowSpan="2">
             <TextBox PlaceholderText="DIFFICULTY" IsReadOnly="True" PlaceholderForeground="Black" HorizontalAlignment="Center" FontSize="30"></TextBox>
-            <RadioButton Content="PRESTIGUE ACADEMY" PointerEntered="RadioButton_Checked"></RadioButton>
-            <RadioButton Content="NORMAL ACADEMY" PointerEntered="RadioButton_Checked"></RadioButton>
-            <RadioButton Content="RISKY ACADEMY" PointerEntered="RadioButton_Checked"></RadioButton>
+            <RadioButton Content="PRESTIGUE ACADEMY" Checked="RadioButton_Checked" IsChecked="False" TabIndex="2"></RadioButton>
+            <RadioButton Content="NORMAL ACADEMY" Checked="RadioButton_Checked" IsChecked="False" TabIndex="3"></RadioButton>
+            <RadioButton Content="RISKY ACADEMY" Checked="RadioButton_Checked" IsChecked="False" TabIndex="4"></RadioButton>
 
         </StackPanel>
 
@@ -65,7 +65,7 @@
             </TextBlock.RenderTransform>
         </TextBlock>
 
-        <Button VerticalAlignment="Top" HorizontalAlignment="Right" Click="Button_Click_2" Grid.Column="4" Height="44" Width="51" Grid.ColumnSpan="2">
+        <Button VerticalAlignment="Top" HorizontalAlignment="Right" Click="Button_Click_2" Grid.Column="4" Height="44" Width="51" Grid.ColumnSpan="2" TabIndex="5">
             <Image Source="/Assets/opcion.png" Width="30" Height="30"/>
         </Button>
 

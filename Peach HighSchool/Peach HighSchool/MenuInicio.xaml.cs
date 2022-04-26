@@ -56,16 +56,16 @@ namespace Peach_HighSchool
         {
             Frame.Navigate(typeof(HudPrincipal));
         }
-      
-        private void Pressed(object sender, PointerRoutedEventArgs e)
-        {
-            Grid.SetRow(photo, 2);
-            Grid.SetRowSpan(photo, 3);
-        }
 
         private void RadioButton_Checked(object sender, RoutedEventArgs e)
         {
             Grid.SetRow(photo, 3);
+            Grid.SetRowSpan(photo, 3);
+        }
+
+        private void TextBox_TextChanging(TextBox sender, TextBoxTextChangingEventArgs args)
+        {
+            Grid.SetRow(photo, 2);
             Grid.SetRowSpan(photo, 3);
         }
     }

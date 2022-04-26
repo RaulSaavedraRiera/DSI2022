@@ -19,6 +19,7 @@
 
             <Style TargetType="TextBox">
                 <Setter Property="IsReadOnly" Value="True"/>
+                <Setter Property="IsTabStop" Value="False"/>
             </Style>
         </ResourceDictionary>
 
@@ -141,7 +142,7 @@
 
 
         <Button Name="AlumInMap" Background="Transparent" Grid.Column="3" Grid.Row="3" HorizontalAlignment="Right" Click="AlumInMap_Click" Height="280" Width="100">
-            <Image Margin="-60,-30,-60,-30" Source="Assets/student.png"></Image>
+            <Image Margin="-60,-30,-60,-20" Source="Assets/student.png"></Image>
         </Button>
 
         <TextBox Name="instrucciones" Visibility="Collapsed" Grid.Row="2" Grid.RowSpan="3" Grid.Column="0" Grid.ColumnSpan="5" Margin="160,5,160,50" TextWrapping="Wrap" IsReadOnly="True" FontSize="40" Background="White"       Header="COMO JUGAR A PEACH HIGH SCHOOL" TextAlignment="Center" Text="Información sobre la aventura y la tareas que deben ser realizadas para completar la aventura. Tenemos diferente tipos de opciones entre ellas"  />

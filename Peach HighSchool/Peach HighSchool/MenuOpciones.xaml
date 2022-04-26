@@ -45,13 +45,13 @@
         </Grid.ColumnDefinitions>
         <Image HorizontalAlignment="Right" Grid.Column="2"  Source="Assets/menuOpciones.png" Margin="0,100,-75,0" Grid.ColumnSpan="2" Grid.RowSpan="7"  />
 
-        <ToggleSwitch Name="autoSave" OffContent="AUTOSAVE" OnContent="AUTOSAVE" HorizontalAlignment="Center" 
+        <ToggleSwitch Name="autoSave" OffContent="AUTOSAVE" OnContent="AUTOSAVE" HorizontalAlignment="Center" TabIndex="0"
                       VerticalAlignment="Center" FontSize="55" Grid.Column="2" Grid.Row="0" Toggled="autoSave_Toggled" />
-        <ToggleSwitch Name="sound" OffContent="SOUND" OnContent="SOUND" Grid.Column="2" Grid.Row="1" Toggled="sound_Toggled"/>
+        <ToggleSwitch Name="sound" OffContent="SOUND" OnContent="SOUND" Grid.Column="2" Grid.Row="1" Toggled="sound_Toggled" TabIndex="1"/>
         <Slider Width="500" Grid.Column="2" Grid.Row="2" VerticalAlignment="Center" ValueChanged="Slider_ValueChanged"></Slider>
-        <ToggleSwitch  Name="music" OffContent="MUSIC" OnContent="MUSIC" Grid.Column="2" Grid.Row="3" VerticalAlignment="Center" Toggled="music_Toggled"/>
-        <Slider Width="500" Grid.Column="2" Grid.Row="4" VerticalAlignment="Center" ValueChanged="Slider_ValueChanged_1"></Slider>
-        <DropDownButton Content="QUALITY LEVEL" HorizontalAlignment="Center" Width="300" Grid.Column="2" Grid.Row="5" Background="White" FontSize="35" Click="DropDownButton_Click" >
+        <ToggleSwitch  Name="music" OffContent="MUSIC" OnContent="MUSIC" Grid.Column="2" Grid.Row="3" VerticalAlignment="Center" Toggled="music_Toggled" TabIndex="2" />
+        <Slider Width="500" Grid.Column="2" Grid.Row="4" VerticalAlignment="Center" ValueChanged="Slider_ValueChanged_1" TabIndex="3"></Slider>
+        <DropDownButton Content="QUALITY LEVEL" HorizontalAlignment="Center" Width="300" Grid.Column="2" Grid.Row="5" Background="White" FontSize="35" Click="DropDownButton_Click" TabIndex="4" >
             <DropDownButton.Flyout>
                 <MenuFlyout Placement="Bottom">
                     <MenuFlyoutItem Text="LOW"/>
@@ -61,11 +61,11 @@
             </DropDownButton.Flyout>
         </DropDownButton>
 
-        <Button Content="SAVE" HorizontalAlignment="Center" Click="Button_Click"
+        <Button Content="SAVE" HorizontalAlignment="Center" Click="Button_Click" TabIndex="5"
                 Background="#FFCB6B87" FontSize="30" Grid.Column="2" Grid.Row="6" Width="272"/>
 
 
-        <Button Content="BACK" VerticalAlignment="Bottom" Margin="50,0,0,30" Click="Button_Click"
+        <Button Content="BACK" VerticalAlignment="Bottom" Margin="50,0,0,30" Click="Button_Click" TabIndex="6"
                 Background="#FFFBDED3" FontSize="35" Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="2" BorderBrush="Transparent" Height="88" Width="218"/>
 
         <TextBlock HorizontalAlignment="Left" VerticalAlignment="Bottom" Text="PEACH HIGHSCHOOL" TextWrapping="Wrap"  Margin="0,0,0,91"
