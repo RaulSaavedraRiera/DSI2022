@@ -144,6 +144,7 @@ namespace Peach_HighSchool
                     mode1[selectedStudent - 1] = currentNewStudent;
 
                 currentNewStudent = "";
+                studentSearch.Text = "";
 
                 ActList();
             }
@@ -196,6 +197,7 @@ namespace Peach_HighSchool
                     mode1[selectedStudent - 1] = currentNewStudent;
 
                 currentNewStudent = "";
+                studentSearch.Text = "";
 
                 ActList();
             }

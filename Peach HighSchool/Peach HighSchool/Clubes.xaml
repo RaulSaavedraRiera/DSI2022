@@ -98,7 +98,7 @@
         </StackPanel>
 
         <StackPanel Grid.Column="2" Grid.Row="4" VerticalAlignment="Center" HorizontalAlignment="Center" Orientation="Horizontal" Height="60" Width="210">
-            <TextBox  PlaceholderText="STUDENT"  Width="150" IsReadOnly ="False" IsTabStop="True" TabIndex="0" KeyDown="TextBox_KeyDown"/>
+            <TextBox Name="studentSearch"  PlaceholderText="STUDENT"  Width="150" IsReadOnly ="False" IsTabStop="True" TabIndex="0" KeyDown="TextBox_KeyDown"/>
             <Button Width=" 40" Height="40" Margin="10" BorderBrush="Black">
                 <SymbolIcon Symbol="Find"></SymbolIcon>
             </Button>
