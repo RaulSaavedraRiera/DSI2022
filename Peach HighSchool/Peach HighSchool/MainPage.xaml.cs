@@ -39,7 +39,7 @@ namespace Peach_HighSchool
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
-            Frame.Navigate(typeof(MenuOpciones));
+            Frame.Navigate(typeof(Alumnos));
         }
 
         private void Button_Click_3(object sender, RoutedEventArgs e)

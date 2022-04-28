@@ -34,40 +34,65 @@
             <ColumnDefinition Width="165*"/>
             <ColumnDefinition Width="41*"/>
         </Grid.ColumnDefinitions>
-        <Button Content="START NEW GAME" VerticalAlignment="Top"  TabIndex="6"
-                Background="#FFCB6B87" FontSize="35" Grid.Column="2" Margin="201,70,0,0" Grid.Row="6" Height="60" Width="307" Click="Button_Click_1"/>
+        
+        <Viewbox VerticalAlignment="Center" Grid.Column="2" Grid.Row="6" HorizontalAlignment="Center">
+            <Button Content="START NEW GAME"   TabIndex="6"
+                Background="#FFCB6B87" FontSize="35" Height="60" Width="307" Click="Button_Click_1"
+                    Margin="50,50,50,50"/>
 
-        <Button Content="BACK TO MENU" VerticalAlignment="Bottom" Margin="50,0,0,30" TabIndex="7"
-                Background="#FFFBDED3" FontSize="35" Grid.Row="6" Grid.Column="1" Height="60" Width="266" Click="Button_Click"/>
+        </Viewbox>
 
-        <Image HorizontalAlignment="Left" Grid.Column="3"  Source="Assets/menuInicio.png" Margin="0,18,0,0" Grid.RowSpan="6" Grid.Row="1" Width="292" />
+        <Viewbox Grid.Row="6" Grid.Column="1"   VerticalAlignment="Bottom">
+            <Button Content="BACK TO MENU" Margin="50,50,50,50" TabIndex="7"
+                Background="#FFFBDED3" FontSize="35" Height="60" Width="266" Click="Button_Click"/>
+
+        </Viewbox>
 
 
-        <TextBox PlaceholderText="Welcome to Peach HighSchool. Here begins your adventure to take your dream academy to stardom, giving it back the honor it once had. Choose how you want this to be and how difficult your adventure will be." 
+        <Image HorizontalAlignment="Left" Grid.Column="3"  Source="Assets/menuInicio.png" Margin="0,18,0,0" Grid.RowSpan="6" Grid.ColumnSpan="6" Grid.Row="1" />
+
+
+        <Viewbox   HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Column="2" Grid.Row="0" Grid.RowSpan="2">
+            <TextBox PlaceholderText="Welcome to Peach HighSchool. Here begins your adventure to take your dream academy to stardom, giving it back the honor it once had. Choose how you want this to be and how difficult your adventure will be." 
                  IsReadOnly="True" TextWrapping="Wrap" PlaceholderForeground="Black"
-                 HorizontalAlignment="Left" VerticalAlignment="Top" Margin="16,25,0,0" FontSize="30" FontWeight="Normal" FontStyle="Italic" Grid.Column="2" Grid.Row="0" Grid.RowSpan="2" Height="213" Width="649"/>
+               Margin="16,25,0,0" FontSize="30" FontWeight="Normal" FontStyle="Italic"  Height="213" Width="649"/>
+        </Viewbox>
 
-        <TextBox PlaceholderText="YOUR ACADEMY NAME" HorizontalAlignment="Left"  VerticalAlignment="Center" FontSize="35" 
-                 Grid.Column="2" Margin="161,0,0,0" Grid.Row="3" Height="60" Width="386" TextChanging="TextBox_TextChanging" TabIndex="0"/>
+        <Viewbox   Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Left" Grid.Row="3"  >
+            <TextBox PlaceholderText="YOUR ACADEMY NAME"   FontSize="35" 
+                Margin="161,0,0,0" Height="60" Width="386" TextChanging="TextBox_TextChanging" TabIndex="0"/>
 
-        <StackPanel HorizontalAlignment="Left" VerticalAlignment="Center" Margin="229,0,0,0" Spacing="15" Grid.Column="2" Grid.Row="4" Height="209" Width="251" Grid.RowSpan="2">
-            <TextBox PlaceholderText="DIFFICULTY" IsReadOnly="True" PlaceholderForeground="Black" HorizontalAlignment="Center" FontSize="30"></TextBox>
-            <RadioButton Content="PRESTIGUE ACADEMY" Checked="RadioButton_Checked" IsChecked="False" TabIndex="2"></RadioButton>
-            <RadioButton Content="NORMAL ACADEMY" Checked="RadioButton_Checked" IsChecked="False" TabIndex="3"></RadioButton>
-            <RadioButton Content="RISKY ACADEMY" Checked="RadioButton_Checked" IsChecked="False" TabIndex="4"></RadioButton>
+        </Viewbox>
 
-        </StackPanel>
+        <Viewbox HorizontalAlignment="Left" VerticalAlignment="Center" Grid.Column="2" Grid.Row="4" >
+            <StackPanel  Margin="229,0,0,0" Spacing="15"  Height="209" Width="251" >
+                <TextBox PlaceholderText="DIFFICULTY" IsReadOnly="True" PlaceholderForeground="Black" HorizontalAlignment="Center" FontSize="30"></TextBox>
+                <RadioButton Content="PRESTIGUE ACADEMY" Checked="RadioButton_Checked" IsChecked="False" TabIndex="2"></RadioButton>
+                <RadioButton Content="NORMAL ACADEMY" Checked="RadioButton_Checked" IsChecked="False" TabIndex="3"></RadioButton>
+                <RadioButton Content="RISKY ACADEMY" Checked="RadioButton_Checked" IsChecked="False" TabIndex="4"></RadioButton>
 
-        <TextBlock HorizontalAlignment="Left" VerticalAlignment="Bottom" Text="PEACH HIGHSCHOOL" TextWrapping="Wrap"  Margin="0,0,0,65"
-                    Grid.ColumnSpan="3" FontSize="50" FontFamily="Century Schoolbook" FontWeight="Bold" RenderTransformOrigin="0,0" FocusVisualPrimaryBrush="Black" Foreground="#FFFD96B5" UseLayoutRounding="False" d:LayoutRounding="Auto" Height="88" Width="778" Grid.Row="6" >
-            <TextBlock.RenderTransform>
-                <CompositeTransform Rotation="-90"/>
-            </TextBlock.RenderTransform>
-        </TextBlock>
+            </StackPanel>
+        </Viewbox>
 
-        <Button VerticalAlignment="Top" HorizontalAlignment="Right" Click="Button_Click_2" Grid.Column="4" Height="44" Width="51" Grid.ColumnSpan="2" TabIndex="5">
-            <Image Source="/Assets/opcion.png" Width="30" Height="30"/>
-        </Button>
+
+        <Viewbox HorizontalAlignment="Left" VerticalAlignment="Bottom"  Grid.ColumnSpan="3" Grid.Row="6" >
+            <TextBlock  Text="PEACH HIGHSCHOOL" TextWrapping="Wrap"  Margin="0,0,0,65"
+                    FontSize="50" FontFamily="Century Schoolbook" FontWeight="Bold" 
+                        RenderTransformOrigin="0,0" FocusVisualPrimaryBrush="Black" 
+                        Foreground="#FFFD96B5" UseLayoutRounding="False" d:LayoutRounding="Auto" Height="88" Width="778" >
+                <TextBlock.RenderTransform>
+                    <CompositeTransform Rotation="-90"/>
+                </TextBlock.RenderTransform>
+            </TextBlock>
+        </Viewbox>
+
+
+        <Viewbox VerticalAlignment="Top" HorizontalAlignment="Right"  Grid.Column="4" Grid.ColumnSpan="2" >
+            <Button  Click="Button_Click_2" Height="44" Width="51" TabIndex="5">
+                <Image Source="/Assets/opcion.png" Width="30" Height="30"/>
+            </Button>
+        </Viewbox>
+       
 
         <Rectangle Name="optionsPanel" Grid.Column="4" Grid.Row="1" Grid.RowSpan="4" Stretch="Fill" Stroke="Black" Visibility="Collapsed" 
                    RenderTransformOrigin="0.5,0.5" Grid.ColumnSpan="2" Margin="0,0,31,0" >

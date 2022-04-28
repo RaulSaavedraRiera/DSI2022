@@ -55,135 +55,205 @@
         <Image HorizontalAlignment="Stretch" Grid.Column="0" Grid.ColumnSpan="10" 
                Source="Assets/alumnos.jpg" Stretch="Fill" Grid.RowSpan="10" VerticalAlignment="Stretch" />
 
-        <StackPanel Grid.Row="2" Grid.Column="1" Grid.RowSpan="3">
-            <TextBox Text="SPORTS"></TextBox>
-            <TextBox Text="CONCENTRATION"></TextBox>
-            <TextBox Text="HABILITY"></TextBox>
-            <TextBox Text="INTELIGENCE"></TextBox>
-            <TextBox Text="CREATIVITY"></TextBox>
-        </StackPanel>
-        <StackPanel Grid.Row="2" Grid.Column="2" Grid.RowSpan="3">
-            <TextBox Text="4/10"></TextBox>
-            <TextBox Text="6/10"></TextBox>
-            <TextBox Text="8/10"></TextBox>
-            <TextBox Text="9/10"></TextBox>
-            <TextBox Text="7/10"></TextBox>
-        </StackPanel>
+        <Viewbox Grid.Row="2" Grid.Column="1" Grid.RowSpan="3">
+            <StackPanel >
+                <TextBox Text="SPORTS"></TextBox>
+                <TextBox Text="CONCENTRATION"></TextBox>
+                <TextBox Text="HABILITY"></TextBox>
+                <TextBox Text="INTELIGENCE"></TextBox>
+                <TextBox Text="CREATIVITY"></TextBox>
+            </StackPanel>
+        </Viewbox>
 
-        <StackPanel Grid.Row="2" Grid.Column="1" Grid.RowSpan="3">
-            <TextBox Text="SPORTS"></TextBox>
-            <TextBox Text="CONCENTRATION"></TextBox>
-            <TextBox Text="HABILITY"></TextBox>
-            <TextBox Text="INTELIGENCE"></TextBox>
-            <TextBox Text="CREATIVITY"></TextBox>
-        </StackPanel>
+        <Viewbox Grid.Row="2" Grid.Column="2" Grid.RowSpan="3" >
+            <StackPanel Width="303" >
+                <TextBox Text="4/10"></TextBox>
+                <TextBox Text="6/10"></TextBox>
+                <TextBox Text="8/10"></TextBox>
+                <TextBox Text="9/10"></TextBox>
+                <TextBox Text="7/10"></TextBox>
+            </StackPanel>
+        </Viewbox>
 
-        <StackPanel Grid.Row="6" Grid.Column="1" Grid.RowSpan="4" Margin="0, -20, 0, 0">
-            <TextBox Text="POPULARITY"></TextBox>
-            <TextBox Text="POSITION IN CLASS"></TextBox>
-            <TextBox Text="COUPLE"></TextBox>
-            <TextBox Text="PREFERENCES"></TextBox>
-            <TextBox Text="ACADEMIC MEAN"></TextBox>
-        </StackPanel>
+        <Viewbox Grid.Row="6" Grid.Column="1" Grid.RowSpan="3" >
+            <StackPanel>
+                <TextBox Text="POPULARITY"></TextBox>
+                <TextBox Text="POSITION IN CLASS"></TextBox>
+                <TextBox Text="COUPLE"></TextBox>
+                <TextBox Text="PREFERENCES"></TextBox>
+                <TextBox Text="ACADEMIC MEAN"></TextBox>
+            </StackPanel>
+        </Viewbox>
 
-        <StackPanel Grid.Row="6" Grid.Column="2" Grid.RowSpan="4"  Margin="0, -20, 0, 0">
-            <TextBox Text="HIGH"></TextBox>
-            <TextBox Text="DELEGATE"></TextBox>
-            <TextBox Text="---"></TextBox>
-            <TextBox Text="STUDY"></TextBox>
-            <TextBox Text="A++"></TextBox>
-        </StackPanel>
 
-        <StackPanel Grid.Row="2" Grid.Column="4" Grid.RowSpan="6">
-            <TextBox Text="LUFFY" Height="80"></TextBox>
-            <TextBox Text="YUMI" Height="80"></TextBox>
-            <TextBox Text="ICHIGO" Height="80"></TextBox>
-            <TextBox Text="SETT" Height="80"></TextBox>
-            <TextBox Text="KAGUYA" Height="80"></TextBox>
-            <TextBox Text="ROBIN" Height="80"></TextBox>
-            <TextBox Text="ZORO" Height="80"></TextBox>
-        </StackPanel>
+        <Viewbox Grid.Row="6" Grid.Column="2" Grid.RowSpan="3"  >
+            <StackPanel Width="316" >
+                <TextBox Text="HIGH"></TextBox>
+                <TextBox Text="DELEGATE"></TextBox>
+                <TextBox Text="---"></TextBox>
+                <TextBox Text="STUDY"></TextBox>
+                <TextBox Text="A++"></TextBox>
+            </StackPanel>
+        </Viewbox>
 
-        <StackPanel Grid.Row="2" Grid.Column="5" Grid.RowSpan="6">
-            <TextBox Text="LITTLE BROTHER" Height="80"></TextBox>
-            <TextBox Text="GIRLFRIEND" Height="80"></TextBox>
-            <TextBox Text="FRIEND" Height="80"></TextBox>
-            <TextBox Text="FRIEND" Height="80"></TextBox>
-            <TextBox Text="SENPAI" Height="80"></TextBox>
-            <TextBox Text="CLASSMATE" Height="80"></TextBox>
-            <TextBox Text="CLASMATE" Height="80"></TextBox>
-        </StackPanel>
-        <TextBox Text="STATS" Grid.Row="1" Grid.Column="1" Background="#FFFBDE90" HorizontalAlignment="Center" VerticalAlignment="Center" Height="65" Width="98"/>
-        <TextBox Text="SOCIAL LIFE" Grid.Row="5" Grid.Column="1" Background="#FFFBDE90" HorizontalAlignment="Center" VerticalAlignment="top" Height="65" Width="179" Margin="0, 5, 0, 0"/>
-        <TextBox Text="RELATIONS" Grid.Row="1" Grid.Column="4" Background="#63FBDE90" Margin="0,8,0,7"/>
-        <TextBox Name="name" Text="LUFFY" Grid.Row="0" Grid.ColumnSpan="2" Grid.Column="4" Background="Orange" Margin="0,8,0,7"/>
 
-        <TextBox Text="HAPINESS" Grid.Row="2" Grid.Column="7" Background="#FFFBDE90" Margin="0,31,0,7" />
-        <TextBox Text="80%" Grid.Row="3" Grid.Column="7" VerticalAlignment="Top" Height="65" />
-        <TextBox Text="EVOLUTION" Grid.Row="4" Grid.Column="7" Background="#FFFBDE90" Margin="0,7,0,7" />
-        <TextBox Text="A-->A+" Grid.Row="5" Grid.Column="7" VerticalAlignment="Top" Height="65" />
-        <TextBox Text="CURRENT CLUB" Grid.Row="7" Grid.Column="7" Background="#FFFBDE90" Margin="0,9,0,9" />
-        <TextBox Text="READ CLUB" Grid.Row="8" Grid.Column="7" VerticalAlignment="Top" Height="65" />
+        <Viewbox  Grid.Row="2" Grid.Column="4" Grid.RowSpan="6">
+            <StackPanel Width="200">
+                <TextBox Text="LUFFY" Height="80"></TextBox>
+                <TextBox Text="YUMI" Height="80"></TextBox>
+                <TextBox Text="ICHIGO" Height="80"></TextBox>
+                <TextBox Text="SETT" Height="80"></TextBox>
+                <TextBox Text="KAGUYA" Height="80"></TextBox>
+                <TextBox Text="ROBIN" Height="80"></TextBox>
+                <TextBox Text="ZORO" Height="80"></TextBox>
+            </StackPanel>
+        </Viewbox>
 
-        <Rectangle Stroke="Black" Fill="#FFFBDE90" Grid.Column="4" Grid.Row="8" Grid.ColumnSpan="2"/>
 
-        <Button Name="Desplegable" Grid.Row="8" Grid.Column="4" Click="Desplegable_Click" Height="63" Width="70" HorizontalAlignment="Left" TabIndex="2">
-            <Image Source="/Assets/tienda.png" Width="50" Height="50" />
-        </Button>
-        <StackPanel Name="desplegable" Grid.Row="8" Grid.ColumnSpan="2" Grid.Column="4" HorizontalAlignment="Center" VerticalAlignment="Center" Spacing="50" 
+        <Viewbox Grid.Row="2" Grid.Column="5" Grid.RowSpan="6">
+            <StackPanel Height="592" >
+                <TextBox Text="LITTLE BROTHER" Height="80"></TextBox>
+                <TextBox Text="GIRLFRIEND" Height="80"></TextBox>
+                <TextBox Text="FRIEND" Height="80"></TextBox>
+                <TextBox Text="FRIEND" Height="80"></TextBox>
+                <TextBox Text="SENPAI" Height="80"></TextBox>
+                <TextBox Text="CLASSMATE" Height="80"></TextBox>
+                <TextBox Text="CLASMATE" Height="80"></TextBox>
+            </StackPanel>
+        </Viewbox>
+
+        <Viewbox Grid.Row="1" Grid.Column="1" >
+            <TextBox Text="STATS" Background="#FFFBDE90" Height="65" Width="221"/>
+        </Viewbox>
+
+        <Viewbox Grid.Row="5" Grid.Column="1" >
+            <TextBox Text="SOCIAL LIFE" Background="#FFFBDE90" Margin="0,8,0,7"/>
+        </Viewbox>
+
+        <Viewbox  Grid.Row="1" Grid.Column="4" >
+            <TextBox Text="RELATIONS" Background="#63FBDE90" Margin="0,8,0,7"/>
+
+        </Viewbox>
+
+        <Viewbox Grid.Row="0" Grid.ColumnSpan="2" Grid.Column="4" >
+            <TextBox Name="name" Text="LUFFY" Background="Orange" Margin="0,8,0,7"/>
+
+        </Viewbox>
+
+        <Viewbox Grid.Row="1" Grid.Column="7">
+            <TextBox Text="HAPINESS"  Background="#FFFBDE90" Margin="0,31,0,7" />
+
+        </Viewbox>
+
+        <Viewbox Grid.Row="2" Grid.Column="7" >
+            <TextBox Text="80%" VerticalAlignment="Top" FontSize="20"   />
+        </Viewbox>
+
+
+        <Viewbox Grid.Row="4" Grid.Column="7">
+            <TextBox Text="EVOLUTION"  Background="#FFFBDE90" Margin="0,7,0,7" />
+        </Viewbox>
+
+        <Viewbox Grid.Row="5" Grid.Column="7">
+            <TextBox Text="A-->A+"  VerticalAlignment="Top" Height="65" />
+        </Viewbox>
+
+        <Viewbox Grid.Row="7" Grid.Column="7">
+            <TextBox Text="CURRENT CLUB"  Background="#FFFBDE90" Margin="0,9,0,9" />
+        </Viewbox>
+
+        <Viewbox>
+            <TextBox Text="READ CLUB" Grid.Row="8" Grid.Column="7" VerticalAlignment="Top" Height="65" />
+        </Viewbox>
+
+        <Viewbox  Grid.Column="4" Grid.Row="8" Grid.ColumnSpan="2">
+            <Rectangle Stroke="Black" Fill="#FFFBDE90"/>
+        </Viewbox>
+
+        <Viewbox Grid.Row="8" Grid.Column="4" >
+            <Button Name="Desplegable" Click="Desplegable_Click" Height="40" Width="40" HorizontalAlignment="Left" TabIndex="2">
+                <Image Source="/Assets/tienda.png" Margin="0,7,-1,7" />
+            </Button>
+        </Viewbox>
+
+
+        <Viewbox  Grid.Row="8" Grid.ColumnSpan="2" Grid.Column="4">
+            <StackPanel Name="desplegable" HorizontalAlignment="Center" VerticalAlignment="Center" Spacing="50" 
                     Visibility="Collapsed" Orientation="Horizontal" Height="63" Width="190">
-            <Button HorizontalAlignment="Center" VerticalAlignment="Center" Background="Transparent">
-                <Image Source="/Assets/camiseta1.png" Width="50" Height="50"/>
-            </Button>
-            <Button HorizontalAlignment="Center" VerticalAlignment="Center" Background="Transparent">
-                <Image Source="/Assets/camiseta2.png" Width="50" Height="50"/>
-            </Button>
-        </StackPanel>
+                <Button HorizontalAlignment="Center" VerticalAlignment="Center" Background="Transparent">
+                    <Image Source="/Assets/camiseta1.png" Width="50" Height="50"/>
+                </Button>
+                <Button HorizontalAlignment="Center" VerticalAlignment="Center" Background="Transparent">
+                    <Image Source="/Assets/camiseta2.png" Width="50" Height="50"/>
+                </Button>
+            </StackPanel>
+        </Viewbox>
 
-        <Button Content="BACK" VerticalAlignment="Bottom" Margin="0,0,0,30"  Click="Button_Click" TabIndex="4"
-                Background="#FFFBDED3" FontSize="35" Grid.Row="9" Grid.Column="1"  Height="95" Width="266"/>
 
-        <TextBox PlaceholderText="ALUMNS" IsReadOnly="True" PlaceholderForeground="#FFDAA74F" 
-                 HorizontalAlignment="Left" FontSize="30" Grid.Column="8" VerticalAlignment="Center" Height="54" Width="180" Margin="71,0,0,0" Grid.ColumnSpan="2"></TextBox>
+        <Viewbox Grid.Row="9" Grid.Column="1" >
+            <Button Content="BACK" VerticalAlignment="Top"  Click="Button_Click" TabIndex="4"
+                Background="#FFFBDED3" FontSize="35" Height="86" Width="266"/>
 
-        <StackPanel Grid.Column="8" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Left" Orientation="Horizontal" Grid.ColumnSpan="2" Margin="11,0,0,0" Height="65" Width="300" >
-            <TextBox Name="ClassSearch" PlaceholderText="2-B" FontSize="30" Width="240" IsReadOnly ="False" IsTabStop="True" TabIndex="1"/>
-            <Button Width=" 40" Height="40" Margin="10" BorderBrush="Black" Background="Transparent">
-                <SymbolIcon Symbol="Find"></SymbolIcon>
-            </Button>
-        </StackPanel>
+        </Viewbox>
 
-        <StackPanel Grid.Column="7" Grid.Row="9" VerticalAlignment="Center" HorizontalAlignment="Left" Orientation="Horizontal" Grid.ColumnSpan="3"  Height="65" Width="320" Margin="222,0,0,0" >
-            <TextBox Name="AlumSearch" PlaceholderText="LUFFY" FontSize="30" Width="240" IsReadOnly ="False" IsTabStop="True" TabIndex="0"/>
-            <Button Width=" 40" Height="40" Margin="10" BorderBrush="Black" Background="Transparent" Click="Button_ClickBuscar">
-                <SymbolIcon Symbol="Find" Margin="3,0,0,0" Height="20" VerticalAlignment="Top"/>
-            </Button>
-        </StackPanel>
+        <Viewbox Grid.Column="8" VerticalAlignment="Center" Grid.ColumnSpan="2">
+            <TextBox PlaceholderText="ALUMNS" IsReadOnly="True" PlaceholderForeground="#FFDAA74F" 
+                 HorizontalAlignment="Left" FontSize="30"  Height="54" Width="180" Margin="71,0,0,0" ></TextBox>
 
-        <Button Name="Menu" Grid.Row="9" Grid.Column="9" HorizontalAlignment="Center" VerticalAlignment="Bottom"  Background="Transparent" BorderBrush="Transparent" Click="Info_Click" TabIndex="3"
+        </Viewbox>
+
+        <Viewbox Grid.Column="8" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Left" >
+            <StackPanel Orientation="Horizontal" Grid.ColumnSpan="2" Margin="11,0,0,0" Height="65" Width="300" >
+                <TextBox Name="ClassSearch" PlaceholderText="2-B" FontSize="30" Width="240" IsReadOnly ="False" IsTabStop="True" TabIndex="1"/>
+                <Button Width=" 40" Height="40" Margin="10" BorderBrush="Black" Background="Transparent">
+                    <SymbolIcon Symbol="Find"></SymbolIcon>
+                </Button>
+            </StackPanel>
+        </Viewbox>
+
+        <Viewbox Grid.Column="7" Grid.Row="9" VerticalAlignment="Center" HorizontalAlignment="Left" Height="40"  Grid.ColumnSpan="3">
+            <StackPanel Orientation="Horizontal"  >
+                <TextBox Name="AlumSearch" PlaceholderText="LUFFY" FontSize="30" Width="240" IsReadOnly ="False" IsTabStop="True" TabIndex="0" Height="44"/>
+                <Button Width=" 40" Height="40" Margin="10" BorderBrush="Black" Background="Transparent" Click="Button_ClickBuscar">
+                    <SymbolIcon Symbol="Find" Margin="3,0,0,0" Height="20" VerticalAlignment="Top"/>
+                </Button>
+            </StackPanel>
+        </Viewbox>
+
+
+        <Viewbox  Grid.Row="9" Grid.Column="9" HorizontalAlignment="Center" VerticalAlignment="Bottom"  >
+            <Button Name="Menu" Background="Transparent" BorderBrush="Transparent" Click="Info_Click" TabIndex="3"
                 Width="100" Height="100" Margin="25">
-            <Image Source="/Assets/info.png" Width="50" Height="50" />
-        </Button>
+                <Image Source="/Assets/info.png" Width="50" Height="50" />
+            </Button>
+        </Viewbox>
 
-        <StackPanel Grid.Row="2" Grid.RowSpan="7" Grid.Column="8" Grid.ColumnSpan="2" Margin="40,20,40,0">
-            <Button Content="Luffy" Click="Button_ClickLuffy"></Button>
-            <Button Content="Smoothy" Click="Button_ClickSmoothy"></Button>
-            <Button Content="Miracle" Click="Button_ClickMiracle"></Button>
-            <Button Content="Jonny" Click="Button_ClickJonny"></Button>
-            <Button Content="Kaguya" Click="Button_ClickKaguya"></Button>
-            <Button Content="Robin" Click="Button_ClickRobin"></Button>
-            <Button Content="Zoro" Click="Button_ClickZoro"></Button>
-            <Button Content="Richard" Click="Button_ClickRichard"></Button>
-            <Button Content="Nami" Click="Button_ClickNami"></Button>
-            <Button Content="Kid" Click="Button_ClickKid"></Button>
-            <Button Content="Law" Click="Button_ClickLaw"></Button>
-            <Button Content="Uzumaki" Click="Button_ClickUzumaki"></Button>
-            <Button Content="Sasuke" Click="Button_ClickSasuke"></Button>
-            <Button Content="Kiba" Click="Button_ClickKiba"></Button>
-        </StackPanel>
+        <Viewbox Grid.Row="2" Grid.RowSpan="7" Grid.Column="8" Grid.ColumnSpan="2" >
+            <StackPanel Margin="40,20,40,0">
+                <Button Content="Luffy" Click="Button_ClickLuffy"></Button>
+                <Button Content="Smoothy" Click="Button_ClickSmoothy"></Button>
+                <Button Content="Miracle" Click="Button_ClickMiracle"></Button>
+                <Button Content="Jonny" Click="Button_ClickJonny"></Button>
+                <Button Content="Kaguya" Click="Button_ClickKaguya"></Button>
+                <Button Content="Robin" Click="Button_ClickRobin"></Button>
+                <Button Content="Zoro" Click="Button_ClickZoro"></Button>
+                <Button Content="Richard" Click="Button_ClickRichard"></Button>
+                <Button Content="Nami" Click="Button_ClickNami"></Button>
+                <Button Content="Kid" Click="Button_ClickKid"></Button>
+                <Button Content="Law" Click="Button_ClickLaw"></Button>
+                <Button Content="Uzumaki" Click="Button_ClickUzumaki"></Button>
+                <Button Content="Sasuke" Click="Button_ClickSasuke"></Button>
+                <Button Content="Kiba" Click="Button_ClickKiba"></Button>
+            </StackPanel>
+        </Viewbox>
 
-        <TextBox  Name="Information" Visibility="Collapsed"  Grid.Row="8" Grid.RowSpan="2" Grid.Column="3" Grid.ColumnSpan="4" Header="LOS ALUMNOS" TextWrapping="Wrap" HorizontalAlignment="Left" VerticalAlignment="Top"  Width="590" Height="300"
+
+        <Viewbox  Grid.Row="8" Grid.RowSpan="2" Grid.Column="3" Grid.ColumnSpan="4"
+                  HorizontalAlignment="Left" VerticalAlignment="Top"  >
+            <TextBox  Name="Information" Visibility="Collapsed"  Header="LOS ALUMNOS" TextWrapping="Wrap" Width="590" Height="300"
                   Text="Aquí tienes toda la información importante sobre los alumnos: desde sus habilidades y puntos fuertes a sus relaciones con otros alumnos para que los conozcas mejor. En la zona derecha puedes buscar tanto clases como alumnos específicos. " Margin="10,-20,10,0"
                   Background="White" />
+        </Viewbox>
+       
     </Grid>
 </Page>
