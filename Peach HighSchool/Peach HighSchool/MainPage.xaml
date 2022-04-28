@@ -46,14 +46,28 @@
             <ColumnDefinition Width="517*"/>
             <ColumnDefinition Width="862*"/>
         </Grid.ColumnDefinitions>
-        <Image HorizontalAlignment="Left" Grid.Column="0" Grid.ColumnSpan="3"  Source="Assets/portada.jpg" Stretch="Fill" Grid.RowSpan="7" Width="1920"  />
+            <Image HorizontalAlignment="Left" Grid.Column="0" Grid.ColumnSpan="3"  Source="Assets/portada.jpg" Stretch="Fill" Grid.RowSpan="7"  />
 
-        <Button Content="RETURN GAME" Background="#FFD15E81" Grid.Row="1" Click="Button_Click" Margin="20,0,0,0"/>
-        <Button Content="NEW GAME" Background="#FFD688A0" Grid.Row="2" Click="Button_Click_1" Height="70" Margin="20,0,0,0"/>
-        <Button Content="OPTIONS" Background="#FFE8ABBD" Grid.Row="3" Click="Button_Click_2" Height="70" Margin="20,0,0,0"/>
-        <Button Content="EXIT" Width="250" Height="75" Background="#FFCFCFCF" Grid.Row="4" Click="Button_Click_3" Margin="20,0,0,0"/>
-        <TextBlock HorizontalAlignment="Left" Text="PEACH HIGHSCHOOL" TextWrapping="Wrap" VerticalAlignment="Center"
-                    Grid.ColumnSpan="3" FontSize="100" FontFamily="Century Schoolbook" FontWeight="Bold" Height="120" Width="1416" />
+
+        <Viewbox  Grid.Row="1" Grid.Column="1">
+            <Button Content="RETURN GAME" Background="#FFD15E81" Click="Button_Click" Margin="20,0,0,0"/>
+        </Viewbox>
+
+        <Viewbox Grid.Row="2" Grid.Column="1">
+            <Button Content="NEW GAME" Background="#FFD688A0" Click="Button_Click_1" Margin="20,0,0,0"/>
+        </Viewbox>
+
+        <Viewbox Grid.Row="3" Grid.Column="1">
+            <Button Content="OPTIONS" Background="#FFE8ABBD" Click="Button_Click_2" Margin="20,0,0,0"/>
+        </Viewbox>
+        <Viewbox Grid.Row="4" Grid.Column="1">
+            <Button Content="EXIT"  Background="#FFCFCFCF" Click="Button_Click_3" Margin="20,0,0,0"/>
+        </Viewbox>
+        <Viewbox   Grid.ColumnSpan="3" >
+            <TextBlock HorizontalAlignment="Left" Text="PEACH HIGHSCHOOL" TextWrapping="Wrap" VerticalAlignment="Center"
+                  FontSize="100" FontFamily="Century Schoolbook" FontWeight="Bold"  />
+        </Viewbox>
+      
 
     </Grid>
 </Page>
