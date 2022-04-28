@@ -18,29 +18,29 @@
                     <SolidColorBrush x:Key="TextBoxBackgroundPointerOver" Color="#FFE5ABE5"></SolidColorBrush>
                 </ResourceDictionary>
             </ResourceDictionary.ThemeDictionaries>
-        
-        <Style TargetType="Button">
-            <Setter Property="HorizontalAlignment" Value="Center"/>
-            <Setter Property="Grid.Column" Value="2"/>
-            <Setter Property="Height" Value="50"/>
-            <Setter Property="Width" Value="300"/>
-            <Setter Property="FontSize" Value="25"/>
-            <Setter Property="Margin" Value="3"/>
-            <Setter Property="Background" Value="White"/>
 
-        </Style>
+            <Style TargetType="Button">
+                <Setter Property="HorizontalAlignment" Value="Center"/>
+                <Setter Property="Grid.Column" Value="2"/>
+                <Setter Property="Height" Value="50"/>
+                <Setter Property="Width" Value="300"/>
+                <Setter Property="FontSize" Value="25"/>
+                <Setter Property="Margin" Value="3"/>
+                <Setter Property="Background" Value="White"/>
 
-        <Style TargetType="TextBox">
-            <Setter Property="TextAlignment" Value="Center"/>
-            <Setter Property="Grid.Column" Value="2"/>
-            <Setter Property="Height" Value="50"/>
-            <Setter Property="Width" Value="300"/>
-            <Setter Property="FontSize" Value="25"/>
-            <Setter Property="Margin" Value="3"/>
-            <Setter Property="Background" Value="White"/>
-            <Setter Property="IsReadOnly" Value="true"/>
-            <Setter Property="IsTabStop" Value="False"/>
-        </Style>
+            </Style>
+
+            <Style TargetType="TextBox">
+                <Setter Property="TextAlignment" Value="Center"/>
+                <Setter Property="Grid.Column" Value="2"/>
+                <Setter Property="Height" Value="50"/>
+                <Setter Property="Width" Value="300"/>
+                <Setter Property="FontSize" Value="25"/>
+                <Setter Property="Margin" Value="3"/>
+                <Setter Property="Background" Value="White"/>
+                <Setter Property="IsReadOnly" Value="true"/>
+                <Setter Property="IsTabStop" Value="False"/>
+            </Style>
 
         </ResourceDictionary>
 
@@ -50,9 +50,9 @@
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="126*"/>
-            <RowDefinition Height="125*"/>
-            <RowDefinition Height="594*"/>
-            <RowDefinition Height="236*"/>
+            <RowDefinition Height="181*"/>
+            <RowDefinition Height="536*"/>
+            <RowDefinition Height="238*"/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="293*"/>
@@ -67,72 +67,110 @@
         <Image HorizontalAlignment="Left" Grid.Column="0" Grid.ColumnSpan="6"  
                Source="Assets/mision.jpg" Stretch="Fill" Grid.RowSpan="4" Width="1920"  />
 
-        <StackPanel Grid.Row="1" Grid.RowSpan="2" HorizontalAlignment="Center" VerticalAlignment="Top" Height="508" Width="201">
-            <Button Content="1ªA" TabIndex="4" Click="ChangeClass_click"></Button>
-            <Button Content="1ªB" Click="ChangeClass_click"></Button>
-            <Button Content="1ªC" Click="ChangeClass_click"></Button>
-            <Button Content="2ªA" Click="ChangeClass_click"></Button>
-            <Button Content="2ªB" Click="ChangeClass_click"></Button>
-            <Button Content="2ªC" Click="ChangeClass_click"></Button>
-            <Button Content="3ªA" Click="ChangeClass_click"></Button>
-            <Button Content="3ªB" Click="ChangeClass_click"></Button>
-            <Button Content="3ªC" Click="ChangeClass_click"></Button>
-        </StackPanel>
-
-        <Button Name="Menu" Grid.Row="3" Grid.Column="5" HorizontalAlignment="Right" VerticalAlignment="Bottom"  Background="Transparent" BorderBrush="Transparent"
-                Width="100" Height="100" Margin="0,0,25,25" Click="Info_Click" TabIndex="5">
-            <Image Source="/Assets/info.png" Width="50" Height="50" VerticalAlignment="Bottom" />
-        </Button>
-
-        <Button Content="BACK" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="50,0,0,30" Click="Button_Click" TabIndex="6"
-                Background="#FFFBDED3" FontSize="35" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" BorderBrush="Transparent" Height="88" Width="300"/>
-
-        <TextBox PlaceholderText="STUDENT BODY" IsReadOnly="True" 
-                 HorizontalAlignment="Left" FontSize="30" Grid.Column="4" TextAlignment="Center" VerticalAlignment="Center" Height="54" Width="302" Grid.ColumnSpan="2" Margin="195,0,0,0"></TextBox>
-        
-        <TextBox Name="moneyT" PlaceholderText="500$" IsReadOnly="True" 
-                 HorizontalAlignment="Right" FontSize="30" Grid.Column="4" TextAlignment="Center" VerticalAlignment="Center" Height="54" Width="150" Grid.ColumnSpan="2" Margin="0,0,20,0" Background="#FFFFE281"></TextBox>
-
-        <TextBox Name="expT" PlaceholderText="150xP" IsReadOnly="True" 
-                 HorizontalAlignment="Right" FontSize="30" Grid.Row="1" VerticalAlignment="Top" Grid.Column="4" TextAlignment="Center" Height="54" Width="150" Grid.ColumnSpan="2" Margin="0,0,20,0" Background="#FFA6A6FF"></TextBox>
-
-<TextBox PlaceholderText="CURRENT MISIONS: 4/4" IsReadOnly="True" 
-                 HorizontalAlignment="Center" Grid.Row="1" FontSize="25" Grid.Column="1" TextAlignment="Center" VerticalAlignment="Center" Height="54" Width="320" Background="#FFF08787" Grid.ColumnSpan="2"/>
+        <Viewbox Grid.RowSpan="3" HorizontalAlignment="Center" VerticalAlignment="Center" Height="718" Width="284" >
+            <StackPanel Height="508" Width="201">
+                <Button Content="1ªA" TabIndex="4" Click="ChangeClass_click"></Button>
+                <Button Content="1ªB" Click="ChangeClass_click"></Button>
+                <Button Content="1ªC" Click="ChangeClass_click"></Button>
+                <Button Content="2ªA" Click="ChangeClass_click"></Button>
+                <Button Content="2ªB" Click="ChangeClass_click"></Button>
+                <Button Content="2ªC" Click="ChangeClass_click"></Button>
+                <Button Content="3ªA" Click="ChangeClass_click"></Button>
+                <Button Content="3ªB" Click="ChangeClass_click"></Button>
+                <Button Content="3ªC" Click="ChangeClass_click"></Button>
+            </StackPanel>
+        </Viewbox>
 
 
-        <StackPanel Grid.Row="2" Grid.Column="2" HorizontalAlignment="Center" 
-            VerticalAlignment="Top" Height="508" Width="299">
-            <TextBox PlaceholderText="STUDENT" Margin="0" Background="#FFE5ABE5"></TextBox>
-            <TextBox Name="student1" PlaceholderText="LUFFY" Margin="0"></TextBox>
-            <TextBox Name="student2" PlaceholderText="ROBIN" Margin="0"></TextBox>
-            <TextBox Name="student3" PlaceholderText="ZORO" Margin="0"></TextBox>
-            <TextBox Name="student4" PlaceholderText="SANJI" Margin="0"></TextBox>
-        </StackPanel>
+        <Viewbox Grid.Row="3" Grid.Column="5" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Button Name="Menu" Background="Transparent" BorderBrush="Transparent"
+                Width="36" Height="38" Click="Info_Click" TabIndex="5">
+                <Image Source="/Assets/info.png" Height="22" HorizontalAlignment="Center" VerticalAlignment="Center" Width="16"  />
+            </Button>
+        </Viewbox>
 
-        <StackPanel Grid.Row="2" Grid.Column="3" HorizontalAlignment="Center" 
-            VerticalAlignment="Top" Height="508" Width="480">
-            <TextBox PlaceholderText="TARGET" Margin="0" Width="478" Background="#FFE5ABE5"></TextBox>
-            <TextBox PlaceholderText="HAVE 2 COOKIE STANS" Margin="0" Width="478"></TextBox>
-            <TextBox PlaceholderText="IMPROVE ENGLISH ROOM" Margin="0" Width="478"></TextBox>
-            <TextBox PlaceholderText="ORGANIZE A EXCURSION" Margin="0" Width="478"></TextBox>
-            <TextBox PlaceholderText="AVERAGE OF 7" Margin="0" Width="478"></TextBox>
-        </StackPanel>
+        <Viewbox VerticalAlignment="Top" HorizontalAlignment="Center" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" Height="154" Margin="0,82,0,0" Width="457" >
+            <Button Content="BACK" Margin="50,0,0,30" Click="Button_Click" TabIndex="6"
+                Background="#FFFBDED3" FontSize="35" BorderBrush="Transparent" Height="88" Width="300"/>
 
-        <StackPanel Grid.Row="2" Grid.Column="4" HorizontalAlignment="Left" 
-            VerticalAlignment="Top" Height="508" Width="299" Grid.ColumnSpan="2">
-            <TextBox PlaceholderText="REWARD" Margin="0" Background="#FFE5ABE5"></TextBox>
-            <TextBox PlaceholderText="100Y" Margin="0" IsTabStop="True" TabIndex="0" KeyDown="Reward_KeyDown"></TextBox>
-            <TextBox PlaceholderText="50xp" Margin="0" IsTabStop="True" TabIndex="1" KeyDown="Reward_KeyDown"></TextBox>
-            <TextBox PlaceholderText="150Y" Margin="0" IsTabStop="True" TabIndex="2" KeyDown="Reward_KeyDown"></TextBox>
-            <TextBox PlaceholderText="REWARD" Margin="0" IsTabStop="True" TabIndex="3" KeyDown="Reward_KeyDown"></TextBox>
-        </StackPanel>
+        </Viewbox>
 
-        <TextBox PlaceholderText="CLASS RATING: 3/10" IsReadOnly="True" 
-                 HorizontalAlignment="Center" Grid.Row="3" FontSize="25" Grid.Column="3" TextAlignment="Center" VerticalAlignment="Center" Height="54" Width="377" Background="#FFF08787"></TextBox>
 
-        <TextBox  Name="Information" Visibility="Collapsed"  Grid.Row="2" Grid.Column="2" Grid.ColumnSpan="3" Header="LAS MISIONES" TextWrapping="Wrap" HorizontalAlignment="Left" VerticalAlignment="Bottom"  Width="1075" Height="300"
+        <Viewbox Grid.Column="4" Grid.ColumnSpan="2"   HorizontalAlignment="Left" Margin="0,0,0,8" Width="692"  >
+            <TextBox PlaceholderText="STUDENT BODY" IsReadOnly="True" 
+               FontSize="30" TextAlignment="Center" VerticalAlignment="Center" Height="54" Width="302" Margin="195,0,0,0"></TextBox>
+
+        </Viewbox>
+
+
+        <Viewbox   HorizontalAlignment="Left"  VerticalAlignment="Center" Grid.Column="5" Grid.Row="1" Height="124" Margin="190,0,0,0" Width="206">
+            <TextBox Name="moneyT" PlaceholderText="500$" IsReadOnly="True" 
+               FontSize="20"  TextAlignment="Center"  Background="#FFFFE281" Width="88"></TextBox>
+        </Viewbox>
+
+
+        <Viewbox Grid.Row="1" VerticalAlignment="Center" Grid.Column="4"  Grid.ColumnSpan="2" Height="124"  >
+            <TextBox Name="expT" PlaceholderText="150xP" IsReadOnly="True" 
+                 HorizontalAlignment="Center" FontSize="20"  Height="57" TextAlignment="Center" Background="#FFA6A6FF" Width="86"></TextBox>
+
+        </Viewbox>
+
+        <Viewbox Grid.Row="1" Grid.Column="1"  VerticalAlignment="Center" Grid.ColumnSpan="3" Height="85" Margin="0,0,479,0">
+            <TextBox PlaceholderText="CURRENT MISIONS: 4/4" IsReadOnly="True" 
+                 HorizontalAlignment="Center" FontSize="25"  TextAlignment="Center" Height="54" Width="320" Background="#FFF08787" />
+
+        </Viewbox>
+
+
+        <Viewbox Grid.Row="2" Grid.Column="2" HorizontalAlignment="Center" 
+            VerticalAlignment="Top" Height="494" Margin="0,2,0,0" Width="291" >
+            <StackPanel Height="508" Width="299">
+                <TextBox PlaceholderText="STUDENT" Margin="0" Background="#FFE5ABE5"></TextBox>
+                <TextBox Name="student1" PlaceholderText="LUFFY" Margin="0"></TextBox>
+                <TextBox Name="student2" PlaceholderText="ROBIN" Margin="0"></TextBox>
+                <TextBox Name="student3" PlaceholderText="ZORO" Margin="0"></TextBox>
+                <TextBox Name="student4" PlaceholderText="SANJI" Margin="0"></TextBox>
+            </StackPanel>
+        </Viewbox>
+
+
+
+        <Viewbox Grid.Row="2" Grid.Column="3" HorizontalAlignment="Center" 
+            VerticalAlignment="Top" Height="507" Margin="0,2,0,0" Width="479">
+            <StackPanel  Height="508" Width="480">
+                <TextBox PlaceholderText="TARGET" Margin="0" Width="478" Background="#FFE5ABE5"></TextBox>
+                <TextBox PlaceholderText="HAVE 2 COOKIE STANS" Margin="0" Width="478"></TextBox>
+                <TextBox PlaceholderText="IMPROVE ENGLISH ROOM" Margin="0" Width="478"></TextBox>
+                <TextBox PlaceholderText="ORGANIZE A EXCURSION" Margin="0" Width="478"></TextBox>
+                <TextBox PlaceholderText="AVERAGE OF 7" Margin="0" Width="478"></TextBox>
+            </StackPanel>
+        </Viewbox>
+
+
+        <Viewbox Grid.Row="2" Grid.Column="4" HorizontalAlignment="Center" 
+            VerticalAlignment="Top" Height="502" Margin="0,2,0,0" Width="296" >
+            <StackPanel Height="508" Width="299" Grid.ColumnSpan="2">
+                <TextBox PlaceholderText="REWARD" Margin="0" Background="#FFE5ABE5"></TextBox>
+                <TextBox PlaceholderText="100Y" Margin="0" IsTabStop="True" TabIndex="0" KeyDown="Reward_KeyDown"></TextBox>
+                <TextBox PlaceholderText="50xp" Margin="0" IsTabStop="True" TabIndex="1" KeyDown="Reward_KeyDown"></TextBox>
+                <TextBox PlaceholderText="150Y" Margin="0" IsTabStop="True" TabIndex="2" KeyDown="Reward_KeyDown"></TextBox>
+                <TextBox PlaceholderText="REWARD" Margin="0" IsTabStop="True" TabIndex="3" KeyDown="Reward_KeyDown"></TextBox>
+            </StackPanel>
+        </Viewbox>
+
+
+        <Viewbox   HorizontalAlignment="Center" Grid.Row="3" Grid.Column="3" VerticalAlignment="Center" Height="76" Width="479" >
+            <TextBox PlaceholderText="CLASS RATING: 3/10" IsReadOnly="True" 
+               FontSize="25" TextAlignment="Center" Height="54" Width="377" Background="#FFF08787"></TextBox>
+
+        </Viewbox>
+
+        <Viewbox  Grid.Row="2" Grid.Column="2" Grid.ColumnSpan="3" Margin="0,2,0,237" Grid.RowSpan="2" >
+            <TextBox  Name="Information" Visibility="Collapsed" Header="LAS MISIONES" TextWrapping="Wrap" Width="1075" Height="300"
                   Text="Las misiones son necesarias para recaudar puntos de prestigio hasta llegar a lo más alto. son dadas por alumnos que confían en ti como jefe del consejo estudiantil."
                   Background="White" Margin="3,265,0,0"/>
+        </Viewbox>
+
 
     </Grid>
 </Page>
