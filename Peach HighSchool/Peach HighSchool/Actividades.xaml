@@ -8,8 +8,143 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
+    <Page.Resources>
+        <Style TargetType="TextBox">
+            <Setter Property="IsReadOnly" Value="true"></Setter>
+            <Setter Property="IsTabStop" Value="False"/>
+            <Setter Property="Height" Value="65"></Setter>
+            <Setter Property="FontSize" Value="30"></Setter>
+            <Setter Property="TextAlignment" Value="Center"></Setter>
+            <Setter Property="Background" Value="White"></Setter>
+        </Style>
+        <Style TargetType="Button">
+            <Setter Property="HorizontalAlignment" Value="Stretch"></Setter>
+            <Setter Property="VerticalAlignment" Value="Stretch"></Setter>
+            <Setter Property="FontSize" Value="30"></Setter>
+            <Setter Property="Background" Value="White"></Setter>
+        </Style>
+    </Page.Resources>
+
+
     <Grid>
-        <Image HorizontalAlignment="Left" Grid.Column="0" Grid.ColumnSpan="4"  
-               Source="Assets/club.jpg" Stretch="Fill" Grid.RowSpan="5"   />
+        <Grid.RowDefinitions>
+            <RowDefinition Height="93*"/>
+            <RowDefinition Height="382*"/>
+            <RowDefinition Height="38*"/>
+            <RowDefinition Height="198*"/>
+            <RowDefinition Height="45*"/>
+            <RowDefinition Height="96*"/>
+            <RowDefinition Height="68*"/>
+            <RowDefinition Height="159*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="90*"/>
+            <ColumnDefinition Width="134*"/>
+            <ColumnDefinition Width="504*"/>
+            <ColumnDefinition Width="37*"/>
+            <ColumnDefinition Width="232*"/>
+            <ColumnDefinition Width="568*"/>
+            <ColumnDefinition Width="38*"/>
+            <ColumnDefinition Width="281*"/>
+            <ColumnDefinition Width="35*"/>
+        </Grid.ColumnDefinitions>
+
+
+        <Image HorizontalAlignment="Left" Grid.Column="0" Grid.ColumnSpan="9" Grid.Row="0" Grid.RowSpan="8"  
+               Source="Assets/sakura.jpg" Stretch="Fill" Width="1920"   />
+
+
+        <Viewbox Grid.Row="7" Grid.Column="1" VerticalAlignment="Top" Grid.ColumnSpan="2" Margin="10, 10, 10, 10">
+            <Button Content="BACK" Click="Button_Click"
+                Background="#FFFBDED3" FontSize="35" TabIndex="5" />
+
+        </Viewbox>
+
+        <Viewbox Grid.Row="1" Grid.RowSpan="5" Grid.Column="1" Grid.ColumnSpan="4" Margin="10, 10, 10, 10" >
+            <CalendarView  Width="307" Height="auto" IsTabStop="False"
+                SelectionMode="Single"
+                IsGroupLabelVisible="True"
+                IsOutOfScopeEnabled="True"
+                           FontSize="15"
+                Language="en"
+                CalendarIdentifier="GregorianCalendar" Background="#FFAFFAFF" BorderBrush="White" />
+        </Viewbox>
+
+
+        <Viewbox Grid.Row="2" Grid.Column="3" >
+            <Button Background="Transparent" Click="Sakura_Click" TabIndex="1"  >
+                <Image Source="/Assets/sakura.png"/>
+            </Button>
+        </Viewbox>
+
+
+        <Viewbox Grid.Row="3" Grid.Column="3" >
+            <Button Background="Transparent" Click="Okinawa_Click" TabIndex="0" >
+                <Image Source="/Assets/okinawa.png"/>
+            </Button>
+        </Viewbox>
+
+
+
+        <Viewbox Grid.Column="5" Grid.Row="7" Margin="10, 10, 10, 10" >
+            <TextBox  IsReadOnly="true" PlaceholderText="DAYS UNTIL END OF COURSE: 15"
+                 
+                  FontSize="30" Background="#FFAFFAFF" FontWeight="Bold" Height="73" Width="714" ></TextBox>
+        </Viewbox>
+
+
+
+        <Viewbox  Grid.Column="7" Grid.Row="1" >
+            <TextBox IsReadOnly="true" PlaceholderText="CALENDAR" 
+                 VerticalAlignment="Top" HorizontalAlignment="Center"  TextAlignment="Center"
+                  FontSize="60" Background="#FFE6E6E6" FontWeight="Normal" Height="93" Width="315" />
+
+        </Viewbox>
+
+
+        <Viewbox  Grid.Column="7" Grid.Row="0" >
+            <TextBox Name="money" IsReadOnly="true" PlaceholderText="500$" 
+                 VerticalAlignment="Bottom" HorizontalAlignment="Right"  TextAlignment="Center"
+                  FontSize="45" Background="#FFAFFAFF" FontWeight="Normal" Height="70" Width="115" />
+
+        </Viewbox>
+
+
+
+        <Viewbox Grid.Column="5" Grid.Row="3" Grid.RowSpan="4" >
+            <StackPanel Spacing="50" >
+                <Button Content="Okinawa Trip 3-A" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontSize="50" Background="White" Click="Okinawa_Click" Height="180" TabIndex="2"></Button>
+                <Button Content="Sakura" HorizontalAlignment="Stretch" FontSize="50" Background="White" Click="Sakura_Click" Height="180" TabIndex="3"></Button>
+            </StackPanel>
+        </Viewbox>
+
+        <Rectangle Name="infoTrip" Grid.Row="1" Grid.Column="6" Stretch="Fill" Stroke="Black" Grid.ColumnSpan="3" Grid.RowSpan="6" Margin="37,242,35,20" />
+
+
+        <Viewbox Grid.Row="5" Grid.Column="7"  Margin="10, 10, 10, 10">
+            <Button Name="buyActivity" Content="Select one" Click="Buy_Click" TabIndex="4"
+                Background="#FFAFFAFF" FontSize="35"  Height="60" VerticalAlignment="Top" />
+
+        </Viewbox>
+
+        <Viewbox Grid.Row="3" Grid.Column="7" >
+            <TextBlock Name="infoActivity"  Text="select a activity"  TextAlignment="Center"
+                   HorizontalAlignment="Center" VerticalAlignment="Top" TextWrapping="Wrap" Height="53" Width="267" />
+
+        </Viewbox>
+
+
+        <Viewbox  Grid.Column="5" Grid.Row="1" Margin="10, 10, 10, 10">
+            <TextBox IsReadOnly="true" PlaceholderText="21 March" Height="56"
+                 VerticalAlignment="Center"  TextAlignment="Center"
+                 Background="#FFAFFAFF" FontWeight="Bold"/>
+
+        </Viewbox>
+
+        <Image Name="OkinawaIcon" Source="/Assets/okinawa.png" Grid.Row="1" Grid.RowSpan="2" Grid.Column="5" HorizontalAlignment="Left" Visibility="Collapsed" Margin="0,66,0,1" Width="0" />
+        <Image Name="SakuraIcon" Source="/Assets/sakura.png" Grid.Row="1" Grid.RowSpan="2" Grid.Column="5" HorizontalAlignment="Left" Visibility="Collapsed" Margin="0,66,0,1" Width="0"/>
+
+
+
     </Grid>
 </Page>

@@ -144,7 +144,7 @@
 
 
         <Viewbox Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" HorizontalAlignment="Left" VerticalAlignment="Top" >
-            <TextBox  Name="Information" Visibility="Visible"  Header="LOS CLUBES" TextWrapping="Wrap" Width="1144" Height="183" Margin="10"
+            <TextBox  Name="Information" Visibility="Collapsed"  Header="LOS CLUBES" TextWrapping="Wrap" Width="1144" Height="183" Margin="10"
                   Text="Los clubes son donde los estudiantes pasan la mayor parte de su vida escolar. Saber gestionarlos y organizarlos de la manera má eficiente conseguirá que tu escuela sea conocida en toda la región gracias a los eventos interescolares que se organizan cada año."
                   Background="White" Grid.RowSpan="2"/>
         </Viewbox>

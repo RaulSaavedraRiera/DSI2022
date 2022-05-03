@@ -91,7 +91,7 @@
 
         <Viewbox Grid.Row="0" Grid.RowSpan="3" Grid.Column="4" VerticalAlignment="Top" >
             <StackPanel Name="menus" Margin="0,20,0,0" Spacing="50"
-                    Visibility="Visible" Height="340">
+                    Visibility="Collapsed" Height="340">
                 <Button Name="SaveButton" Content="SAVE" FontSize="20" Background="#FFEEA0C3" HorizontalAlignment="Center" Width="198"></Button>
                 <Button Name="ToMenuButton" Content="TO MENU" FontSize="20" Background="#FFEEA0C3" HorizontalAlignment="Stretch" Click="ToMenuButton_Click"></Button>
                 <Button Name="OptionsButton" Content="OPTIONS" FontSize="20" Background="#FFEEA0C3" HorizontalAlignment="Stretch" Click="OptionsButton_Click"></Button>

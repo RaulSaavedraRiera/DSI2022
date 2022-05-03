@@ -108,7 +108,7 @@ namespace Peach_HighSchool
 
         private void Calendario_Click(object sender, RoutedEventArgs e)
         {
-            Frame.Navigate(typeof(Calendario));
+            Frame.Navigate(typeof(Actividades));
         }
 
         private void Misiones_Click(object sender, RoutedEventArgs e)
