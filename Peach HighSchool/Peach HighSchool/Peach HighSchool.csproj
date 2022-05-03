@@ -116,6 +116,9 @@
     <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Actividades.xaml.cs">
+      <DependentUpon>Actividades.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Alumnos.xaml.cs">
       <DependentUpon>Alumnos.xaml</DependentUpon>
     </Compile>
@@ -212,6 +215,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="Actividades.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Alumnos.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
