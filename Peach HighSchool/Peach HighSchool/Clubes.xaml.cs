@@ -84,7 +84,7 @@ namespace Peach_HighSchool
 
         private void student1_KeyDown(object sender, KeyRoutedEventArgs e)
         {
-            if (e.Key == Windows.System.VirtualKey.Enter || e.Key == Windows.System.VirtualKey.GamepadY)
+            if (e.Key == Windows.System.VirtualKey.Enter || e.Key == Windows.System.VirtualKey.GamepadX)
             {
                 selectedStudent = 1;
             }
@@ -92,7 +92,7 @@ namespace Peach_HighSchool
 
         private void student2_KeyDown(object sender, KeyRoutedEventArgs e)
         {
-            if (e.Key == Windows.System.VirtualKey.Enter || e.Key == Windows.System.VirtualKey.GamepadA)
+            if (e.Key == Windows.System.VirtualKey.Enter || e.Key == Windows.System.VirtualKey.GamepadX)
             {
                 selectedStudent = 2;
             }
@@ -100,7 +100,7 @@ namespace Peach_HighSchool
 
         private void student3_KeyDown(object sender, KeyRoutedEventArgs e)
         {
-            if (e.Key == Windows.System.VirtualKey.Enter || e.Key == Windows.System.VirtualKey.GamepadA)
+            if (e.Key == Windows.System.VirtualKey.Enter || e.Key == Windows.System.VirtualKey.GamepadX)
             {
                 selectedStudent = 3;
             }
@@ -108,7 +108,7 @@ namespace Peach_HighSchool
 
         private void student4_KeyDown(object sender, KeyRoutedEventArgs e)
         {
-            if (e.Key == Windows.System.VirtualKey.Enter || e.Key == Windows.System.VirtualKey.GamepadA)
+            if (e.Key == Windows.System.VirtualKey.Enter || e.Key == Windows.System.VirtualKey.GamepadX)
             {
                 selectedStudent = 4;
             }
@@ -116,7 +116,7 @@ namespace Peach_HighSchool
 
         private void student5_KeyDown(object sender, KeyRoutedEventArgs e)
         {
-            if (e.Key == Windows.System.VirtualKey.Enter || e.Key == Windows.System.VirtualKey.GamepadA)
+            if (e.Key == Windows.System.VirtualKey.Enter || e.Key == Windows.System.VirtualKey.GamepadX)
             {
                 selectedStudent = 5;
             }
@@ -205,7 +205,7 @@ namespace Peach_HighSchool
 
         private void TextBox_KeyDown(object sender, KeyRoutedEventArgs e)
         {
-            if (e.Key == Windows.System.VirtualKey.Enter || e.Key == Windows.System.VirtualKey.GamepadA)
+            if (e.Key == Windows.System.VirtualKey.Enter || e.Key == Windows.System.VirtualKey.GamepadX)
             {
                 var a = sender as TextBox;
 

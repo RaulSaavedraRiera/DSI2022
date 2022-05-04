@@ -70,7 +70,7 @@ namespace Peach_HighSchool
 
         private void Reward_KeyDown(object sender, KeyRoutedEventArgs e)
         {
-            if(e.Key == Windows.System.VirtualKey.Enter || e.Key == Windows.System.VirtualKey.GamepadA)
+            if(e.Key == Windows.System.VirtualKey.Enter || e.Key == Windows.System.VirtualKey.GamepadX)
             {
                 var a = sender as TextBox;
                 if(a.PlaceholderText == "REWARD")
