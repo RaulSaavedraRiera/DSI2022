@@ -89,9 +89,10 @@
             </Button>
         </Viewbox>
 
-        <Viewbox VerticalAlignment="Top" HorizontalAlignment="Center" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2"  >
+        <Viewbox VerticalAlignment="Top" HorizontalAlignment="Center" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" 
+                 Margin="30,30,30,20">
             <Button Content="BACK"  Click="Button_Click" TabIndex="6"
-                Background="#FFFBDED3" FontSize="35" BorderBrush="Transparent" Height="79" />
+                Background="#FFFBDED3" FontSize="20" BorderBrush="Transparent" Height="79" />
 
         </Viewbox>
 
@@ -103,15 +104,15 @@
         </Viewbox>
 
 
-        <Viewbox   HorizontalAlignment="Right"  VerticalAlignment="Center" Grid.Column="5" Grid.Row="1"  >
+        <Viewbox   HorizontalAlignment="Right"  VerticalAlignment="Center" Grid.Column="5" Grid.Row="1"  Margin="10,10,10,10">
             <TextBox Name="moneyT" PlaceholderText="500$" IsReadOnly="True" 
-               FontSize="20"  TextAlignment="Center"  Background="#FFFFE281" Width="62"></TextBox>
+               FontSize="15"  TextAlignment="Center"  Background="#FFFFE281" Width="77" Height="37"></TextBox>
         </Viewbox>
 
 
         <Viewbox Grid.Row="1" VerticalAlignment="Center" Grid.Column="4"   >
             <TextBox Name="expT" PlaceholderText="150xP" IsReadOnly="True"
-                 HorizontalAlignment="Center" FontSize="20"  TextAlignment="Center" Background="#FFA6A6FF" Width="77" />
+                 HorizontalAlignment="Center" FontSize="15"  TextAlignment="Center" Background="#FFA6A6FF" Width="88" Height="39" />
 
         </Viewbox>
 

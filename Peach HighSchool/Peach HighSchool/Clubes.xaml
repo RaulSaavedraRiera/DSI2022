@@ -129,8 +129,8 @@
 
 
         <Viewbox  VerticalAlignment="Bottom" HorizontalAlignment="Left" Grid.Row="4" Grid.Column="0">
-            <Button Content="BACK" Margin="70,70,70,70" Click="Button_Click" TabIndex="10"
-                Background="#FFFBDED3" FontSize="30"  BorderBrush="Transparent" Height="100" Width="300"/>
+            <Button Content="BACK" Margin="90,90,90,90" Click="Button_Click" TabIndex="10"
+                Background="#FFFBDED3" FontSize="20"  BorderBrush="Transparent" />
 
         </Viewbox>
 
