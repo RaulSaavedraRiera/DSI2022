@@ -74,7 +74,7 @@ namespace Peach_HighSchool
             objects[13] = new Item(ST2);
             objects[14] = new Item(ST3);
 
-            price.PlaceholderText = money.ToString();
+            price.PlaceholderText = money.ToString() + "$";
 
             Window.Current.Dispatcher.AcceleratorKeyActivated += AccelertorKeyActivedHandle;
         }
@@ -118,7 +118,7 @@ namespace Peach_HighSchool
 
                 money -= 100;
 
-                price.PlaceholderText = money.ToString();
+                price.PlaceholderText = money.ToString()+"s";
             }
         }
 
@@ -132,7 +132,7 @@ namespace Peach_HighSchool
                 objects[currentZone * 3 + 1].o.Visibility = Visibility.Visible;
 
                
-                price.PlaceholderText = money.ToString();
+                price.PlaceholderText = money.ToString()+"$";
             }
 
         }
@@ -149,7 +149,7 @@ namespace Peach_HighSchool
 
                 money -= 500;
 
-                price.PlaceholderText = money.ToString();
+                price.PlaceholderText = money.ToString()+"$";
             }
                
 
