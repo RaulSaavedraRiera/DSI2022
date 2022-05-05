@@ -99,7 +99,7 @@
                 Background="#FFAFFAFF" FontSize="35" Grid.Row="5" Grid.Column="7" Height="60" VerticalAlignment="Bottom"/>
 
                 <TextBlock Name="infoActivity" Grid.Row="3" Grid.RowSpan="3" Grid.Column="7" Text="select a activity"  TextAlignment="Center"
-                   HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="40" TextWrapping="Wrap" />
+                   HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="60" TextWrapping="Wrap" />
 
                 <TextBox Grid.Column="5" Grid.Row="1" IsReadOnly="true" PlaceholderText="21 March" Margin="50,0,50,0" Height="100"
                  VerticalAlignment="Center"  TextAlignment="Center"

@@ -143,5 +143,7 @@ namespace Peach_HighSchool
                 i.icon.Visibility = Visibility.Collapsed;
             }
         }
+
+     
     }
 }

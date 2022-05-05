@@ -127,9 +127,9 @@
 
         </Viewbox>
 
-        <Viewbox Grid.Row="3" Grid.Column="7" >
-            <TextBlock Name="infoActivity"  Text="select a activity"  TextAlignment="Center"
-                   HorizontalAlignment="Center" VerticalAlignment="Top" TextWrapping="Wrap" Height="53" Width="267" />
+        <Viewbox Grid.Row="2" Grid.RowSpan="2" Grid.Column="7" >
+            <TextBlock Name="infoActivity"  Text="select a activity"  TextAlignment="Center" FontSize="40" 
+                   HorizontalAlignment="Center" VerticalAlignment="Center" TextWrapping="Wrap"  Width="267" />
 
         </Viewbox>
 
@@ -141,8 +141,8 @@
 
         </Viewbox>
 
-        <Image Name="OkinawaIcon" Source="/Assets/okinawa.png" Grid.Row="1" Grid.RowSpan="2" Grid.Column="5" HorizontalAlignment="Left" Visibility="Collapsed" Margin="0,66,0,1" Width="0" />
-        <Image Name="SakuraIcon" Source="/Assets/sakura.png" Grid.Row="1" Grid.RowSpan="2" Grid.Column="5" HorizontalAlignment="Left" Visibility="Collapsed" Margin="0,66,0,1" Width="0"/>
+        <Image Name="OkinawaIcon" Source="/Assets/okinawa.png" Grid.Row="1" Grid.RowSpan="2" Grid.Column="5" HorizontalAlignment="Left" Visibility="Collapsed" Margin="0,80,0,80"/>
+        <Image Name="SakuraIcon" Source="/Assets/sakura.png" Grid.Row="1" Grid.RowSpan="2" Grid.Column="5" HorizontalAlignment="Left" Visibility="Collapsed" Margin="0,80,0,80" />
 
 
 
