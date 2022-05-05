@@ -58,14 +58,14 @@
                Margin="16,25,0,0" FontSize="30" FontWeight="Normal" FontStyle="Italic"  Height="213" Width="649"/>
         </Viewbox>
 
-        <Viewbox   Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Left" Grid.Row="3"  >
+        <Viewbox   Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Left" Grid.Row="2"  >
             <TextBox PlaceholderText="YOUR ACADEMY NAME"   FontSize="35" 
-                Margin="161,0,0,0" Height="60" Width="386" TextChanging="TextBox_TextChanging" TabIndex="0"/>
+                Margin="60,0,60,0" Height="60" Width="386" TextChanging="TextBox_TextChanging" TabIndex="0"/>
 
         </Viewbox>
 
-        <Viewbox HorizontalAlignment="Left" VerticalAlignment="Center" Grid.Column="2" Grid.Row="4" >
-            <StackPanel  Margin="229,0,0,0" Spacing="15"  Height="209" Width="251" >
+        <Viewbox HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="2" Grid.Row="4" >
+            <StackPanel  Margin="0,0,0,0" Spacing="15"  Height="209" Width="251" >
                 <TextBox PlaceholderText="DIFFICULTY" IsReadOnly="True" PlaceholderForeground="Black" HorizontalAlignment="Center" FontSize="30"></TextBox>
                 <RadioButton Content="PRESTIGUE ACADEMY" Checked="RadioButton_Checked" IsChecked="False" TabIndex="2"></RadioButton>
                 <RadioButton Content="NORMAL ACADEMY" Checked="RadioButton_Checked" IsChecked="False" TabIndex="3"></RadioButton>
